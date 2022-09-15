@@ -43,7 +43,7 @@ function Header() {
         xs={12}
         md={12}
         lg={12}
-        gap={15}
+        gap={10}
         flexDirection="row"
       >
         <Animator variant="slide" direction="right" delay={800} timeout={1000}>
