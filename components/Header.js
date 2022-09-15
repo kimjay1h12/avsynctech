@@ -93,12 +93,19 @@ function Header() {
           </Grid>
         </Animator>
         <Animator variant="fade" delay={100} timeout={500}>
-          <Grid item xs={12} md={6} lg={6}>
+          <Grid
+            item
+            xs={12}
+            md={6}
+            lg={6}
+            display="flex"
+            justifyContent="flex-end"
+          >
             <img
               src="/img/header.jpg"
               alt="header"
-              width="100%"
-              height="468px"
+              width="582px"
+              height="438px"
               style={{ borderRadius: 15 }}
             />
           </Grid>
