@@ -17,8 +17,8 @@ const useStyles = makeStyles({
       padding: 10,
 
       ["@media (min-width : 1200px)"]: {
-        paddingLeft: 50,
-        paddingRight: 50,
+        paddingLeft: 120,
+        paddingRight: 120,
       },
     },
     "& .MuiGrid-item": {
@@ -54,14 +54,11 @@ function Header() {
               Smater Life with us
             </Typography>
             <Typography mt={4} lineHeight={2} color="#fff" fontWeight="200px">
-              Our smart products are compatible with tens of thousands
-              <br /> of other devices and can be seamlessly integrated with
-              popular
-              <br /> platforms like Google, Alexa, and Siri. Our smart products
-              are <br />
-              compatible with tens of thousands of other devices and can <br />
-              be seamlessly integrated with popular platforms like Google,
-              Alexa, and Siri.
+              Our smart products are compatible with tens of thousands of other
+              devices and can be seamlessly integrated with popular platforms
+              like Google, Alexa, and Siri. Our smart products are compatible
+              with tens of thousands of other devices and can be seamlessly
+              integrated with popular platforms like Google, Alexa, and Siri.
             </Typography>
 
             <Grid className="right" flexDirection="row" mt={4}>
