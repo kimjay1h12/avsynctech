@@ -11,13 +11,14 @@ export default function Home() {
       <div
         style={{
           background: "#000",
-          height: "100%",
-          width: "100vw",
+
           backgroundSize: "cover",
         }}
       >
         <Header />
-        <Typography color="#fff">juufuf</Typography>
+        <Typography color="#fff" mt={100}>
+          juufuf
+        </Typography>
       </div>
     </MainLayout>
   );

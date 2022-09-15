@@ -17,8 +17,8 @@ const useStyles = makeStyles({
       padding: 10,
 
       ["@media (min-width : 1200px)"]: {
-        paddingLeft: "6vw",
-        paddingRight: "6vw",
+        paddingLeft: 50,
+        paddingRight: 50,
       },
     },
     "& .MuiGrid-item": {
@@ -44,7 +44,7 @@ function Header() {
         xs={12}
         md={12}
         lg={12}
-        gap={10}
+        gap={8}
         flexDirection="row"
       >
         <Animator variant="slide" direction="right" delay={800} timeout={1000}>
@@ -54,14 +54,17 @@ function Header() {
               Smater Life with us
             </Typography>
             <Typography mt={4} lineHeight={2} color="#fff" fontWeight="200px">
-              Our smart products are compatible with tens of thousands of other
-              devices and can be seamlessly integrated with popular platforms
-              like Google, Alexa, and Siri. Our smart products are compatible
-              with tens of thousands of other devices and can be seamlessly
-              integrated with popular platforms like Google, Alexa, and Siri.
+              Our smart products are compatible with tens of thousands
+              <br /> of other devices and can be seamlessly integrated with
+              popular
+              <br /> platforms like Google, Alexa, and Siri. Our smart products
+              are <br />
+              compatible with tens of thousands of other devices and can <br />
+              be seamlessly integrated with popular platforms like Google,
+              Alexa, and Siri.
             </Typography>
 
-            <Grid className="right" flexDirection="row" mt={3}>
+            <Grid className="right" flexDirection="row" mt={4}>
               <Button
                 variant="outlined"
                 style={{
@@ -93,20 +96,12 @@ function Header() {
           </Grid>
         </Animator>
         <Animator variant="fade" delay={100} timeout={500}>
-          <Grid
-            item
-            xs={12}
-            md={6}
-            lg={6}
-            padding={10}
-            display="flex"
-            justifyContent="center"
-          >
+          <Grid item xs={12} md={6} lg={6}>
             <img
               src="/img/header.jpg"
               alt="header"
               width="100%"
-              height="448px"
+              height="468px"
               style={{ borderRadius: 15 }}
             />
           </Grid>
