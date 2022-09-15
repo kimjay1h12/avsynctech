@@ -47,50 +47,51 @@ function Header() {
         gap={10}
         flexDirection="row"
       >
-        <Grid item xs={11} md={5} lg={5}>
-          <Typography variant="h2" color="#fff" fontWeight={700}>
-            Get a <br />
-            Smater Life with us
-          </Typography>
-          <Typography mt={4} lineHeight={2} color="#fff" fontWeight="200px">
-            Our smart products are compatible with tens of thousands of other
-            devices and can be seamlessly integrated with popular platforms like
-            Google, Alexa, and Siri. Our smart products are compatible with tens
-            of thousands of other devices and can be seamlessly integrated with
-            popular platforms like Google, Alexa, and Siri.
-          </Typography>
+        <Animator variant="slide" direction="right" delay={800} timeout={1000}>
+          <Grid item xs={11} md={5} lg={5}>
+            <Typography variant="h2" color="#fff" fontWeight={700}>
+              Get a <br />
+              Smater Life with us
+            </Typography>
+            <Typography mt={4} lineHeight={2} color="#fff" fontWeight="200px">
+              Our smart products are compatible with tens of thousands of other
+              devices and can be seamlessly integrated with popular platforms
+              like Google, Alexa, and Siri. Our smart products are compatible
+              with tens of thousands of other devices and can be seamlessly
+              integrated with popular platforms like Google, Alexa, and Siri.
+            </Typography>
 
-          <Grid className="right" flexDirection="row" mt={3}>
-            <Button
-              variant="outlined"
-              style={{
-                background: "#1355FF",
-                color: "#fff",
-                fontSize: 12,
-                padding: 16,
-                borderRadius: 0,
-                width: 150,
-              }}
-              size="lg"
-            >
-              {" "}
-              Get Started
-            </Button>{" "}
-            <Button
-              style={{
-                background: "#fff",
-                color: "#999",
-                borderRadius: 0,
-                fontSize: 12,
-                padding: 16,
-                width: 150,
-              }}
-            >
-              See video
-            </Button>
+            <Grid className="right" flexDirection="row" mt={3}>
+              <Button
+                variant="outlined"
+                style={{
+                  background: "#1355FF",
+                  color: "#fff",
+                  fontSize: 12,
+                  padding: 16,
+                  borderRadius: 0,
+                  width: 150,
+                }}
+                size="lg"
+              >
+                {" "}
+                Get Started
+              </Button>{" "}
+              <Button
+                style={{
+                  background: "#fff",
+                  color: "#999",
+                  borderRadius: 0,
+                  fontSize: 12,
+                  padding: 16,
+                  width: 150,
+                }}
+              >
+                See video
+              </Button>
+            </Grid>
           </Grid>
-        </Grid>
-
+        </Animator>
         <Animator variant="fade" delay={100} timeout={500}>
           <Grid
             item
