@@ -35,7 +35,7 @@ function Header() {
     <div className={classes.root}>
       <Grid
         mt={8}
-        height="90vh"
+        height="100%"
         width="100vw"
         justifyContent="center"
         alignItems="center"
