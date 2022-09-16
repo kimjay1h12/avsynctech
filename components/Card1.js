@@ -34,7 +34,7 @@ function Card1() {
         <Animator variant="zoom" delay={400} timeout={500}>
           <Grid
             item
-            style={{ background: "#fff", borderRadius: 20 }}
+            style={{ background: "#F6F3FF", borderRadius: 20 }}
             xs={12}
             md={2}
             lg={2}
@@ -53,7 +53,7 @@ function Card1() {
             xs={12}
             md={2}
             lg={2}
-            style={{ background: "#fff", borderRadius: 20 }}
+            style={{ background: "#F6F3FF", borderRadius: 20 }}
             height={300}
             item
             padding={3}
@@ -68,7 +68,7 @@ function Card1() {
             xs={12}
             md={2}
             lg={2}
-            style={{ background: "#fff", borderRadius: 20 }}
+            style={{ background: "#F6F3FF", borderRadius: 20 }}
             height={300}
             item
             padding={3}

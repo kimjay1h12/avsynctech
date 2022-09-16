@@ -13,7 +13,12 @@ function Header() {
         height="90vh"
         variant="slide"
         mt={8}
-        title="  Get a Smater Life with us"
+        title={
+          <Typography variant="h2" color="#fff" fontWeight={700}>
+            Get a<br /> Smater Life
+            <br /> with us
+          </Typography>
+        }
         subtitle=" Our smart products are compatible with tens of thousands of other
               devices and can be seamlessly integrated with popular platforms
               like Google, Alexa, and Siri. Our smart products are compatible

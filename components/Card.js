@@ -66,10 +66,14 @@ function Header({
           timeout={1000}
         >
           <Grid item xs={11} md={4} lg={4}>
-            <Typography variant="h2" color="#fff" fontWeight={700}>
-              {title}
-            </Typography>
-            <Typography mt={2} lineHeight={2} color="#fff" fontFamily="ariel">
+            {title}
+
+            <Typography
+              mt={2}
+              lineHeight={2}
+              color="#fffa"
+              fontFamily="Inria Sans"
+            >
               {subtitle}
             </Typography>
 
@@ -100,7 +104,7 @@ function Header({
             lg={5}
             display="flex"
             justifyContent="flex-end"
-            height="400px"
+            height="450px"
           >
             <img
               src={src}
