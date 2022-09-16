@@ -1,7 +1,7 @@
 import { Rowing } from "@mui/icons-material";
 import { Box, Button, Grid, Typography } from "@mui/material";
 import { makeStyles } from "@mui/styles";
-import Card from "../components/Card";
+import HeaderCard from "./HeaderCard";
 
 import React from "react";
 import Animator from "./Animator";
@@ -9,7 +9,7 @@ import Animator from "./Animator";
 function Header() {
   return (
     <div>
-      <Card
+      <HeaderCard
         height="90vh"
         variant="slide"
         mt={8}

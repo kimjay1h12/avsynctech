@@ -71,7 +71,7 @@ function Header({
             <Typography
               mt={2}
               lineHeight={2}
-              color="#fffa"
+              color="#fff9"
               fontFamily="Inria Sans"
             >
               {subtitle}

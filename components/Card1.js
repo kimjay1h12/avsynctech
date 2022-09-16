@@ -14,7 +14,7 @@ function Card1() {
       }}
     >
       <Grid contsiner justifyContent="center" textAlign="center">
-        <Typography color="#fff" fontWeight={700} variant="h2">
+        <Typography color="#fff" fontWeight={700} variant="h3">
           Let’s See How it Works
         </Typography>
         <Typography color="#fff" mt={2}>
@@ -27,25 +27,31 @@ function Card1() {
         xs={12}
         md={12}
         lg={12}
-        gap={10}
+        gap={8}
         alignItems="center"
         justifyContent="center"
       >
         <Animator variant="zoom" delay={400} timeout={500}>
           <Grid
             item
-            style={{ background: "#F6F3FF", borderRadius: 20 }}
+            style={{ background: "#fff9", borderRadius: 20 }}
             xs={12}
             md={2}
             lg={2}
             display="flex"
             flexDirection="column"
-            padding={3}
-            gap={5}
+            padding={4}
+            gap={2}
             margin={0}
           >
-            <img src="/img/build.png" width="100%" height="100%" />
-            <Typography>hdh</Typography>
+            <img src="/img/plan.png" width="90px" height="90px" />
+            <Typography variant="h4" fontWeight={700}>
+              Plan
+            </Typography>
+            <Typography variant="p">
+              First, we 'll listen, answer your questions, and advise on the
+              overall project scope and budget.
+            </Typography>
           </Grid>
         </Animator>
         <Animator variant="zoom" delay={600} timeout={500}>
@@ -53,14 +59,22 @@ function Card1() {
             xs={12}
             md={2}
             lg={2}
-            style={{ background: "#F6F3FF", borderRadius: 20 }}
-            height={300}
+            style={{ background: "#fff9", borderRadius: 20 }}
             item
-            padding={3}
-            gap={5}
+            display="flex"
+            flexDirection="column"
+            padding={4}
+            gap={2}
             margin={0}
           >
-            hff
+            <img src="/img/design.png" width="90px" height="90px" />
+            <Typography variant="h4" fontWeight={700}>
+              Design
+            </Typography>
+            <Typography variant="p">
+              First, we 'll listen, answer your questions, and advise on the
+              overall project scope and budget.
+            </Typography>
           </Grid>
         </Animator>
         <Animator variant="zoom" delay={800} timeout={900}>
@@ -68,14 +82,22 @@ function Card1() {
             xs={12}
             md={2}
             lg={2}
-            style={{ background: "#F6F3FF", borderRadius: 20 }}
-            height={300}
+            style={{ background: "#fff9", borderRadius: 20 }}
             item
-            padding={3}
-            gap={5}
+            padding={4}
+            gap={2}
             margin={0}
+            display="flex"
+            flexDirection="column"
           >
-            fyfy
+            <img src="/img/design.png" width="90px" height="90px" />
+            <Typography variant="h4" fontWeight={700}>
+              Build
+            </Typography>
+            <Typography variant="p">
+              First, we 'll listen, answer your questions, and advise on the
+              overall project scope and budget.
+            </Typography>
           </Grid>
         </Animator>
       </Grid>
