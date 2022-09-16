@@ -13,7 +13,7 @@ function Section() {
     >
       <Grid contsiner justifyContent="center" textAlign="center" padding={2}>
         <Typography color="#fff" fontWeight={700} variant="h3">
-          Let’s See How it Works
+          Let&apos;s See How it Works
         </Typography>
         <Typography color="#fff" mt={2}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit
