@@ -20,7 +20,10 @@ const useStyles = makeStyles({
     ["@media (min-width : 1200px)"]: {},
     "&.scrolled": {
       boxShadow: "0 5px 5px #0001",
-      background: "#F90",
+      background: "#000",
+      "& a": {
+        color: "#fff",
+      },
     },
 
     "& ul": {
