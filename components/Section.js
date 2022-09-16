@@ -146,9 +146,9 @@ impartiality of our advice,the practicality of our recommendations as well as qu
         />
         <Card
           direction="row"
-          height="70vh"
+          height="90vh"
           variant="grow"
-          mt="-20vh"
+          mt="-18vh"
           title={
             <Typography variant="h3" color="#fff" fontWeight={700}>
               Have Access to Safe,
