@@ -4,8 +4,10 @@ import Image from "next/image";
 import Header from "../components/Header";
 import MainLayout from "../layouts/MainLayout";
 import styles from "../styles/Home.module.css";
-import Card from "../components/HeaderCard";
+import Card from "../components/Card";
 import Card1 from "../components/Card1";
+import Section from "../components/Section";
+import Footer from "../components/Footer";
 export default function Home() {
   return (
     <MainLayout>
@@ -18,7 +20,8 @@ export default function Home() {
       >
         <Header />
 
-        <Card1 />
+        <Section />
+        <Footer />
       </div>
     </MainLayout>
   );

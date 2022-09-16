@@ -72,8 +72,8 @@ function Card1() {
               Design
             </Typography>
             <Typography variant="p">
-              First, we 'll listen, answer your questions, and advise on the
-              overall project scope and budget.
+              Then, we'll explore what'spossible together, and test our
+              decisions to ensure cost alignment.
             </Typography>
           </Grid>
         </Animator>
@@ -95,8 +95,8 @@ function Card1() {
               Build
             </Typography>
             <Typography variant="p">
-              First, we 'll listen, answer your questions, and advise on the
-              overall project scope and budget.
+              Finally, we'll execute the plan, and make sure you're aware of
+              progress every step of the way
             </Typography>
           </Grid>
         </Animator>
