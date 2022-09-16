@@ -15,7 +15,7 @@ function Card1() {
     >
       <Grid contsiner justifyContent="center" textAlign="center">
         <Typography color="#fff" fontWeight={700} variant="h3">
-          Let’s See How it Works
+          Let&apos;s See How it Works
         </Typography>
         <Typography color="#fff" mt={2}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -49,7 +49,7 @@ function Card1() {
               Plan
             </Typography>
             <Typography variant="p">
-              First, we 'll listen, answer your questions, and advise on the
+              First, we&apos;ll listen, answer your questions, and advise on the
               overall project scope and budget.
             </Typography>
           </Grid>
@@ -72,8 +72,8 @@ function Card1() {
               Design
             </Typography>
             <Typography variant="p">
-              Then, we'll explore what'spossible together, and test our
-              decisions to ensure cost alignment.
+              Then, we&apos;ll explore what&apos;spossible together, and test
+              our decisions to ensure cost alignment.
             </Typography>
           </Grid>
         </Animator>
@@ -95,8 +95,8 @@ function Card1() {
               Build
             </Typography>
             <Typography variant="p">
-              Finally, we'll execute the plan, and make sure you're aware of
-              progress every step of the way
+              Finally, we&apos;ll execute the plan, and make sure you&apos;re
+              aware of progress every step of the way
             </Typography>
           </Grid>
         </Animator>
