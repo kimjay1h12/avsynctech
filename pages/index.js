@@ -8,7 +8,7 @@ import Card from "../components/Card";
 import Card1 from "../components/Card1";
 import Section from "../components/Section";
 import Footer from "../components/Footer";
-import ContactUs from "../components/Contactus";
+import ContactUs from "../components/ContactUs";
 import Iframe from "react-iframe";
 export default function Home() {
   return (

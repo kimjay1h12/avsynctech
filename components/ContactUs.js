@@ -3,6 +3,7 @@ import { Button, Grid, Typography } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import Iframe from "react-iframe";
 import React from "react";
+import Map from "../components/Map";
 import Animator from "./Animator";
 const useStyles = makeStyles({
   root: {
@@ -65,24 +66,6 @@ function ContactUs({
           <Typography variant="h3" color="#fff" fontWeight={700}>
             Get In Touch
           </Typography>
-
-          <Grid className="right" flexDirection="row" mt={4}>
-            <Button
-              variant="outlined"
-              style={{
-                background: "#fff",
-                color: "#000",
-                fontSize: 12,
-                padding: 16,
-                display: buttonvisibility,
-                width: 180,
-              }}
-              size="lg"
-            >
-              {" "}
-              {button1}
-            </Button>{" "}
-          </Grid>
         </Grid>
         <Animator variant="fade" delay={100} timeout={500}>
           <Grid
@@ -94,14 +77,7 @@ function ContactUs({
             justifyContent="flex-end"
             height="450px"
           >
-            <Iframe
-              url="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=avsynctech+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-              width="100%"
-              id="myId"
-              className="myClassname"
-              height="100%"
-              styles={{ height: "100%", width: "100%" }}
-            />
+            <Map />
           </Grid>
         </Animator>
       </Grid>
