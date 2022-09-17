@@ -15,7 +15,6 @@ export default function Home() {
         style={{
           background: "#000",
           height: "100%",
-          backgroundSize: "cover",
         }}
       >
         <Header />

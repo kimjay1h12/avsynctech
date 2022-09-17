@@ -3,6 +3,8 @@ import React from "react";
 import Animator from "./Animator";
 import Card from "../components/Card";
 import Card1 from "./Card1";
+import CardRight from "./CardRight";
+import CardLeft from "./CardLeft";
 function Section() {
   return (
     <div>
@@ -128,9 +130,8 @@ function Section() {
             </Grid>
           </Animator>
         </Grid>
-        <Card
-          direction="row-reverse"
-          height="90vh"
+        <CardRight
+          height="100%"
           variant="grow"
           mt={8}
           title={
@@ -144,11 +145,9 @@ function Section() {
 impartiality of our advice,the practicality of our recommendations as well as quality of our after-sales service."
           src="/img/procurement.png"
         />
-        <Card
-          direction="row"
-          height="90vh"
+        <CardLeft
+          height="100%"
           variant="grow"
-          mt="-18vh"
           title={
             <Typography variant="h3" color="#fff" fontWeight={700}>
               Have Access to Safe,
