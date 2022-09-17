@@ -19,6 +19,9 @@ const useStyles = makeStyles({
     transition: "all 0.3s",
     ["@media (min-width : 1200px)"]: {},
     "&.scrolled": {
+      "& .icon": {
+        color: "#fff",
+      },
       boxShadow: "0 5px 5px #0001",
       background: "#000",
       "& a": {
@@ -148,7 +151,7 @@ function AppToolbar({ active, routes = [], logo }) {
             onClick={() => setMenuOpen(!menuOpen)}
             className={classes.menu}
           >
-            {menuOpen ? <CloseOutlined /> : <Menu />}
+            {menuOpen ? <CloseOutlined /> : <Menu className="icon" />}
           </IconButton>
         </Hidden>
 
