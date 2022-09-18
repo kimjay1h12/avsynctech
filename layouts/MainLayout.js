@@ -30,27 +30,27 @@ function MainLayout({ active, title, description, children }) {
       label: "home",
     },
     {
-      href: "/",
+      href: "/about",
       icon: <Home />,
       label: "About",
     },
     {
-      href: "/",
+      href: "/services",
       icon: <Home />,
       label: "Services",
     },
     {
-      href: "/",
+      href: "/products",
       icon: <Home />,
       label: "Product",
     },
     {
-      href: "/",
+      href: "/gallery",
       icon: <Home />,
       label: "Gallery",
     },
     {
-      href: "/",
+      href: "/contactus",
       icon: <Home />,
       label: "Contact us",
     },

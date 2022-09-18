@@ -77,7 +77,7 @@ function Card1() {
             </Typography>
           </Grid>
         </Animator>
-        <Animator variant="zoom" delay={800} timeout={900}>
+        <Animator variant="zoom" delay={800} timeout={500}>
           <Grid
             xs={12}
             md={2}

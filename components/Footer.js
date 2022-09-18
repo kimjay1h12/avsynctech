@@ -10,6 +10,7 @@ function Footer() {
         height: "60vh",
         display: "flex",
         alignItems: "center",
+        marginTop: 100,
         justifyContent: "center",
       }}
     >

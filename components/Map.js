@@ -11,7 +11,7 @@ function Map() {
         id="myId"
         className="myClassname"
         height="100%"
-        styles={{ height: "100%", width: "100%" }}
+        styles={{ height: "100%", width: "100%", border: "none" }}
       />
     </div>
   );
