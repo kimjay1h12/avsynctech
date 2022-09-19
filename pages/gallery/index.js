@@ -146,9 +146,6 @@ const itemData = [
 ];
 const slideImages = [
   {
-    url: "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6",
-  },
-  {
     url: "https://images.unsplash.com/photo-1525097487452-6278ff080c31",
   },
   {

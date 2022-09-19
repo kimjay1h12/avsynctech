@@ -8,7 +8,7 @@ import Animator from "./Animator";
 
 function Header() {
   return (
-    <div>
+    <div style={{ marginBottom: "200px" }}>
       <HeaderCard
         height="90vh"
         variant="slide"
