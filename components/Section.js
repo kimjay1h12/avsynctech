@@ -10,6 +10,8 @@ import DialogPop from "./DialogPop";
 import { Close } from "@mui/icons-material";
 function Section() {
   const [open, setOpen] = React.useState(false);
+  const [open1, setOpen1] = React.useState(false);
+  const [open2, setOpen2] = React.useState(false);
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -20,18 +22,18 @@ function Section() {
   };
 
   const handleClickOpen1 = () => {
-    setOpen(true);
+    setOpen1(true);
   };
 
   const handleClose1 = () => {
-    setOpen(false);
+    setOpen1(false);
   };
   const handleClickOpen2 = () => {
-    setOpen(true);
+    setOpen2(true);
   };
 
   const handleClose2 = () => {
-    setOpen(false);
+    setOpen2(false);
   };
   return (
     <div>
@@ -105,17 +107,31 @@ function Section() {
                         src="/img/smarthome.png"
                         width="100%"
                         height="100%"
+                        alt="logo"
                       />
                     </Grid>
-                    <Grid item xs={12} md={12} lg={12} height="50vh">
+                    <Grid
+                      item
+                      xs={12}
+                      md={12}
+                      lg={12}
+                      height="50vh"
+                      textAlign="center"
+                      display="flex"
+                      justifyContent="center"
+                      padding={4}
+                    >
                       <Typography>
                         {" "}
                         AVS Technologies offer a wide range of surveillance CCTV
-                        <br />
-                        security systems which are designed and i nstalled to
-                        secure
-                        <br />
-                        you, your domestic premises and your business.
+                        security systems which are designed and installed to
+                        secure you, your domestic premises and your business.
+                        AVS Technologies offer a wide range of surveillance CCTV
+                        security systems which are designed and installed to
+                        secure you, your domestic premises and your business.
+                        AVS Technologies offer a wide range of surveillance CCTV
+                        security systems which are designed and installed to
+                        secure you, your domestic premises and your business.
                       </Typography>
                     </Grid>
                   </Grid>
@@ -154,7 +170,7 @@ function Section() {
               <Grid mt={4}>
                 <Dialog
                   onClose={handleClose1}
-                  open={open}
+                  open={open1}
                   fullWidth="true"
                   maxWidth="lg"
                   style={{ scrollbarWidth: "hidden" }}
@@ -173,15 +189,28 @@ function Section() {
                         height="100%"
                       />
                     </Grid>
-                    <Grid item xs={12} md={12} lg={12} height="50vh">
+                    <Grid
+                      item
+                      xs={12}
+                      md={12}
+                      lg={12}
+                      height="50vh"
+                      textAlign="center"
+                      display="flex"
+                      justifyContent="center"
+                      padding={4}
+                    >
                       <Typography>
                         {" "}
                         AVS Technologies offer a wide range of surveillance CCTV
-                        <br />
-                        security systems which are designed and i nstalled to
-                        secure
-                        <br />
-                        you, your domestic premises and your business.
+                        security systems which are designed and installed to
+                        secure you, your domestic premises and your business.
+                        AVS Technologies offer a wide range of surveillance CCTV
+                        security systems which are designed and installed to
+                        secure you, your domestic premises and your business.
+                        AVS Technologies offer a wide range of surveillance CCTV
+                        security systems which are designed and installed to
+                        secure you, your domestic premises and your business.
                       </Typography>
                     </Grid>
                   </Grid>
@@ -219,7 +248,7 @@ function Section() {
               <Grid mt={4}>
                 <Dialog
                   onClose={handleClose2}
-                  open={open}
+                  open={open2}
                   fullWidth="true"
                   maxWidth="lg"
                   style={{ scrollbarWidth: "hidden" }}
@@ -234,14 +263,28 @@ function Section() {
                     <Grid item xs={12} md={12} lg={12} height="50vh">
                       <img src="/img/smart.png" width="100%" height="100%" />
                     </Grid>
-                    <Grid item xs={12} md={12} lg={12} height="50vh">
+                    <Grid
+                      item
+                      xs={12}
+                      md={12}
+                      lg={12}
+                      height="50vh"
+                      textAlign="center"
+                      display="flex"
+                      justifyContent="center"
+                      padding={4}
+                    >
                       <Typography>
+                        {" "}
                         AVS Technologies offer a wide range of surveillance CCTV
-                        <br />
-                        security systems which are designed and i nstalled to
-                        secure
-                        <br />
-                        you, your domestic premises and your business.
+                        security systems which are designed and installed to
+                        secure you, your domestic premises and your business.
+                        AVS Technologies offer a wide range of surveillance CCTV
+                        security systems which are designed and installed to
+                        secure you, your domestic premises and your business.
+                        AVS Technologies offer a wide range of surveillance CCTV
+                        security systems which are designed and installed to
+                        secure you, your domestic premises and your business.
                       </Typography>
                     </Grid>
                   </Grid>
@@ -273,6 +316,7 @@ impartiality of our advice,the practicality of our recommendations as well as qu
           src="/img/procurement.png"
         />
         <CardLeft
+          mt={8}
           height="100%"
           variant="grow"
           title={
