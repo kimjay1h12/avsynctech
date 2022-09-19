@@ -24,7 +24,7 @@ import { makeStyles } from "@mui/styles";
 import Card1 from "../../components/Card1";
 import Footer from "../../components/Footer";
 const headerimg = "/img/contactheader.png";
-const useStyles = makeStyles({
+const UseStyles = makeStyles({
   root: {
     marginTop: 100,
     transition: "0.5s",
@@ -48,7 +48,7 @@ const useStyles = makeStyles({
   },
 });
 function index() {
-  const classes = useStyles();
+  const classes = UseStyles();
   return (
     <MainLayout>
       {" "}
