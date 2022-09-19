@@ -5,7 +5,34 @@ import Card from "../components/Card";
 import Card1 from "./Card1";
 import CardRight from "./CardRight";
 import CardLeft from "./CardLeft";
+import { Dialog, DialogTitle } from "@mui/material";
+import DialogPop from "./DialogPop";
+import { Close } from "@mui/icons-material";
 function Section() {
+  const [open, setOpen] = React.useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+  const handleClickOpen1 = () => {
+    setOpen(true);
+  };
+
+  const handleClose1 = () => {
+    setOpen(false);
+  };
+  const handleClickOpen2 = () => {
+    setOpen(true);
+  };
+
+  const handleClose2 = () => {
+    setOpen(false);
+  };
   return (
     <div>
       <Card1 />
@@ -59,7 +86,42 @@ function Section() {
                 building.
               </Typography>
               <Grid mt={4}>
+                <Dialog
+                  onClose={handleClose}
+                  open={open}
+                  fullWidth="true"
+                  maxWidth="lg"
+                  style={{ scrollbarWidth: "hidden" }}
+                >
+                  <DialogTitle>
+                    <Grid container justifyContent="space-between">
+                      <Typography>Detail</Typography>{" "}
+                      <Close onClick={handleClose} />{" "}
+                    </Grid>
+                  </DialogTitle>
+                  <Grid container xs={12} md={12} lg={12} height="100vh">
+                    <Grid item xs={12} md={12} lg={12} height="50vh">
+                      <img
+                        src="/img/smarthome.png"
+                        width="100%"
+                        height="100%"
+                      />
+                    </Grid>
+                    <Grid item xs={12} md={12} lg={12} height="50vh">
+                      <Typography>
+                        {" "}
+                        AVS Technologies offer a wide range of surveillance CCTV
+                        <br />
+                        security systems which are designed and i nstalled to
+                        secure
+                        <br />
+                        you, your domestic premises and your business.
+                      </Typography>
+                    </Grid>
+                  </Grid>
+                </Dialog>
                 <Button
+                  onClick={handleClickOpen}
                   size="large"
                   style={{ color: "#000", background: "#fff", borderRadius: 0 }}
                 >
@@ -90,7 +152,42 @@ function Section() {
                 <br /> technology.
               </Typography>
               <Grid mt={4}>
+                <Dialog
+                  onClose={handleClose1}
+                  open={open}
+                  fullWidth="true"
+                  maxWidth="lg"
+                  style={{ scrollbarWidth: "hidden" }}
+                >
+                  <DialogTitle>
+                    <Grid container justifyContent="space-between">
+                      <Typography>Detail</Typography>{" "}
+                      <Close onClick={handleClose1} />{" "}
+                    </Grid>
+                  </DialogTitle>
+                  <Grid container xs={12} md={12} lg={12} height="100vh">
+                    <Grid item xs={12} md={12} lg={12} height="50vh">
+                      <img
+                        src="/img/smarrtoffice.png"
+                        width="100%"
+                        height="100%"
+                      />
+                    </Grid>
+                    <Grid item xs={12} md={12} lg={12} height="50vh">
+                      <Typography>
+                        {" "}
+                        AVS Technologies offer a wide range of surveillance CCTV
+                        <br />
+                        security systems which are designed and i nstalled to
+                        secure
+                        <br />
+                        you, your domestic premises and your business.
+                      </Typography>
+                    </Grid>
+                  </Grid>
+                </Dialog>
                 <Button
+                  onClick={handleClickOpen1}
                   size="large"
                   style={{ color: "#000", background: "#fff", borderRadius: 0 }}
                 >
@@ -120,7 +217,37 @@ function Section() {
                 you, your domestic premises and your business.
               </Typography>
               <Grid mt={4}>
+                <Dialog
+                  onClose={handleClose2}
+                  open={open}
+                  fullWidth="true"
+                  maxWidth="lg"
+                  style={{ scrollbarWidth: "hidden" }}
+                >
+                  <DialogTitle>
+                    <Grid container justifyContent="space-between">
+                      <Typography>Detail</Typography>{" "}
+                      <Close onClick={handleClose2} />{" "}
+                    </Grid>
+                  </DialogTitle>
+                  <Grid container xs={12} md={12} lg={12} height="100vh">
+                    <Grid item xs={12} md={12} lg={12} height="50vh">
+                      <img src="/img/smart.png" width="100%" height="100%" />
+                    </Grid>
+                    <Grid item xs={12} md={12} lg={12} height="50vh">
+                      <Typography>
+                        AVS Technologies offer a wide range of surveillance CCTV
+                        <br />
+                        security systems which are designed and i nstalled to
+                        secure
+                        <br />
+                        you, your domestic premises and your business.
+                      </Typography>
+                    </Grid>
+                  </Grid>
+                </Dialog>
                 <Button
+                  onClick={handleClickOpen2}
                   size="large"
                   style={{ color: "#000", background: "#fff", borderRadius: 0 }}
                 >
