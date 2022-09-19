@@ -26,7 +26,7 @@ function Header() {
               integrated with popular platforms like Google, Alexa, and Siri."
         button1=" Get Started"
         button2=" See video"
-        src="/img/header.jpg"
+        src="/img/right.jpg"
       />
     </div>
   );

@@ -18,7 +18,10 @@
     "next": "12.3.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-grid-gallery": "^1.0.0",
     "react-iframe": "^1.8.0",
+    "react-image-gallery": "^1.2.9",
+    "react-slideshow-image": "^4.0.5",
     "styled-components": "^5.3.5"
   },
   "devDependencies": {
