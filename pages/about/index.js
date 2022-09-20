@@ -35,6 +35,7 @@ function index() {
             justifyContent="center"
             textAlign="center"
             flexDirection="column"
+            padding={1}
           >
             <Typography variant="h3" color="#fff " lineHeight={2}>
               Who Are We
@@ -51,7 +52,7 @@ function index() {
               src="/img/standout.png"
               style={{ marginTop: 50, width: "100%" }}
             />
-            <Grid padding={5}>
+            <Grid padding={4}>
               <Typography color="#fff" lineHeight={2} Mt={15}>
                 AVS Technologies are specialist in complete “turn-key”
                 audiovisual design, installation, maintenance and procurement of
@@ -95,7 +96,7 @@ function index() {
             subtitle="Our ultimate objective is to be regarded as the benchmark for service excellence, client satisfaction, also deliver elevated success and prosperity to our clients.
 
 We believe in providing highly personalized services that reflect the individual culture of our clients, and offer audiovisual solutions tailored to their specific needs and goals."
-            src="/img/Vision.png"
+            src="/img/OurMission.png"
           />
           <CardRight
             height="100%"
