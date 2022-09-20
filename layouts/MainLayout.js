@@ -62,10 +62,7 @@ function MainLayout({ active, title, description, children }) {
         <meta property="og:title" content={title | "AVSYNTECH"} />
         <link rel="shortcut icon" href="/img/2.jpg" />
 
-        <meta
-          property="og:image"
-          content="https://avsynctech.vercel.app/img/logo.png"
-        />
+        <meta property="og:image" content="/img/logo.png" />
         <meta property="og:description" content={description || "SMART HOME"} />
         {/* <meta property="og:image:width" content="1200" /> */}
 

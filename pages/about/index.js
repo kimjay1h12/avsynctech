@@ -27,9 +27,6 @@ function index() {
             About us
           </Typography>
           <Typography variant="p1" color="#fff" fontSize={30}>
-            Grace Your Life With Comfort
-          </Typography>
-          <Typography variant="h2" color="#fff" fontSize={20} mt={2}>
             We are here to make your dream come true
           </Typography>
         </header>
