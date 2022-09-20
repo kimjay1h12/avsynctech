@@ -60,15 +60,14 @@ export default function TitlebarBelowMasonryImageList() {
             <Slide>
               {slideImages.map((slideImage, index) => (
                 <div className="each-slide" key={index}>
-                  <div
-                    style={{
-                      backgroundImage: `url(${slideImage.url})`,
-                      height: "80vh",
-                      width: "100%",
-                      backgroundRepeat: "no-repeat",
-                      backgroundSize: "cover",
-                    }}
-                  >
+                  <div>
+                    <img
+                      src={slideImage.img}
+                      style={{
+                        height: "80vh",
+                        width: "100%",
+                      }}
+                    ></img>
                     <span>{slideImage.caption}</span>
                   </div>
                 </div>
@@ -84,92 +83,165 @@ export default function TitlebarBelowMasonryImageList() {
 
 const itemData = [
   {
-    img: "https://images.unsplash.com/photo-1549388604-817d15aa0110",
+    img: "/img/2.jpg",
     title: "Bed",
     author: "swabdesign",
   },
   {
-    img: "https://images.unsplash.com/photo-1525097487452-6278ff080c31",
+    img: "/img/36.jpeg",
     title: "Books",
     author: "Pavel Nekoranec",
   },
   {
-    img: "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6",
+    img: "/img/34.jpeg",
     title: "Sink",
     author: "Charles Deluvio",
   },
   {
-    img: "https://images.unsplash.com/photo-1563298723-dcfebaa392e3",
+    img: "/img/25.jpeg",
     title: "Kitchen",
     author: "Christian Mackie",
   },
   {
-    img: "https://images.unsplash.com/photo-1588436706487-9d55d73a39e3",
+    img: "/img/32.jpeg",
     title: "Blinds",
     author: "Darren Richardson",
   },
   {
-    img: "https://images.unsplash.com/photo-1574180045827-681f8a1a9622",
+    img: "/img/30.jpeg",
     title: "Chairs",
     author: "Taylor Simpson",
   },
   {
-    img: "https://images.unsplash.com/photo-1530731141654-5993c3016c77",
+    img: "/img/22.jpeg",
     title: "Laptop",
     author: "Ben Kolde",
   },
   {
-    img: "https://images.unsplash.com/photo-1481277542470-605612bd2d61",
+    img: "/img/13.jpeg",
     title: "Doors",
     author: "Philipp Berndt",
   },
   {
-    img: "https://images.unsplash.com/photo-1517487881594-2787fef5ebf7",
+    img: "/img/27.jpeg",
     title: "Coffee",
     author: "Jen P.",
   },
   {
-    img: "https://images.unsplash.com/photo-1516455207990-7a41ce80f7ee",
+    img: "/img/16.jpeg",
     title: "Storage",
     author: "Douglas Sheppard",
   },
   {
-    img: "https://images.unsplash.com/photo-1597262975002-c5c3b14bbd62",
+    img: "/img/14.jpeg",
     title: "Candle",
     author: "Fi Bell",
   },
   {
-    img: "https://images.unsplash.com/photo-1519710164239-da123dc03ef4",
+    img: "/img/37.jpeg",
+    title: "Coffee table",
+    author: "Hutomo Abrianto",
+  },
+  {
+    img: "/img/27.jpeg",
+    title: "Coffee",
+    author: "Jen P.",
+  },
+  {
+    img: "/img/16.jpeg",
+    title: "Storage",
+    author: "Douglas Sheppard",
+  },
+  {
+    img: "/img/14.jpeg",
+    title: "Candle",
+    author: "Fi Bell",
+  },
+  {
+    img: "/img/37.jpeg",
     title: "Coffee table",
     author: "Hutomo Abrianto",
   },
 ];
 const slideImages = [
   {
-    url: "https://images.unsplash.com/photo-1525097487452-6278ff080c31",
+    img: "/img/2.jpg",
+    title: "Bed",
+    author: "swabdesign",
   },
   {
-    url: "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6",
+    img: "/img/36.jpeg",
+    title: "Books",
+    author: "Pavel Nekoranec",
   },
   {
-    url: "https://images.unsplash.com/photo-1563298723-dcfebaa392e3",
+    img: "/img/34.jpeg",
+    title: "Sink",
+    author: "Charles Deluvio",
   },
   {
-    url: "https://images.unsplash.com/photo-1588436706487-9d55d73a39e3",
+    img: "/img/25.jpeg",
+    title: "Kitchen",
+    author: "Christian Mackie",
   },
   {
-    url: "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6",
+    img: "/img/32.jpeg",
+    title: "Blinds",
+    author: "Darren Richardson",
   },
   {
-    url: "https://images.unsplash.com/photo-1525097487452-6278ff080c31",
+    img: "/img/30.jpeg",
+    title: "Chairs",
+    author: "Taylor Simpson",
   },
   {
-    url: "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6",
+    img: "/img/22.jpeg",
+    title: "Laptop",
+    author: "Ben Kolde",
   },
   {
-    url: "https://images.unsplash.com/photo-1563298723-dcfebaa392e3",
+    img: "/img/13.jpeg",
+    title: "Doors",
+    author: "Philipp Berndt",
   },
   {
-    url: "https://images.unsplash.com/photo-1588436706487-9d55d73a39e3",
+    img: "/img/27.jpeg",
+    title: "Coffee",
+    author: "Jen P.",
+  },
+  {
+    img: "/img/16.jpeg",
+    title: "Storage",
+    author: "Douglas Sheppard",
+  },
+  {
+    img: "/img/14.jpeg",
+    title: "Candle",
+    author: "Fi Bell",
+  },
+  {
+    img: "/img/37.jpeg",
+    title: "Coffee table",
+    author: "Hutomo Abrianto",
+  },
+  {
+    img: "/img/27.jpeg",
+    title: "Coffee",
+    author: "Jen P.",
+  },
+  {
+    img: "/img/16.jpeg",
+    title: "Storage",
+    author: "Douglas Sheppard",
+  },
+  {
+    img: "/img/14.jpeg",
+    title: "Candle",
+    author: "Fi Bell",
+  },
+  {
+    img: "/img/37.jpeg",
+    title: "Coffee table",
+    author: "Hutomo Abrianto",
   },
 ];

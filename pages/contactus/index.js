@@ -64,6 +64,7 @@ function index() {
             alignItems: "center",
             justifyContent: "center",
             flexDirection: "column",
+            textAlign: "center",
           }}
         >
           <Typography variant="h2" fontSize={70} fontWeight={700} color="#fff">
@@ -208,8 +209,8 @@ function index() {
             </Animator>
           </Grid>
           <Card1 />
-          <Footer />
         </section>
+        <Footer />
       </div>
     </MainLayout>
   );

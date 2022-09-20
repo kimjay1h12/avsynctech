@@ -321,7 +321,7 @@ function Section() {
             </Grid>
           </Animator>
         </Grid>
-        <div style={{ marginTop: 50 }}>
+        <div style={{ marginTop: 100 }}>
           <CardRight
             height="100%"
             variant="grow"
@@ -383,7 +383,7 @@ impartiality of our advice,the practicality of our recommendations as well as qu
               height: "50vh",
             }}
           >
-            <Grid>
+            <Grid mt={10}>
               <span
                 style={{ width: "20px", background: "#fff", height: "0.5px" }}
               ></span>

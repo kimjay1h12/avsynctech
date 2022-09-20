@@ -17,7 +17,7 @@ function index() {
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
             display: "flex",
-            padding: 20,
+            textAlign: "center",
             alignItems: "center",
             justifyContent: "center",
             flexDirection: "column",
@@ -53,10 +53,15 @@ function index() {
               registration number: RC: 1047010.
             </Typography>
             <img
-              src="/img/standout.png"
-              style={{ marginTop: 50, width: "100%" }}
+              src="/img/15.jpg"
+              style={{
+                marginTop: 50,
+                width: "100%",
+                height: "500px",
+                objectFit: "cover",
+              }}
             />
-            <Grid padding={4}>
+            <Grid padding={2}>
               <Typography color="#fff" lineHeight={2} Mt={15}>
                 AVS Technologies are specialist in complete “turn-key”
                 audiovisual design, installation, maintenance and procurement of

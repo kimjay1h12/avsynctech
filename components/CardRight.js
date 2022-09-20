@@ -61,6 +61,7 @@ function CardRight({
         xs={12}
         md={12}
         lg={12}
+        mt={mt}
       >
         <Animator variant="fade" delay={100} timeout={500}>
           <Grid
