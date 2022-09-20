@@ -7,7 +7,7 @@ import MainLayout from "../../layouts/MainLayout";
 const headerimg = "/img/aboutus.png";
 function index() {
   return (
-    <MainLayout>
+    <MainLayout title="About Us" description="Get to know us better">
       <div className="" style={{ background: "#000" }}>
         <header
           style={{

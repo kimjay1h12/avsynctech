@@ -50,7 +50,7 @@ const UseStyles = makeStyles({
 function index() {
   const classes = UseStyles();
   return (
-    <MainLayout>
+    <MainLayout title="Contact Us" description="Beep Us with Your messages">
       {" "}
       <div className="" style={{ background: "#000" }}>
         <header

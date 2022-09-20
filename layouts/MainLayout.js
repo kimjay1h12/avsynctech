@@ -60,7 +60,11 @@ function MainLayout({ active, title, description, children }) {
       <Head>
         <title> {title} | AVSYNCTECH</title>
         <meta property="og:title" content={title | "AVSYNTECH"} />
+        <meta property="og:image" content="/img/2.jpg" />
         <meta property="og:description" content={description || "SMART HOME"} />
+        <meta property="og:image:width" content="1200" />
+
+        <meta property="og:image:height" content="630" />
       </Head>
       <Toolbar active={active} routes={routes} logo="/img/logo.png" />
 

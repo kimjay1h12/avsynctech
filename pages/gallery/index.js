@@ -22,7 +22,7 @@ export default function TitlebarBelowMasonryImageList() {
     setOpen(false);
   };
   return (
-    <MainLayout>
+    <MainLayout title="Gallery" description="View Our Previous Works">
       <div style={{ background: "#000" }}>
         <Box
           mt={9}
