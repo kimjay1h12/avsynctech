@@ -104,7 +104,7 @@ function Section() {
                   <Grid container xs={12} md={12} lg={12} height="100vh">
                     <Grid item xs={12} md={12} lg={12} height="50vh">
                       <img
-                        src="/img/smarthome.png"
+                        src="/img/aboutus.png"
                         width="100%"
                         height="100%"
                         alt="logo"
