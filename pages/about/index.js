@@ -17,6 +17,7 @@ function index() {
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
             display: "flex",
+            padding: 20,
             alignItems: "center",
             justifyContent: "center",
             flexDirection: "column",
@@ -26,7 +27,10 @@ function index() {
             About us
           </Typography>
           <Typography variant="p1" color="#fff" fontSize={30}>
-            Get to know us better
+            Grace Your Life With Comfort
+          </Typography>
+          <Typography variant="h2" color="#fff" fontSize={20} mt={2}>
+            We are here to make your dream come true
           </Typography>
         </header>
         <section style={{ marginTop: 150 }}>

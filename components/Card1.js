@@ -31,7 +31,7 @@ function Card1() {
         alignItems="center"
         justifyContent="center"
       >
-        <Animator variant="zoom" delay={400} timeout={500}>
+        <Animator variant="zoom" delay={300} timeout={500}>
           <Grid
             item
             style={{ background: "#fff9", borderRadius: 20 }}
@@ -54,7 +54,7 @@ function Card1() {
             </Typography>
           </Grid>
         </Animator>
-        <Animator variant="zoom" delay={600} timeout={500}>
+        <Animator variant="zoom" delay={500} timeout={500}>
           <Grid
             xs={12}
             md={2}
@@ -77,7 +77,7 @@ function Card1() {
             </Typography>
           </Grid>
         </Animator>
-        <Animator variant="zoom" delay={800} timeout={500}>
+        <Animator variant="zoom" delay={700} timeout={500}>
           <Grid
             xs={12}
             md={2}

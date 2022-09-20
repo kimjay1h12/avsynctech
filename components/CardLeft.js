@@ -7,7 +7,12 @@ import Animator from "./Animator";
 const useStyles = makeStyles({
   root: {
     transition: "0.5s",
-
+    "& img": {
+      height: "300px",
+      ["@media (min-width : 1200px)"]: {
+        height: "100%",
+      },
+    },
     "& .MuiGrid-container": {
       padding: 10,
 
@@ -18,8 +23,6 @@ const useStyles = makeStyles({
       },
     },
     "& .MuiGrid-item": {
-      marginTop: 120,
-
       ["@media (min-width : 1200px)"]: {
         marginTop: 0,
       },
@@ -52,6 +55,7 @@ function CardLeft({
         xs={12}
         md={12}
         lg={12}
+        spacing="0"
       >
         <Animator
           variant={variant}
@@ -92,8 +96,9 @@ function CardLeft({
         </Animator>
         <Animator variant="fade" delay={100} timeout={500}>
           <Grid
+            m={0}
             item
-            xs={12}
+            xs={11}
             md={5}
             lg={5}
             display="flex"
