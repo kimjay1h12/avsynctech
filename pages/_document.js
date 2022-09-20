@@ -13,8 +13,13 @@ export default class MyDocument extends Document {
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
           />
-          <meta property="og:image" content="/img/logo.png" />
-          {/* <link rel="shortcut icon" href="/img/logo.png" /> */}
+          <meta
+            property="og:image"
+            content="https://avsynctech.vercel.app/img/logo.png"
+          />
+          <meta property="og:image:width" content="1200" />
+
+          <meta property="og:image:height" content="630" />
           <meta
             name="google-site-verification"
             content="LnYh0UQt4hnAaDsFGORlZ9p50zKahbAMOJD9cKGCIGQ"
