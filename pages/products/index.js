@@ -25,11 +25,11 @@ function index() {
   };
   return (
     <MainLayout>
-      <form ref={form} onSubmit={sendEmail} style={{ margin: "100px" }}>
+      <form ref={form} onSubmit={sendEmail} style={{ margin: "" }}>
         <label>Name</label>
-        <input type="text" name="name" />
+        <input type="text" name="user_name" />
         <label>Email</label>
-        <input type="email" name="email" />
+        <input type="email" name="user_email" />
         <label>Message</label>
         <textarea name="message" />
         <input type="submit" value="Send" />
