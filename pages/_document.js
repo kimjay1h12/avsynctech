@@ -15,7 +15,7 @@ export default class MyDocument extends Document {
           />
           <meta
             property="og:image"
-            content="https://avsynctech.vercel.app/img/logo.png"
+            content="https://avsynctech.vercel.app/img/53.jpeg"
           />
           <meta property="og:image:width" content="1200" />
 

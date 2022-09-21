@@ -1,5 +1,6 @@
 import { Grid, Typography } from "@mui/material";
 import React from "react";
+import Animator from "../../components/Animator";
 import CardLeft from "../../components/CardLeft";
 import CardRight from "../../components/CardRight";
 import Footer from "../../components/Footer";
@@ -26,9 +27,12 @@ function index() {
           <Typography variant="h2" fontSize={70} fontWeight={700} color="#fff">
             About us
           </Typography>
-          <Typography variant="p1" color="#fff" fontSize={30}>
-            We are here to make your dream come true
-          </Typography>
+          <Animator variant="grow" delay={800} timeout={1000}>
+            <Typography color="#fff" fontSize={35} padding={2} fontWeight={600}>
+              Pushing the boundaries of technology to create <br />
+              impactful human experiences.
+            </Typography>
+          </Animator>
         </header>
         <section style={{ marginTop: 150 }}>
           <Grid
@@ -38,16 +42,40 @@ function index() {
             flexDirection="column"
             padding={1}
           >
-            <Typography variant="h3" color="#fff " lineHeight={2}>
+            <Typography
+              variant="h3"
+              color="#fff "
+              lineHeight={2}
+              fontWeight={700}
+            >
               Who Are We
             </Typography>
-            <Typography color="#fff" lineHeight={2}>
-              AV Synchronization Technologies (AVS Technologies) is an
-              independent custom <br />
-              electronics solutions provider company based in Lagos Nigeria,
-              registered with the Corporate
-              <br /> Affairs Commission (CAC) of Nigeria December 2010 with
-              registration number: RC: 1047010.
+            <Typography
+              color="#fff"
+              lineHeight={2}
+              variant="body1"
+              fontWeight={500}
+              sx={{
+                padding: 1,
+                ["@media (min-width : 1200px)"]: { padding: "0vh, 35vw" },
+              }}
+            >
+              AVS Technologies Ltd is an independent custom-made electronics
+              solutions provider company based in Lagos (western Nigeria) and
+              Abuja (Northern Nigeria), registered with the Corporate Affairs
+              Commission (CAC) of Nigeria December 2010 with registration
+              number: RC: 1047010.Our professionals have a global reputation as
+              a first-choice vendor for the projects that matter. We’re always
+              searching for new ways to innovate, creating bold solutions Where
+              Imagination Comes to Life™. Our team bring together technical
+              skills acquired over years, creative know-how and commitment to
+              deliver solutions that empower and enhance the human
+              experience.AVS Technologies Ltd is dedicated to developing
+              complete home automation systems and creative smart products,
+              providing users with more convenient, comfortable and secure smart
+              life, Great experiences need great teams that bring together
+              creativity, design, engineering, integration, project management
+              and support.
             </Typography>
             <img
               src="/img/15.jpg"
@@ -58,34 +86,25 @@ function index() {
                 objectFit: "cover",
               }}
             />
-            <Grid padding={2}>
-              <Typography color="#fff" lineHeight={2} Mt={15}>
-                AVS Technologies are specialist in complete “turn-key”
-                audiovisual design, installation, maintenance and procurement of
-                audiovisual systems engineering for residential, commercial, and
-                specifically for low voltage custom audiovisual equipment in;
-                corporate smart offices, smart homes solution, educational
-                institutions, conference rooms, auditoriums, board rooms,
-                restaurant and bars whereby automation programming and graphic
-                user interface designed to makes audiovisual systems easy to
-                operate seamlessly. AVS Technologies work closely with interior
-                designers, general contractors, builders, and electricians to
-                provide for smooth integration throughout the life of the
-                project and work with very extensive list of audiovisual
-                equipment vendors to provide you with the most choices and
-                flexibility evoked in the technology. Our personalized approach
-                to audiovisual solutions along with our top-notch customer
-                service, has earned us acclaim and appreciation from our
-                clients. AVS Technologies is dedicated to producing efficiently
-                functioning audiovisual solutions in multi-room, automated home
-                cinema, audio and video conferencing, training/boardroom
-                solutions, public address system, lightings and blinds, CCTV.
-                And as a consult, AVS Technologies are willing to assist in
-                design as well as procurements of AV equipment. Hence, encourage
-                clients with limited budget plans not to keep you away from
-                audiovisual systems of your dreams. If you have the man power or
-                just prefer the do-it-yourself approach, we’re willing to work
-                with you to help you get it right.
+            <Grid padding={1}>
+              <Typography
+                color="#fff"
+                lineHeight={2}
+                mt={3}
+                variant="body1"
+                fontWeight={500}
+                sx={{
+                  padding: 0,
+                  ["@media (min-width : 1200px)"]: { padding: "3vh, 35vw" },
+                }}
+              >
+                At AVS Technologies Ltd, we plan, design, build and support
+                unique, fully integrated experiential spaces while coordinating
+                with a wide range of partners to collaborate globally and
+                achieve seamless solutions that transform the places where we
+                live, work and play. Our vision, mission and values serve as our
+                guiding principles as we fuse architecture, storytelling and
+                technology to create lasting human experiences
               </Typography>
             </Grid>
           </Grid>
@@ -95,28 +114,24 @@ function index() {
             variant="grow"
             title={
               <Typography variant="h3" color="#fff" fontWeight={700}>
-                Vision
+                Our Vision
               </Typography>
             }
             buttonvisibility="none"
-            subtitle="Our ultimate objective is to be regarded as the benchmark for service excellence, client satisfaction, also deliver elevated success and prosperity to our clients.
-
-We believe in providing highly personalized services that reflect the individual culture of our clients, and offer audiovisual solutions tailored to their specific needs and goals."
+            subtitle="We’re pushing the boundaries of technology to unleash the power of human experience"
             src="/img/OurMission.png"
           />
           <CardRight
             height="100%"
             variant="grow"
-            mt={8}
+            mt={0}
             title={
               <Typography variant="h3" color="#fff" fontWeight={700}>
-                Mission
+                Our Mission
               </Typography>
             }
             buttonvisibility="none"
-            subtitle=" Our mission is to help our clients achieve their goals by identifying and understanding key technological challenges and new opportunities, designing customized solutions, and implementing with a level of quality and customer service par excellence.
-
-We become a seamless partner and valued member of the team that will deliver extraordinary service at every turn;"
+            subtitle=" We design, build and support innovative technology solutions that create lasting experiences where people live, work and play"
             src="/img/OurMission.png"
           />
           <CardLeft
@@ -125,13 +140,11 @@ We become a seamless partner and valued member of the team that will deliver ext
             variant="grow"
             title={
               <Typography variant="h3" color="#fff" fontWeight={700}>
-                CoreValues
+                Our CoreValues
               </Typography>
             }
             buttonvisibility="none"
-            subtitle="As an excellent organization, AV Synchronization Technologies (AVS Technologies) core values are used to implement her mission and vision. The values represent the touchstone for the organization, guiding the decisions of the individuals and the organization.
-
-Thus, developing a shared set of values serves as the foundation on which we build exceptional service and performance."
+            subtitle="We’re passionate about innovation, focused on our customers, united as one team, constantly learning, always accountable and act with the utmost integrity"
             src="/img/CoreValues.png"
           />
         </section>
