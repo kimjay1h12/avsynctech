@@ -1,7 +1,7 @@
 import React from "react";
 import MainLayout from "../../layouts/MainLayout";
 import emailjs from "@emailjs/browser";
-function index() {
+function Index() {
   const form = React.useRef();
 
   const sendEmail = (e) => {
@@ -38,4 +38,4 @@ function index() {
   );
 }
 
-export default index;
+export default Index;
