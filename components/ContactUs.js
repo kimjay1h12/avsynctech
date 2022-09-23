@@ -1,4 +1,9 @@
-import { Mail, Rowing } from "@mui/icons-material";
+import { Mail, Message, Rowing } from "@mui/icons-material";
+import emailjs from "@emailjs/browser";
+import { getDatabase, ref, set } from "firebase/database";
+import { useState, useMemo } from "react";
+import Select from "react-select";
+import countryList from "react-select-country-list";
 import {
   AccountCircle,
   ArrowDropDown,
@@ -17,12 +22,13 @@ import {
   OutlinedInput,
   Typography,
 } from "@mui/material";
-
+import { initializeApp } from "firebase/app";
 import { makeStyles } from "@mui/styles";
 import Iframe from "react-iframe";
 import React from "react";
 import Map from "../components/Map";
 import Animator from "./Animator";
+import { firebaseConfig } from "../Backend/Firebase";
 const useStyles = makeStyles({
   root: {
     marginTop: 100,
@@ -60,7 +66,47 @@ function ContactUs({
   slidedirection,
 }) {
   const classes = useStyles();
+  const [country, setCountry] = useState("Country");
+  const options = useMemo(() => countryList().getData(), []);
+  const changeHandler = (country) => {
+    setCountry(country);
+  };
   const [showButton, setShowButton] = React.useState(true);
+  const [name, setName] = useState();
+  const [email, setEmail] = useState();
+  const [message, setMessage] = useState();
+  const form = React.useRef();
+  const app = initializeApp(firebaseConfig);
+  const countryset = country.label;
+  function writeUserData() {
+    const db = getDatabase(app);
+    set(ref(db, "users/" + name), {
+      name,
+      email,
+      message,
+      countryset,
+    });
+  }
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_wkr80os",
+        "template_tw0xx35",
+        form.current,
+        "cfb2n4hwNsmbzyQDB"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert(result.status);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
     <div className={classes.root}>
       <Grid
@@ -86,98 +132,115 @@ function ContactUs({
           <Typography variant="h3" color="#fff" fontWeight={700}>
             Get In Touch
           </Typography>
-          <Grid gap={2} mt={2} display="flex" flexDirection="column">
-            <FormControl root variant="outlined" fullWidth="100%">
-              <OutlinedInput
-                sx={{
-                  background: "#fff",
-                  margin: "0",
-                  width: "100%",
-                  borderRadius: 2,
-                }}
-                endAdornment={
-                  <InputAdornment position="end">
-                    <IconButton>
-                      <AccountCircle />
-                    </IconButton>
-                  </InputAdornment>
-                }
-                placeholder="Full name"
-                type="text"
-              />
-            </FormControl>
-            <FormControl root variant="outlined" fullWidth="100%">
-              <OutlinedInput
-                sx={{
-                  background: "#fff",
-                  margin: "0",
-                  width: "100%",
-                  borderRadius: 2,
-                }}
-                endAdornment={
-                  <InputAdornment position="end">
-                    <IconButton>
-                      <Mail />
-                    </IconButton>
-                  </InputAdornment>
-                }
-                placeholder="Email"
-                type="email"
-              />
-            </FormControl>
-            <FormControl root variant="outlined" fullWidth="100%">
-              <OutlinedInput
-                sx={{
-                  background: "#fff",
-                  margin: "0",
-                  width: "100%",
-                  minHeight: "100px",
-                  display: "flex",
-                  alignItems: "flex-start",
-                  lineBreak: "auto",
-                  borderRadius: 2,
-                }}
-                placeholder="Message"
-                type="text"
-              />
-            </FormControl>
-
-            <Grid display="flex" alignItems="center">
-              {" "}
-              <Checkbox
-                onClick={() => {
-                  setShowButton(false);
-                }}
-                style={{ display: "flex", justifyContent: "flex-start" }}
-              />
-              <Typography color="#999">
-                i agree with terms and condition
-              </Typography>
-            </Grid>
-            <Grid
-              width="100%"
-              sx={{
+          <Grid flexDirection="column">
+            <form
+              ref={form}
+              style={{
+                gap: 10,
+                mt: 50,
                 display: "flex",
-                alignItems: "center",
                 flexDirection: "column",
-                justifyContent: "center",
               }}
+              onSubmit={sendEmail}
             >
-              <Button
-                disabled={showButton}
-                size="large"
-                variant="outlined"
-                sx={{
-                  width: "100%",
+              <FormControl root variant="outlined" fullWidth="100%">
+                <OutlinedInput
+                  sx={{
+                    background: "#fff",
+                    margin: "0",
+                    width: "100%",
+                    borderRadius: 2,
+                  }}
+                  endAdornment={
+                    <InputAdornment position="end">
+                      <IconButton>
+                        <AccountCircle />
+                      </IconButton>
+                    </InputAdornment>
+                  }
+                  placeholder="Full name"
+                  type="text"
+                  name="name"
+                  onChange={(e) => {
+                    setName(e.target.value);
+                  }}
+                />
+              </FormControl>
+              <FormControl root variant="outlined" fullWidth="100%">
+                <OutlinedInput
+                  sx={{
+                    background: "#fff",
+                    margin: "0",
+                    width: "100%",
+                    borderRadius: 2,
+                  }}
+                  endAdornment={
+                    <InputAdornment position="end">
+                      <IconButton>
+                        <Mail />
+                      </IconButton>
+                    </InputAdornment>
+                  }
+                  placeholder="Email"
+                  name="email"
+                  onChange={(e) => {
+                    setEmail(e.target.value);
+                  }}
+                />
+              </FormControl>
+              <FormControl root variant="outlined" fullWidth="100%">
+                <OutlinedInput
+                  sx={{
+                    background: "#fff",
+                    margin: "0",
+                    width: "100%",
+                    minHeight: "100px",
+                    display: "flex",
+                    alignItems: "flex-start",
+                    lineBreak: "auto",
+                    borderRadius: 2,
+                  }}
+                  placeholder="Message"
+                  type="text"
+                  name="message"
+                  onChange={(e) => {
+                    setMessage(e.target.value);
+                  }}
+                />
+              </FormControl>
 
-                  background: "#fff",
-                  color: "#999",
-                  minHeight: 52,
+              <Select
+                options={options}
+                value={country}
+                onChange={changeHandler}
+              />
+
+              <Grid
+                width="100%"
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  flexDirection: "column",
+                  justifyContent: "center",
                 }}
               >
-                Contact Us Now
-              </Button>
-            </Grid>
+                <Button
+                  size="large"
+                  type="submit"
+                  variant="outlined"
+                  onClick={writeUserData}
+                  sx={{
+                    width: "100%",
+
+                    background: "#fff",
+                    color: "#999",
+                    minHeight: 52,
+                  }}
+                >
+                  Contact Us Now
+                </Button>
+              </Grid>
+            </form>
           </Grid>
         </Grid>
         <Animator variant="fade" delay={100} timeout={500}>

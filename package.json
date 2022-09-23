@@ -16,6 +16,7 @@
     "@mui/material": "^5.10.5",
     "@mui/styled-engine-sc": "^5.10.3",
     "@mui/styles": "^5.10.3",
+    "firebase": "^9.10.0",
     "next": "12.3.0",
     "react": "18.2.0",
     "react-animated-slider": "^2.0.0",
@@ -24,6 +25,8 @@
     "react-iframe": "^1.8.0",
     "react-image-gallery": "^1.2.9",
     "react-native-image-slider-box": "^2.0.6",
+    "react-select": "^5.4.0",
+    "react-select-country-list": "^2.2.3",
     "react-slideshow-image": "^4.0.5",
     "styled-components": "^5.3.5"
   },
