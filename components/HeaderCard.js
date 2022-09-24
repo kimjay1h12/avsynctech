@@ -7,7 +7,7 @@ import Animator from "./Animator";
 const useStyles = makeStyles({
   root: {
     transition: "ease-in",
-    "& img": {
+    "& .item": {
       display: "none",
       ["@media (min-width : 1200px)"]: {
         display: "block",
@@ -48,7 +48,8 @@ function Header({
     <div className={classes.root}>
       <Grid
         mt={mt}
-        height={height}
+        mb={10}
+        minHeight={height}
         width="100vw"
         justifyContent="center"
         alignItems="center"
@@ -102,7 +103,7 @@ function Header({
             xs={12}
             md={5}
             lg={5}
-            display="flex"
+            className="item"
             justifyContent="flex-end"
             height="450px"
           >

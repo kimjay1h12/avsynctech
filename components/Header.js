@@ -8,11 +8,10 @@ import Animator from "./Animator";
 
 function Header() {
   return (
-    <div style={{ marginBottom: "200px" }}>
+    <div>
       <HeaderCard
-        height="90vh"
+        height="100vh"
         variant="slide"
-        mt={8}
         title={
           <Typography variant="h2" color="#fff" fontWeight={700}>
             Get a<br /> Smater Life

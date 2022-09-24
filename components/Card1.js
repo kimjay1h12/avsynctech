@@ -31,75 +31,83 @@ function Card1() {
         alignItems="center"
         justifyContent="center"
       >
-        <Animator variant="zoom" delay={300} timeout={500}>
-          <Grid
-            item
-            style={{ background: "#fff9", borderRadius: 20 }}
-            xs={12}
-            md={2}
-            lg={2}
-            display="flex"
-            flexDirection="column"
-            padding={4}
-            gap={2}
-            margin={0}
-          >
-            <img src="/img/plan.png" width="90px" height="90px" />
-            <Typography variant="h4" fontWeight={700}>
-              Plan
-            </Typography>
-            <Typography variant="p">
-              First, we&apos;ll listen, answer your questions, and advise on the
-              overall project scope and budget.
-            </Typography>
-          </Grid>
-        </Animator>
-        <Animator variant="zoom" delay={500} timeout={500}>
-          <Grid
-            xs={12}
-            md={2}
-            lg={2}
-            style={{ background: "#fff9", borderRadius: 20 }}
-            item
-            display="flex"
-            flexDirection="column"
-            padding={4}
-            gap={2}
-            margin={0}
-          >
-            <img src="/img/design.png" width="90px" height="90px" />
-            <Typography variant="h4" fontWeight={700}>
-              Design
-            </Typography>
-            <Typography variant="p">
-              Then, we&apos;ll explore what&apos;spossible together, and test
-              our decisions to ensure cost alignment.
-            </Typography>
-          </Grid>
-        </Animator>
-        <Animator variant="zoom" delay={700} timeout={500}>
-          <Grid
-            xs={12}
-            md={2}
-            lg={2}
-            style={{ background: "#fff9", borderRadius: 20 }}
-            item
-            padding={4}
-            gap={2}
-            margin={0}
-            display="flex"
-            flexDirection="column"
-          >
-            <img src="/img/design.png" width="90px" height="90px" />
-            <Typography variant="h4" fontWeight={700}>
-              Build
-            </Typography>
-            <Typography variant="p">
-              Finally, we&apos;ll execute the plan, and make sure you&apos;re
-              aware of progress every step of the way
-            </Typography>
-          </Grid>
-        </Animator>
+        <Grid
+          item
+          style={{
+            backgroundImage: `url(${"/img/smarthone.png"})`,
+            backgroundSize: "cover",
+            borderRadius: 20,
+          }}
+          xs={12}
+          md={2}
+          lg={2}
+          display="flex"
+          flexDirection="column"
+          padding={4}
+          gap={2}
+          margin={0}
+        >
+          <img src="/img/plan.png" width="90px" height="90px" />
+          <Typography variant="h4" fontWeight={700} color="#fff">
+            Smart Home
+          </Typography>
+          <Typography variant="p" color="#fff">
+            First, we&apos;ll listen, answer your questions, and advise on the
+            overall project scope and budget.
+          </Typography>
+        </Grid>
+
+        <Grid
+          xs={12}
+          md={2}
+          lg={2}
+          style={{
+            backgroundImage: `url(${"/img/smartoffice.png"})`,
+            backgroundSize: "cover",
+            borderRadius: 20,
+          }}
+          item
+          display="flex"
+          flexDirection="column"
+          padding={4}
+          gap={2}
+          margin={0}
+        >
+          <img src="/img/design.png" width="90px" height="90px" />
+          <Typography variant="h4" fontWeight={700} color="#fff">
+            Smart Office
+          </Typography>
+          <Typography variant="p" color="#fff">
+            Then, we&apos;ll explore what&apos;spossible together, and test our
+            decisions to ensure cost alignment.
+          </Typography>
+        </Grid>
+
+        <Grid
+          xs={12}
+          md={2}
+          lg={2}
+          style={{
+            backgroundImage: `url(${"/img/beautifyliving.png"})`,
+            backgroundSize: "cover",
+            borderRadius: 20,
+          }}
+          item
+          padding={4}
+          gap={2}
+          margin={0}
+          display="flex"
+          flexDirection="column"
+        >
+          <img src="/img/design.png" width="90px" height="90px" />
+          <Typography variant="h4" color="#fff" fontWeight={700}>
+            Smart Services
+          </Typography>
+          <Typography variant="p" color="#fff">
+            Finally, we&apos;ll execute the plan, and make sure you&apos;re
+            aware of progress every step of the way
+          </Typography>
+        </Grid>
       </Grid>
     </div>
   );

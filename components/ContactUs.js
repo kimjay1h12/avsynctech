@@ -86,6 +86,7 @@ function ContactUs({
       message,
       countryset,
     });
+    alert("Your Messages will be delivered");
   }
   const sendEmail = (e) => {
     e.preventDefault();
@@ -100,11 +101,8 @@ function ContactUs({
       .then(
         (result) => {
           console.log(result.text);
-          alert(result.status);
         },
-        (error) => {
-          console.log(error.text);
-        }
+        (error) => {}
       );
   };
   return (
@@ -212,6 +210,7 @@ function ContactUs({
               <Select
                 options={options}
                 value={country}
+                placeholder="Select Country"
                 onChange={changeHandler}
               />
 

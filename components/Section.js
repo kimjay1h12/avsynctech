@@ -83,7 +83,7 @@ function Section() {
           padding={2}
           size="large"
         >
-          <Animator variant="zoom" delay={300} timeout={500}>
+          <Animator variant="zoom" delay={200} timeout={300}>
             <Grid
               item
               xs={12}
@@ -164,7 +164,7 @@ function Section() {
               </Grid>
             </Grid>
           </Animator>
-          <Animator variant="zoom" delay={500} timeout={500}>
+          <Animator variant="zoom" delay={400} timeout={300}>
             <Grid
               xs={12}
               md={3}
@@ -244,7 +244,7 @@ function Section() {
               </Grid>
             </Grid>
           </Animator>
-          <Animator variant="zoom" delay={700} timeout={900}>
+          <Animator variant="zoom" delay={500} timeout={300}>
             <Grid
               xs={12}
               md={3}

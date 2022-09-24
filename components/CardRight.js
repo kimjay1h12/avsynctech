@@ -86,7 +86,15 @@ function CardRight({
           delay={200}
           timeout={500}
         >
-          <Grid item xs={11} md={4} lg={4}>
+          <Grid
+            item
+            xs={11}
+            md={4}
+            lg={4}
+            display="flex"
+            justifyContent="center"
+            flexDirection="column"
+          >
             {title}
 
             <Typography
