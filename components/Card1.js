@@ -15,7 +15,7 @@ function Card1() {
     >
       <Grid contsiner justifyContent="center" textAlign="center">
         <Typography color="#fff" fontWeight={700} variant="h3">
-          Let&apos;s See How it Works
+          Control your entire space with one App
         </Typography>
         <Typography color="#fff" mt={2}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit
