@@ -105,7 +105,6 @@ function Header({
             lg={5}
             className="item"
             justifyContent="flex-end"
-            height="450px"
           >
             <img
               src={src}
