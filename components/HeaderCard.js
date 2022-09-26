@@ -103,6 +103,7 @@ function Header({
             lg={5}
             className="item"
             justifyContent="flex-end"
+            alignItems="center"
             height="100%"
           >
             <img
