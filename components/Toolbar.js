@@ -58,7 +58,7 @@ const useStyles = makeStyles({
     marginLeft: "auto",
   },
   logo: {
-    height: 45,
+    height: 58,
     transition: "all 0.3s",
     margin: "10px 0",
   },
@@ -136,7 +136,7 @@ function AppToolbar({ active, routes = [], logo }) {
   }, []);
 
   return (
-    <AppBar color="transparent" elevation={0}>
+    <AppBar color="transparent" elevation={0} style={{ position: "sticky" }}>
       <Hidden lgUp>
         <Backdrop open={menuOpen} onClick={() => setMenuOpen(false)} />
         <Grow in={menuOpen}>{Drawer}</Grow>
