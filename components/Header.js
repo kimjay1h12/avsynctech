@@ -13,7 +13,7 @@ function Header() {
         height="100vh"
         variant="slide"
         title={
-          <Typography variant="h2" color="#fff" fontWeight={700}>
+          <Typography variant="h3" color="#fff" fontWeight={700}>
             Smart
             <br /> Comport &
             <br />

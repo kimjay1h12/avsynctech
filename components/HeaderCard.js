@@ -47,8 +47,6 @@ function Header({
   return (
     <div className={classes.root}>
       <Grid
-        mt={mt}
-        mb={10}
         minHeight={height}
         width="100vw"
         justifyContent="center"
@@ -66,7 +64,7 @@ function Header({
           delay={800}
           timeout={1000}
         >
-          <Grid item xs={11} md={4} lg={4}>
+          <Grid item xs={11} md={5} lg={5}>
             {title}
 
             <Typography
@@ -105,12 +103,17 @@ function Header({
             lg={5}
             className="item"
             justifyContent="flex-end"
+            height="100%"
           >
             <img
               src={src}
               alt="header"
               width="100%"
-              style={{ borderRadius: 15 }}
+              style={{
+                borderRadius: 15,
+                objectFit: "cover",
+                minHeight: "400px",
+              }}
             />
           </Grid>
         </Animator>
