@@ -115,6 +115,7 @@ function ServicesCategory() {
               lg={3}
               md={3}
               gap={20}
+              key={index}
               display="flex"
               onMouseEnter={() => setBackground(cur.url)}
               onMouseLeave={() => setBackground("#666")}
