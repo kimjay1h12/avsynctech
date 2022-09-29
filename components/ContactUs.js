@@ -33,7 +33,7 @@ const useStyles = makeStyles({
   root: {
     marginTop: 100,
     transition: "0.5s",
-
+    minHeight: "30vh",
     "& .MuiGrid-container": {
       padding: 10,
 
@@ -77,14 +77,13 @@ function ContactUs({
   const [message, setMessage] = useState();
   const form = React.useRef();
   const app = initializeApp(firebaseConfig);
-  const countryset = country.label;
+
   function writeUserData() {
     const db = getDatabase(app);
     push(ref(db, "users/"), {
       name,
       email,
       message,
-      countryset,
     });
     alert("Your Messages will be delivered");
   }
@@ -109,7 +108,6 @@ function ContactUs({
     <div className={classes.root}>
       <Grid
         mt={mt}
-        height="100%"
         width="100vw"
         justifyContent="center"
         alignItems="center"
@@ -207,13 +205,6 @@ function ContactUs({
                 />
               </FormControl>
 
-              <Select
-                options={options}
-                value={country}
-                placeholder="Select Country"
-                onChange={changeHandler}
-              />
-
               <Grid
                 width="100%"
                 sx={{
@@ -248,9 +239,12 @@ function ContactUs({
             xs={12}
             md={5}
             lg={5}
-            display="flex"
-            justifyContent="flex-end"
-            height="470px"
+            height="400px"
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
           >
             <Map />
           </Grid>

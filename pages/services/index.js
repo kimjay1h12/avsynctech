@@ -24,15 +24,19 @@ function index() {
             textAlign: "center",
           }}
         >
-          <Typography variant="h2" fontSize={70} fontWeight={700} color="#fff">
+          <Typography variant="h2" fontSize={40} fontWeight={700} color="#f90">
             Our Services
           </Typography>
           <Animator variant="grow" delay={100} timeout={500}>
             <Typography
-              sx={{ padding: { xs: 2, md: 6, lg: 6 } }}
-              variant="p1"
+              mt={3}
+              sx={{
+                paddingLeft: { xs: 2, md: 30, lg: 30 },
+                paddingRight: { xs: 2, md: 30, lg: 30 },
+              }}
+              variant="caption"
               color="#fff"
-              fontSize={25}
+              fontSize={18}
             >
               AVS Technologies Ltd offers a full range of services as we access
               our requirements, collect relevant technical info for a particular
@@ -47,7 +51,6 @@ function index() {
             container
             md={12}
             lg={12}
-            gap={5}
             width="100vw"
             sx={{
               justifyContent: "center",
@@ -55,14 +58,15 @@ function index() {
               display: "flex",
               minHeight: "30vh",
               flexDirection: "row",
+
               padding: {
-                lg: 20,
-                md: 20,
+                lg: 6,
+                md: 6,
                 xs: 0,
               },
             }}
           >
-            <Grid item xs={12} md={3.5} lg={3.5}>
+            <Grid item xs={12} md={4} lg={4}>
               <Box sx={{ padding: { xs: 2 } }}>
                 <Typography color="blue">WHAT WE OFFER</Typography>
                 <Typography color="#fff" variant="h3" mt={2}>

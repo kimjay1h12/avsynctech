@@ -93,7 +93,13 @@ function ServicesCategory() {
         marginTop: 50,
       }}
     >
-      <Typography variant="h3" color="#fff" fontWeight={700} mt={2}>
+      <Typography
+        variant="h4"
+        fontSize={40}
+        color="#fff"
+        fontWeight={700}
+        mt={2}
+      >
         Our Services
       </Typography>
       <Typography color="#fff" fontSize={18} variant="body2" mt={2}>
@@ -104,12 +110,13 @@ function ServicesCategory() {
         xs={12}
         lg={12}
         md={12}
+        mt={7}
         justifyContent="center"
         sx={{
           padding: {
             xs: 1,
-            md: 20,
-            lg: 20,
+            md: 1,
+            lg: 1,
           },
           gap: {
             xs: 2,
@@ -125,7 +132,7 @@ function ServicesCategory() {
               xs={12}
               lg={3}
               md={3}
-              gap={20}
+              gap={10}
               display="flex"
               onMouseEnter={() => setBackground(cur.url)}
               onMouseLeave={() => setBackground("#666")}

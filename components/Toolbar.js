@@ -136,7 +136,11 @@ function AppToolbar({ active, routes = [], logo }) {
   }, []);
 
   return (
-    <AppBar color="transparent" elevation={0} style={{ position: "sticky" }}>
+    <AppBar
+      color="transparent"
+      elevation={0}
+      style={{ position: "sticky", background: "#444" }}
+    >
       <Hidden lgUp>
         <Backdrop open={menuOpen} onClick={() => setMenuOpen(false)} />
         <Grow in={menuOpen}>{Drawer}</Grow>

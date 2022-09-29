@@ -67,16 +67,11 @@ function Header({
           <Grid item xs={11} md={5} lg={5}>
             {title}
 
-            <Typography
-              mt={2}
-              lineHeight={2}
-              color="#fff9"
-              fontFamily="Inria Sans"
-            >
+            <Typography mt={1} color="#fff9" variant="body2" lineHeight={1.7}>
               {subtitle}
             </Typography>
 
-            <Grid className="right" flexDirection="row" mt={4}>
+            <Grid className="right" flexDirection="row" mt={3}>
               <Button
                 variant="outlined"
                 href="/services"
@@ -84,11 +79,11 @@ function Header({
                   background: "#fff",
                   color: "#000",
                   fontSize: 12,
-                  padding: 16,
+                  padding: 11,
 
                   width: 180,
                 }}
-                size="lg"
+                size="sm"
               >
                 {" "}
                 {button1}
@@ -103,18 +98,16 @@ function Header({
             md={5}
             lg={5}
             className="item"
-            justifyContent="flex-end"
-            alignItems="center"
-            height="100%"
+            sx={{ maxHeight: "500px" }}
           >
             <img
               src={src}
               alt="header"
               width="100%"
               style={{
-                borderRadius: 15,
+                borderRadius: 12,
                 objectFit: "cover",
-                minHeight: "400px",
+                height: "100%",
               }}
             />
           </Grid>

@@ -8,17 +8,11 @@ function Section() {
         display: "flex",
         justifyContent: "center",
         flexDirection: "column",
-        marginTop: 100,
+        marginTop: 50,
+        marginBottom: 200,
       }}
     >
-      <Grid contsiner justifyContent="center" textAlign="center" padding={2}>
-        <Typography color="#fff" fontWeight={700} variant="h3">
-          Let&apos;s See How it Works
-        </Typography>
-        <Typography color="#fff" mt={2}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit
-        </Typography>
-      </Grid>
+      <Grid container justifyContent="center" textAlign="center"></Grid>
       <Grid
         mt={10}
         container
@@ -41,25 +35,16 @@ function Section() {
             flexDirection="column"
             gap={2}
             margin={0}
+            height={320}
           >
-            <img src="/img/smarthome.png" width="100%" />
+            <img src="/img/vision.png" width="100%" />
             <Typography variant="h5" fontWeight={700} color="#fff">
-              SMART HOME
+              Our Vision
             </Typography>
-            <Typography variant="p" color="#fff" lineHeight={1.8}>
-              Home entertainment system provides the whole house multi-room AV
-              with most convenient way of controlling entertainment within the
-              <br />
-              building.
+            <Typography variant="caption" color="#fff" lineHeight={2}>
+              We’re pushing the boundaries of technology to unleash the power of
+              human experience
             </Typography>
-            <Grid mt={4}>
-              <Button
-                size="large"
-                style={{ color: "#000", background: "#fff", borderRadius: 0 }}
-              >
-                Learn more
-              </Button>
-            </Grid>
           </Grid>
         </Animator>
         <Animator variant="zoom" delay={600} timeout={500}>
@@ -72,25 +57,16 @@ function Section() {
             flexDirection="column"
             gap={2}
             margin={0}
+            height={320}
           >
-            <img src="/img/smarrtoffice.png" width="100%" />
+            <img src="/img/mission.png" width="100%" />
             <Typography variant="h5" color="#fff" fontWeight={700}>
-              SMART OFFICE
+              Our Mission
             </Typography>
-            <Typography variant="p" lineHeight={1.8} color="#fff">
-              Clear and concise communication is essential in every organization
-              and business. AVS Technologies design, install and revamp
-              up-to-date audiovisual
-              <br /> technology.
+            <Typography variant="caption" lineHeight={2} color="#fff">
+              We design, build and support innovative technology solutions that
+              create lasting experiences where people live, work and play
             </Typography>
-            <Grid mt={4}>
-              <Button
-                size="large"
-                style={{ color: "#000", background: "#fff", borderRadius: 0 }}
-              >
-                Learn more
-              </Button>
-            </Grid>
           </Grid>
         </Animator>
         <Animator variant="zoom" delay={800} timeout={900}>
@@ -100,27 +76,21 @@ function Section() {
             lg={3}
             item
             gap={2}
-            margin={0}
+            height={320}
             display="flex"
             flexDirection="column"
+            gap={2}
+            margin={0}
           >
-            <img src="/img/smart.png" width="100%" />
+            <img src="/img/corevalue.png" width="100%" />
             <Typography variant="h5" color="#fff" fontWeight={700}>
-              CCTV SURVEILLANCE SYSTEM
+              Our CoreValues
             </Typography>
-            <Typography variant="p" color="#fff" lineHeight={1.8}>
-              AVS Technologies offer a wide range of surveillance CCTV security
-              systems which are designed and i nstalled to secure you, your
-              domestic premises and your business.
+            <Typography variant="caption" color="#fff" lineHeight={2}>
+              We’re passionate about innovation, focused on our customers,
+              united as one team, constantly learning, always accountable and
+              act with the utmost integrity
             </Typography>
-            <Grid mt={4}>
-              <Button
-                size="large"
-                style={{ color: "#000", background: "#fff", borderRadius: 0 }}
-              >
-                Learn more
-              </Button>
-            </Grid>
           </Grid>
         </Animator>
       </Grid>

@@ -17,10 +17,9 @@ const useStyles = makeStyles({
     "& .container": {
       padding: 10,
 
-      flexDirection: "row-reverse",
       ["@media (min-width : 1200px)"]: {
-        paddingLeft: 120,
-        paddingRight: 120,
+        paddingLeft: 70,
+        paddingRight: 70,
         gap: "180px",
         flexDirection: "row",
       },
@@ -67,16 +66,21 @@ function CardRight({
           <Grid
             item
             xs={11}
-            md={5}
-            lg={5}
+            md={4}
+            lg={4}
             display="flex"
             justifyContent="flex-end"
+            alignItems="center"
           >
             <img
               src={src}
               alt="header"
               width="100%"
-              style={{ borderRadius: 15 }}
+              style={{
+                borderRadius: 15,
+                objectFit: "cover",
+                maxHeight: "330px",
+              }}
             />
           </Grid>
         </Animator>
@@ -97,12 +101,7 @@ function CardRight({
           >
             {title}
 
-            <Typography
-              mt={2}
-              lineHeight={2}
-              color="#fff9"
-              fontFamily="Inria Sans"
-            >
+            <Typography mt={2} variant="body2" color="#fff9">
               {subtitle}
             </Typography>
 

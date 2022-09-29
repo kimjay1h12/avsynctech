@@ -10,14 +10,14 @@ function Card1() {
         justifyContent: "center",
         flexDirection: "column",
         marginTop: 20,
-        padding: 30,
+        padding: 10,
       }}
     >
       <Grid contsiner justifyContent="center" textAlign="center">
-        <Typography color="#fff" fontWeight={700} variant="h3">
+        <Typography color="#fff" fontWeight={700} variant="h4" fontSize={40}>
           Control your entire space with one App
         </Typography>
-        <Typography color="#fff" mt={2}>
+        <Typography color="#fff" lineHeight={4} variant="p">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit
         </Typography>
       </Grid>
@@ -43,9 +43,10 @@ function Card1() {
           lg={2}
           display="flex"
           flexDirection="column"
-          padding={4}
+          padding={1}
           gap={2}
           margin={0}
+          alignSelf="stretch"
         >
           <img src="/img/plan.png" width="90px" height="90px" />
           <Typography variant="h4" fontWeight={700} color="#fff">
@@ -69,9 +70,10 @@ function Card1() {
           item
           display="flex"
           flexDirection="column"
-          padding={4}
+          padding={1}
           gap={2}
           margin={0}
+          alignSelf="stretch"
         >
           <img src="/img/design.png" width="90px" height="90px" />
           <Typography variant="h4" fontWeight={700} color="#fff">
@@ -93,8 +95,8 @@ function Card1() {
             borderRadius: 20,
           }}
           item
-          padding={4}
-          gap={2}
+          padding={1}
+          gap={1}
           margin={0}
           display="flex"
           flexDirection="column"

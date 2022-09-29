@@ -30,9 +30,12 @@ export default function TitlebarBelowMasonryImageList() {
             height: "100%",
             overflowY: "scroll",
             background: "#000",
+            display: "flex",
+            justifyContent: "center",
+            gap: 20,
           }}
         >
-          <ImageList sx={{ width: "100%", height: "100%" }}>
+          <ImageList sx={{ width: "70%", height: "100%" }}>
             {itemData.map((item) => (
               <ImageListItem key={item.img}>
                 <img
@@ -55,7 +58,7 @@ export default function TitlebarBelowMasonryImageList() {
           onClose={handleClose}
           open={open}
           fullWidth="true"
-          maxWidth="lg"
+          maxWidth="sm"
         >
           <DialogTitle></DialogTitle>
           <div style={{ width: "100%" }}>

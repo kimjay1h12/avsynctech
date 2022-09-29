@@ -11,18 +11,9 @@ import { Close } from "@mui/icons-material";
 import Slider from "react-animated-slider";
 import "react-animated-slider/build/horizontal.css";
 import { makeStyles } from "@mui/styles";
+import { Box } from "@mui/system";
 const UseStyles = makeStyles({
-  root: {
-    "& .slider": {
-      paddingLeft: 10,
-      paddingRight: 10,
-      height: "300px",
-      ["@media (min-width : 1200px)"]: {
-        paddingLeft: 500,
-        paddingRight: 500,
-      },
-    },
-  },
+  root: {},
 });
 function Section() {
   const [open, setOpen] = React.useState(false);
@@ -64,10 +55,10 @@ function Section() {
         }}
       >
         <Grid contsiner justifyContent="center" textAlign="center" padding={2}>
-          <Typography color="#fff" fontWeight={700} variant="h3">
+          <Typography color="#fff" fontWeight={700} variant="h4" fontSize={40}>
             Let&apos;s See How it Works
           </Typography>
-          <Typography color="#fff" mt={2}>
+          <Typography color="#fff" mt={2} variant="p">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit
           </Typography>
         </Grid>
@@ -89,28 +80,28 @@ function Section() {
               xs={12}
               md={3}
               lg={3}
-              minHeight="300px"
               display="flex"
               flexDirection="column"
               gap={2}
               margin={0}
+              alignSelf="stretch"
             >
-              <img src="/img/smarthome.jpeg" width="100%" height={300} />
+              <img src="/img/smarthome.jpeg" width="100%" height={250} />
               <Typography variant="h5" fontWeight={700} color="#fff">
                 SMART HOME
               </Typography>
-              <Typography variant="p" color="#fff" lineHeight={1.8}>
+              <Typography variant="p" color="#fff" lineHeight={1.4}>
                 A Smart Home help with the day-to-day of life by automating tech
                 for security, convenience, comfort and entertainment.
                 <br />
                 entertainment.
               </Typography>
-              <Grid mt={4}>
+              <Grid mt={2}>
                 <Dialog
                   onClose={handleClose}
                   open={open}
                   fullWidth="true"
-                  maxWidth="lg"
+                  maxWidth="sm"
                   style={{ scrollbarWidth: "hidden" }}
                 >
                   <DialogTitle>
@@ -181,23 +172,23 @@ function Section() {
               flexDirection="column"
               gap={2}
               margin={0}
+              alignSelf="stretch"
             >
-              <img src="/img/smartoffice.jpg" width="100%" height={300} />
+              <img src="/img/smartoffice.jpg" width="100%" height={250} />
               <Typography variant="h5" color="#fff" fontWeight={700}>
                 SMART OFFICE
               </Typography>
-              <Typography variant="p" lineHeight={1.8} color="#fff">
+              <Typography variant="p" lineHeight={1.4} color="#fff">
                 A Smart Office integrates systems and devices altogether for
                 effective communication to work intelligently; enabling
-                monitoring,
-                <br /> controlling
+                monitoring, controlling
               </Typography>
-              <Grid mt={4}>
+              <Grid mt={2}>
                 <Dialog
                   onClose={handleClose1}
                   open={open1}
                   fullWidth="true"
-                  maxWidth="lg"
+                  maxWidth="sm"
                   style={{ scrollbarWidth: "hidden" }}
                 >
                   <DialogTitle>
@@ -256,6 +247,7 @@ function Section() {
               </Grid>
             </Grid>
           </Animator>
+
           <Animator variant="zoom" delay={500} timeout={300}>
             <Grid
               xs={12}
@@ -267,23 +259,23 @@ function Section() {
               margin={0}
               display="flex"
               flexDirection="column"
+              alignSelf="stretch"
             >
-              <img src="/img/CCTV.jpg" width="100%" height={300} />
+              <img src="/img/CCTV.jpg" width="100%" height={250} />
               <Typography variant="h5" color="#fff" fontWeight={700}>
-                CCTV SURVEILLANCE SYSTEM
+                CCTV SURVEILLANCE
               </Typography>
-              <Typography variant="p" color="#fff" lineHeight={1.8}>
+              <Typography variant="p" color="#fff" lineHeight={1.4}>
                 AVS Technologies offer a wide range of surveillance CCTV
                 security systems which are designed and i nstalled to secure
-                you, your domestic premises and your
-                <br /> business.
+                you, your domestic premises and your business.
               </Typography>
-              <Grid mt={4}>
+              <Grid mt={2}>
                 <Dialog
                   onClose={handleClose2}
                   open={open2}
                   fullWidth="true"
-                  maxWidth="lg"
+                  maxWidth="sm"
                   style={{ scrollbarWidth: "hidden" }}
                 >
                   <DialogTitle>
@@ -333,15 +325,76 @@ function Section() {
             </Grid>
           </Animator>
         </Grid>
+        <Grid
+          container
+          mt={10}
+          justifyContent="center"
+          sx={{
+            "& .slider": {
+              height: { md: "400px", xs: "300px" },
+              width: { md: "800px", xs: "350px" },
+            },
+            "& .slider a.nextButton": {
+              color: "#fff",
+            },
+          }}
+        >
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              flexDirection: "column",
+
+              textAlign: "center",
+            }}
+          >
+            <Typography
+              color="#fff"
+              fontWeight={700}
+              variant="h4"
+              fontSize={40}
+              mb={6}
+            >
+              Featured Project
+            </Typography>
+
+            <Slider duration="6000" autoplay="2">
+              {slideImages.map((slide, index) => (
+                <div
+                  key={index}
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  <img
+                    src={slide.url}
+                    height="100%"
+                    width="100%"
+                    style={{
+                      objectFit: "cover",
+                    }}
+                  />
+                </div>
+              ))}
+            </Slider>
+          </Box>
+        </Grid>
         <div style={{ marginTop: 100 }}>
           <CardRight
             height="100%"
             variant="grow"
             mt={8}
             title={
-              <Typography variant="h3" color="#fff" fontWeight={700}>
-                Procurement and <br />
-                system develompent
+              <Typography
+                variant="h4"
+                fontSize={40}
+                color="#fff"
+                fontWeight={700}
+              >
+                Procurement and system develompent
               </Typography>
             }
             buttonvisibility="none"
@@ -355,9 +408,13 @@ impartiality of our advice,the practicality of our recommendations as well as qu
             height="100%"
             variant="grow"
             title={
-              <Typography variant="h3" color="#fff" fontWeight={700}>
-                Have Access to Safe,
-                <br /> Smart and Secure life
+              <Typography
+                variant="h4"
+                fontSize={40}
+                color="#fff"
+                fontWeight={700}
+              >
+                Have Access to Safe, Smart and Secure life
               </Typography>
             }
             buttonvisibility="none"
@@ -373,9 +430,13 @@ quis quam velit.  Integer netus mollis sed id arcu diam maximus pellentesque fau
             variant="grow"
             mt={8}
             title={
-              <Typography variant="h3" color="#fff" fontWeight={700}>
-                Procurement and <br />
-                system develompent
+              <Typography
+                variant="h4"
+                fontSize={40}
+                color="#fff"
+                fontWeight={700}
+              >
+                Procurement and system develompent
               </Typography>
             }
             buttonvisibility="none"
@@ -383,57 +444,6 @@ quis quam velit.  Integer netus mollis sed id arcu diam maximus pellentesque fau
 impartiality of our advice,the practicality of our recommendations as well as quality of our after-sales service.Integer netus mollis sed id arcu diam maximus pellentesque faucibus hac ultricies. Commodo proin eu tristique enim si. Cras magna fermentum himenaeos conubia accumsan suspendisse congue tristique. Fermentum est sapien rhoncus quis quam velit."
             src="/img/precument.jpg"
           />
-          <div
-            className="slider"
-            style={{
-              textAlign: "center",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              flexDirection: "column",
-              width: "100%",
-              height: "50vh",
-            }}
-          >
-            <Grid mt={10}>
-              <span
-                style={{ width: "20px", background: "#fff", height: "0.5px" }}
-              ></span>
-              <Typography color="#fff" fontWeight={700} variant="h3" mb={6}>
-                Featured Project
-              </Typography>
-            </Grid>
-            <Slider
-              duration="6000"
-              autoplay="2"
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              {slideImages.map((slide, index) => (
-                <div
-                  key={index}
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    width: "100%",
-                  }}
-                >
-                  <img
-                    src={slide.url}
-                    height="100%"
-                    width="100%"
-                    style={{
-                      objectFit: "cover",
-                    }}
-                  />
-                </div>
-              ))}
-            </Slider>
-          </div>
         </div>
       </div>
     </div>

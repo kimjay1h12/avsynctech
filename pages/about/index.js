@@ -4,6 +4,7 @@ import Animator from "../../components/Animator";
 import CardLeft from "../../components/CardLeft";
 import CardRight from "../../components/CardRight";
 import Footer from "../../components/Footer";
+import Card2 from "../../components/Card2";
 import MainLayout from "../../layouts/MainLayout";
 const headerimg = "/img/aboutus.png";
 function index() {
@@ -24,11 +25,16 @@ function index() {
             flexDirection: "column",
           }}
         >
-          <Typography variant="h2" fontSize={70} fontWeight={700} color="#fff">
+          <Typography
+            variant="caption"
+            fontSize={40}
+            fontWeight={700}
+            color="#f90"
+          >
             About us
           </Typography>
           <Animator variant="grow" delay={800} timeout={1000}>
-            <Typography color="#fff" fontSize={35} padding={2} fontWeight={600}>
+            <Typography color="#fff" fontSize={25} padding={2} fontWeight={600}>
               Pushing the boundaries of technology to create <br />
               impactful human experiences.
             </Typography>
@@ -39,58 +45,60 @@ function index() {
             container
             justifyContent="center"
             textAlign="center"
+            alignItems="center"
             flexDirection="column"
             padding={1}
           >
-            <Typography
-              variant="h3"
-              color="#fff "
-              lineHeight={2}
-              fontWeight={700}
-            >
-              Who Are We
-            </Typography>
-            <Typography
-              color="#fff"
-              lineHeight={2}
-              variant="body1"
-              fontWeight={500}
-              sx={{
-                padding: 1,
-                ["@media (min-width : 1200px)"]: { padding: "0vh, 35vw" },
-              }}
-            >
-              AVS Technologies Ltd is an independent custom-made electronics
-              solutions provider company based in Lagos (western Nigeria) and
-              Abuja (Northern Nigeria), registered with the Corporate Affairs
-              Commission (CAC) of Nigeria December 2010 with registration
-              number: RC: 1047010.Our professionals have a global reputation as
-              a first-choice vendor for the projects that matter. We’re always
-              searching for new ways to innovate, creating bold solutions Where
-              Imagination Comes to Life™. Our team bring together technical
-              skills acquired over years, creative know-how and commitment to
-              deliver solutions that empower and enhance the human
-              experience.AVS Technologies Ltd is dedicated to developing
-              complete home automation systems and creative smart products,
-              providing users with more convenient, comfortable and secure smart
-              life, Great experiences need great teams that bring together
-              creativity, design, engineering, integration, project management
-              and support.
-            </Typography>
-            <img
-              src="/img/15.jpg"
-              style={{
-                marginTop: 50,
-                width: "100%",
-                height: "500px",
-                objectFit: "cover",
-              }}
-            />
-            <Grid padding={1}>
+            <Grid item xs={12} md={8}>
+              <Typography
+                variant="h3"
+                color="#fff "
+                lineHeight={2}
+                fontWeight={700}
+              >
+                Who Are We
+              </Typography>
               <Typography
                 color="#fff"
                 lineHeight={2}
-                mt={3}
+                variant="body1"
+                fontWeight={500}
+                sx={{
+                  padding: 1,
+                  ["@media (min-width : 1200px)"]: { padding: "0vh, 35vw" },
+                }}
+              >
+                AVS Technologies Ltd is an independent custom-made electronics
+                solutions provider company based in Lagos (western Nigeria) and
+                Abuja (Northern Nigeria), registered with the Corporate Affairs
+                Commission (CAC) of Nigeria December 2010 with registration
+                number: RC: 1047010.Our professionals have a global reputation
+                as a first-choice vendor for the projects that matter. We’re
+                always searching for new ways to innovate, creating bold
+                solutions Where Imagination Comes to Life™. Our team bring
+                together technical skills acquired over years, creative know-how
+                and commitment to deliver solutions that empower and enhance the
+                human experience.AVS Technologies Ltd is dedicated to developing
+                complete home automation systems and creative smart products,
+                providing users with more convenient, comfortable and secure
+                smart life, Great experiences need great teams that bring
+                together creativity, design, engineering, integration, project
+                management and support.
+              </Typography>
+              <img
+                src="/img/15.jpg"
+                style={{
+                  marginTop: 50,
+                  width: "100%",
+                  height: "500px",
+                  objectFit: "cover",
+                }}
+              />
+
+              <Typography
+                color="#fff"
+                lineHeight={2}
+                mt={7}
                 variant="body1"
                 fontWeight={500}
                 sx={{
@@ -108,45 +116,7 @@ function index() {
               </Typography>
             </Grid>
           </Grid>
-          <CardLeft
-            mt={8}
-            height="100%"
-            variant="grow"
-            title={
-              <Typography variant="h3" color="#fff" fontWeight={700}>
-                Our Vision
-              </Typography>
-            }
-            buttonvisibility="none"
-            subtitle="We’re pushing the boundaries of technology to unleash the power of human experience"
-            src="/img/vision.png"
-          />
-          <CardRight
-            height="100%"
-            variant="grow"
-            mt={0}
-            title={
-              <Typography variant="h3" color="#fff" fontWeight={700}>
-                Our Mission
-              </Typography>
-            }
-            buttonvisibility="none"
-            subtitle=" We design, build and support innovative technology solutions that create lasting experiences where people live, work and play"
-            src="/img/mission.png"
-          />
-          <CardLeft
-            mt={8}
-            height="100%"
-            variant="grow"
-            title={
-              <Typography variant="h3" color="#fff" fontWeight={700}>
-                Our CoreValues
-              </Typography>
-            }
-            buttonvisibility="none"
-            subtitle="We’re passionate about innovation, focused on our customers, united as one team, constantly learning, always accountable and act with the utmost integrity"
-            src="/img/corevalue.png"
-          />
+          <Card2 />
         </section>
         <Footer />
       </div>

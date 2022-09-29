@@ -17,8 +17,8 @@ const useStyles = makeStyles({
       padding: 10,
 
       ["@media (min-width : 1200px)"]: {
-        paddingLeft: 120,
-        paddingRight: 120,
+        paddingLeft: 70,
+        paddingRight: 70,
         gap: "180px",
       },
     },
@@ -66,12 +66,7 @@ function CardLeft({
           <Grid item xs={11} md={4} lg={4}>
             {title}
 
-            <Typography
-              mt={2}
-              lineHeight={2}
-              color="#fff9"
-              fontFamily="Inria Sans"
-            >
+            <Typography mt={2} color="#fff9" variant="body2">
               {subtitle}
             </Typography>
 
@@ -99,17 +94,21 @@ function CardLeft({
             m={0}
             item
             xs={11}
-            md={5}
-            lg={5}
+            md={4}
+            lg={4}
             display="flex"
             justifyContent="flex-end"
-            height="450px"
+            alignItems="center"
           >
             <img
               src={src}
               alt="header"
               width="100%"
-              style={{ borderRadius: 15 }}
+              style={{
+                borderRadius: 15,
+                objectFit: "cover",
+                height: "330px",
+              }}
             />
           </Grid>
         </Animator>
