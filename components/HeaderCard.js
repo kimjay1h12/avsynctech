@@ -79,6 +79,7 @@ function Header({
             <Grid className="right" flexDirection="row" mt={4}>
               <Button
                 variant="outlined"
+                href="/services"
                 style={{
                   background: "#fff",
                   color: "#000",

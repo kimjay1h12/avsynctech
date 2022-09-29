@@ -1,6 +1,7 @@
 import { Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
+import Animator from "../../components/Animator";
 import Footer from "../../components/Footer";
 import ServicesCategory from "../../components/ServicesCategory";
 import MainLayout from "../../layouts/MainLayout";
@@ -26,9 +27,20 @@ function index() {
           <Typography variant="h2" fontSize={70} fontWeight={700} color="#fff">
             Our Services
           </Typography>
-          <Typography variant="p1" color="#fff" fontSize={30}>
-            Holla There We Wish To Hear From You
-          </Typography>
+          <Animator variant="grow" delay={100} timeout={500}>
+            <Typography
+              sx={{ padding: { xs: 2, md: 6, lg: 6 } }}
+              variant="p1"
+              color="#fff"
+              fontSize={25}
+            >
+              AVS Technologies Ltd offers a full range of services as we access
+              our requirements, collect relevant technical info for a particular
+              project. Hence, we design a solution based and build all relevant
+              smart devices altogether before installation and programming for
+              both residential and commercial projects.
+            </Typography>
+          </Animator>
         </header>
         <section>
           <Grid
@@ -82,81 +94,90 @@ function index() {
                 },
               }}
             >
-              <Grid item xs={6} md={2.7} lg={2.7}>
-                <Box
-                  sx={{
-                    background: "#999",
-                    width: "100%",
-                    height: "100%",
-                    display: "flex",
-                    gap: 2,
-                    flexDirection: "column",
-                    padding: 2,
-                    justifyContent: "center",
-                  }}
-                >
-                  <Typography variant="h3" color="#000" fontWeight={700}>
-                    1.
-                  </Typography>
-                  <Typography variant="h4" color="blue">
-                    Planning
-                  </Typography>
-                  <Typography>
-                    Volutpat sed lobortis congue habitant ac erat. Diam nascetur
-                    pulvinar elementum sed ligula tortor faucibus dapibus lorem.
-                  </Typography>
-                </Box>
-              </Grid>
-              <Grid item xs={6} md={2.7} lg={2.7}>
-                <Box
-                  sx={{
-                    background: "#777",
-                    width: "100%",
-                    height: "100%",
-                    display: "flex",
-                    gap: 2,
-                    flexDirection: "column",
-                    padding: 2,
-                    justifyContent: "center",
-                  }}
-                >
-                  <Typography variant="h3" color="#000" fontWeight={700}>
-                    2.
-                  </Typography>
-                  <Typography variant="h4" color="blue">
-                    Design
-                  </Typography>
-                  <Typography>
-                    Volutpat sed lobortis congue habitant ac erat. Diam nascetur
-                    pulvinar elementum sed ligula tortor faucibus dapibus lorem.
-                  </Typography>
-                </Box>
-              </Grid>
-              <Grid item xs={6} md={2.7} lg={2.7}>
-                <Box
-                  sx={{
-                    background: "#555",
-                    width: "100%",
-                    height: "100%",
-                    display: "flex",
-                    gap: 2,
-                    flexDirection: "column",
-                    padding: 2,
-                    justifyContent: "center",
-                  }}
-                >
-                  <Typography variant="h3" color="#000" fontWeight={700}>
-                    3.
-                  </Typography>
-                  <Typography variant="h4" color="blue">
-                    Built Up
-                  </Typography>
-                  <Typography>
-                    Volutpat sed lobortis congue habitant ac erat. Diam nascetur
-                    pulvinar elementum sed ligula tortor faucibus dapibus lorem.
-                  </Typography>
-                </Box>
-              </Grid>
+              <Animator variant="grow" delay={100} timeout={500}>
+                <Grid item xs={6} md={2.7} lg={2.7}>
+                  <Box
+                    sx={{
+                      background: "#999",
+                      width: "100%",
+                      height: "100%",
+                      display: "flex",
+                      gap: 2,
+                      flexDirection: "column",
+                      padding: 2,
+                      justifyContent: "center",
+                    }}
+                  >
+                    <Typography variant="h3" color="#000" fontWeight={700}>
+                      1.
+                    </Typography>
+                    <Typography variant="h4" color="blue">
+                      Planning
+                    </Typography>
+                    <Typography>
+                      Volutpat sed lobortis congue habitant ac erat. Diam
+                      nascetur pulvinar elementum sed ligula tortor faucibus
+                      dapibus lorem.
+                    </Typography>
+                  </Box>
+                </Grid>
+              </Animator>
+              <Animator variant="grow" delay={300} timeout={500}>
+                <Grid item xs={6} md={2.7} lg={2.7}>
+                  <Box
+                    sx={{
+                      background: "#777",
+                      width: "100%",
+                      height: "100%",
+                      display: "flex",
+                      gap: 2,
+                      flexDirection: "column",
+                      padding: 2,
+                      justifyContent: "center",
+                    }}
+                  >
+                    <Typography variant="h3" color="#000" fontWeight={700}>
+                      2.
+                    </Typography>
+                    <Typography variant="h4" color="blue">
+                      Design
+                    </Typography>
+                    <Typography>
+                      Volutpat sed lobortis congue habitant ac erat. Diam
+                      nascetur pulvinar elementum sed ligula tortor faucibus
+                      dapibus lorem.
+                    </Typography>
+                  </Box>
+                </Grid>
+              </Animator>
+              <Animator variant="grow" delay={500} timeout={500}>
+                <Grid item xs={6} md={2.7} lg={2.7}>
+                  <Box
+                    sx={{
+                      background: "#555",
+                      width: "100%",
+                      height: "100%",
+                      display: "flex",
+                      gap: 2,
+                      flexDirection: "column",
+                      padding: 2,
+                      justifyContent: "center",
+                    }}
+                  >
+                    <Typography variant="h3" color="#000" fontWeight={700}>
+                      3.
+                    </Typography>
+                    <Typography variant="h4" color="blue">
+                      Built Up
+                    </Typography>
+                    <Typography>
+                      Volutpat sed lobortis congue habitant ac erat. Diam
+                      nascetur pulvinar elementum sed ligula tortor faucibus
+                      dapibus lorem.
+                    </Typography>
+                  </Box>
+                </Grid>
+              </Animator>
               <Grid
                 item
                 xs={6}

@@ -32,18 +32,21 @@ export default function TitlebarBelowMasonryImageList() {
             background: "#000",
           }}
         >
-          <ImageList variant="masonry" cols={3} gap={8}>
+          <ImageList sx={{ width: "100%", height: "100%" }}>
             {itemData.map((item) => (
               <ImageListItem key={item.img}>
                 <img
-                  width="100vw"
                   src={`${item.img}?w=248&fit=crop&auto=format`}
                   srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
                   alt={item.title}
                   loading="lazy"
                   onClick={handleClickOpen}
                 />
-                <ImageListItemBar position="below" title={item.author} />
+                <ImageListItemBar
+                  title={item.title}
+                  subtitle={<span>by: {item.author}</span>}
+                  position="below"
+                />
               </ImageListItem>
             ))}
           </ImageList>
@@ -117,7 +120,7 @@ const itemData = [
     author: "Ben Kolde",
   },
   {
-    img: "/img/13.jpeg",
+    img: "/img/13.jpg",
     title: "Doors",
     author: "Philipp Berndt",
   },

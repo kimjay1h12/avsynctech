@@ -100,10 +100,10 @@ function Section() {
                 SMART HOME
               </Typography>
               <Typography variant="p" color="#fff" lineHeight={1.8}>
-                Home entertainment system provides the whole house multi-room AV
-                with most convenient way of controlling entertainment within the
+                A Smart Home help with the day-to-day of life by automating tech
+                for security, convenience, comfort and entertainment.
                 <br />
-                building.
+                entertainment.
               </Typography>
               <Grid mt={4}>
                 <Dialog
@@ -141,15 +141,21 @@ function Section() {
                     >
                       <Typography>
                         {" "}
-                        AVS Technologies offer a wide range of surveillance CCTV
-                        security systems which are designed and installed to
-                        secure you, your domestic premises and your business.
-                        AVS Technologies offer a wide range of surveillance CCTV
-                        security systems which are designed and installed to
-                        secure you, your domestic premises and your business.
-                        AVS Technologies offer a wide range of surveillance CCTV
-                        security systems which are designed and installed to
-                        secure you, your domestic premises and your business.
+                        A Smart Home help with the day-to-day of life by
+                        automating tech for security, convenience, comfort and
+                        entertainment. However, devices can “talk” to one
+                        another in your home, creates a unique ecosystem that
+                        makes your life easier where appliances and devices
+                        communicates seamlessly via home network server. These
+                        appliances include; audio and video systems, lighting,
+                        HVAC, curtain and blinds, security system and so much
+                        more. AVS Technologies Ltd are professional system
+                        integrator and a solution provider for your home with
+                        intuitive, easy to use and user friendly. Our team has
+                        the expertise and capability to design and install a
+                        customized system specific to your needs, desires and
+                        budget friendly solutions either for new building or
+                        revamping an existing project
                       </Typography>
                     </Grid>
                   </Grid>
@@ -181,10 +187,10 @@ function Section() {
                 SMART OFFICE
               </Typography>
               <Typography variant="p" lineHeight={1.8} color="#fff">
-                Clear and concise communication is essential in every
-                organization and business. AVS Technologies design, install and
-                revamp up-to-date audiovisual
-                <br /> technology.
+                A Smart Office integrates systems and devices altogether for
+                effective communication to work intelligently; enabling
+                monitoring,
+                <br /> controlling
               </Typography>
               <Grid mt={4}>
                 <Dialog
@@ -221,15 +227,21 @@ function Section() {
                     >
                       <Typography>
                         {" "}
-                        AVS Technologies offer a wide range of surveillance CCTV
-                        security systems which are designed and installed to
-                        secure you, your domestic premises and your business.
-                        AVS Technologies offer a wide range of surveillance CCTV
-                        security systems which are designed and installed to
-                        secure you, your domestic premises and your business.
-                        AVS Technologies offer a wide range of surveillance CCTV
-                        security systems which are designed and installed to
-                        secure you, your domestic premises and your business.
+                        A Smart Office integrates systems and devices altogether
+                        for effective communication to work intelligently;
+                        enabling monitoring, controlling and putting management
+                        system in place with smart technology using touch screen
+                        panel, iOS and other smart devices. AVS Technologies Ltd
+                        offers trusted smart solutions to control Audiovisual,
+                        teleconferencing, digital signate systems, security, IT
+                        infrastructure, access control and time attendance
+                        biometric systems. As a business owner or facility
+                        manager you have enough to worry about without letting
+                        the technology of business operations distract you. we
+                        can give you competitive advantage by improving your
+                        operating efficiencies. Sets your lighting, HVAC, music
+                        and video to greet your customers with the perfect
+                        welcome.
                       </Typography>
                     </Grid>
                   </Grid>
