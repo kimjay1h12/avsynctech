@@ -79,7 +79,6 @@ function Section() {
             height={320}
             display="flex"
             flexDirection="column"
-            gap={2}
             margin={0}
           >
             <img src="/img/corevalue.png" width="100%" />
