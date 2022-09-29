@@ -25,7 +25,6 @@ export default function TitlebarBelowMasonryImageList() {
     <MainLayout title="Gallery" description="View Our Previous Works">
       <div style={{ background: "#000" }}>
         <Box
-          mt={9}
           sx={{
             width: "100%",
             height: "100%",

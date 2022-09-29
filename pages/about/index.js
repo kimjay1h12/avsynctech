@@ -13,7 +13,7 @@ function index() {
         <header
           style={{
             height: "80vh",
-            marginTop: 70,
+
             backgroundImage: `url(${headerimg})`,
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
@@ -119,7 +119,7 @@ function index() {
             }
             buttonvisibility="none"
             subtitle="We’re pushing the boundaries of technology to unleash the power of human experience"
-            src="/img/OurMission.png"
+            src="/img/p4.jpeg"
           />
           <CardRight
             height="100%"
@@ -132,7 +132,7 @@ function index() {
             }
             buttonvisibility="none"
             subtitle=" We design, build and support innovative technology solutions that create lasting experiences where people live, work and play"
-            src="/img/OurMission.png"
+            src="/img/p5.jpeg"
           />
           <CardLeft
             mt={8}
@@ -145,7 +145,7 @@ function index() {
             }
             buttonvisibility="none"
             subtitle="We’re passionate about innovation, focused on our customers, united as one team, constantly learning, always accountable and act with the utmost integrity"
-            src="/img/CoreValues.png"
+            src="/img/p6.jpeg"
           />
         </section>
         <Footer />

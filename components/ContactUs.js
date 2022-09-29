@@ -1,6 +1,6 @@
 import { Mail, Message, Rowing } from "@mui/icons-material";
 import emailjs from "@emailjs/browser";
-import { getDatabase, ref, set } from "firebase/database";
+import { getDatabase, push, ref, set } from "firebase/database";
 import { useState, useMemo } from "react";
 import Select from "react-select";
 import countryList from "react-select-country-list";
@@ -80,7 +80,7 @@ function ContactUs({
   const countryset = country.label;
   function writeUserData() {
     const db = getDatabase(app);
-    set(ref(db, "users/" + name), {
+    push(ref(db, "users/"), {
       name,
       email,
       message,

@@ -57,7 +57,7 @@ function index() {
         <header
           style={{
             height: "80vh",
-            marginTop: 70,
+
             backgroundImage: `url(${headerimg})`,
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
