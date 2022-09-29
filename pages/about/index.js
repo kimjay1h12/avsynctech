@@ -132,7 +132,7 @@ function index() {
             }
             buttonvisibility="none"
             subtitle=" We design, build and support innovative technology solutions that create lasting experiences where people live, work and play"
-            src="/img/aboutus/p8.png"
+            src="/img/p8.png"
           />
           <CardLeft
             mt={8}
