@@ -108,14 +108,13 @@ function ServicesCategory() {
         }}
       >
         {content.map((cur, index) => (
-          <Animator variant="grow" delay={100} timeout={500}>
+          <Animator variant="grow" delay={100} timeout={500} key={index}>
             <Grid
               item
               xs={5.5}
               lg={3}
               md={3}
               gap={20}
-              key={index}
               display="flex"
               onMouseEnter={() => setBackground(cur.url)}
               onMouseLeave={() => setBackground("#666")}
