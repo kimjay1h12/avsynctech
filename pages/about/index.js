@@ -119,7 +119,7 @@ function index() {
             }
             buttonvisibility="none"
             subtitle="We’re pushing the boundaries of technology to unleash the power of human experience"
-            src="/img/p5.png"
+            src="/img/corevalue.png"
           />
           <CardRight
             height="100%"
