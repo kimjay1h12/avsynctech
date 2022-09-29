@@ -151,7 +151,7 @@ function ServicesCategory() {
           </Animator>
         ))}
       </Grid>
-      <Grid container sx={{ padding: { xs: 2, md: 20, lg: 20 } }}>
+      <Grid container sx={{ padding: { xs: 2, md: 20, lg: 20 } }} mt={5}>
         <Animator variant="slide" direction="right" delay={800} timeout={1000}>
           <Grid item xs={12} md={6} lg={6}>
             <Typography color="#fff" variant="h3" fontWeight={700}>
@@ -233,17 +233,17 @@ function ServicesCategory() {
           </Grid>
         </Animator>
       </Grid>
-      <Grid container justifyContent="center">
+      <Grid container justifyContent="center" padding={2}>
         <Typography color="#fff" variant="h3" fontWeight={700}>
           {" "}
           Wish to see our Videos
         </Typography>
-        <Grid container mt={3} padding={20}>
-          <Grid item xs={12} md={6} lg={6} height="40vh">
+        <Grid container mt={3} padding={20} gap={2}>
+          <Grid item xs={12} md={5.7} lg={5.7} height="40vh" bgcolor="#888">
             {" "}
             <video src="/img/1.mp4" controls height="100%" width="100%" />
           </Grid>
-          <Grid item xs={12} md={6} lg={6} height="40vh">
+          <Grid item xs={12} md={5.7} lg={5.7} height="40vh" bgcolor="#888">
             {" "}
             <video src="/img/2.mp4" controls height="100%" width="100%" />
           </Grid>
