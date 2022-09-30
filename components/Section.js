@@ -94,7 +94,7 @@ function Section() {
               margin={0}
               alignSelf="stretch"
             >
-              <img src="/img/P22.webp" width="100%" height={250} />
+              <img src="/img/P9.jpg" width="100%" height={250} />
               <Typography variant="h5" fontWeight={700} color="#fff">
                 SMART Controls
               </Typography>
@@ -121,7 +121,7 @@ function Section() {
                   <Grid container xs={12} md={12} lg={12} height="100vh">
                     <Grid item xs={12} md={12} lg={12} height="50vh">
                       <img
-                        src="/img/P22.jpg"
+                        src="/img/P9.jpg"
                         width="100%"
                         height="100%"
                         alt="logo"
