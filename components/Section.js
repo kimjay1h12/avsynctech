@@ -94,9 +94,9 @@ function Section() {
               margin={0}
               alignSelf="stretch"
             >
-              <img src="/img/smarthome.jpeg" width="100%" height={250} />
+              <img src="/img/P22.webp" width="100%" height={250} />
               <Typography variant="h5" fontWeight={700} color="#fff">
-                SMART HOME
+                SMART Controls
               </Typography>
               <Typography variant="p" color="#fff" lineHeight={1.4}>
                 A Smart Home help with the day-to-day of life by automating tech
@@ -121,7 +121,7 @@ function Section() {
                   <Grid container xs={12} md={12} lg={12} height="100vh">
                     <Grid item xs={12} md={12} lg={12} height="50vh">
                       <img
-                        src="/img/smarthome.jpeg"
+                        src="/img/P22.jpg"
                         width="100%"
                         height="100%"
                         alt="logo"
@@ -182,9 +182,9 @@ function Section() {
               margin={0}
               alignSelf="stretch"
             >
-              <img src="/img/smartoffice.jpg" width="100%" height={250} />
+              <img src="/img/P22.jpeg" width="100%" height={250} />
               <Typography variant="h5" color="#fff" fontWeight={700}>
-                SMART OFFICE
+                SMART Lock
               </Typography>
               <Typography variant="p" lineHeight={1.4} color="#fff">
                 A Smart Office integrates systems and devices altogether for
@@ -207,11 +207,7 @@ function Section() {
                   </DialogTitle>
                   <Grid container xs={12} md={12} lg={12} height="100vh">
                     <Grid item xs={12} md={12} lg={12} height="50vh">
-                      <img
-                        src="/img/smartoffice.jpg"
-                        width="100%"
-                        height="100%"
-                      />
+                      <img src="/img/P22.jpeg" width="100%" height="100%" />
                     </Grid>
                     <Grid
                       item
@@ -269,7 +265,7 @@ function Section() {
               flexDirection="column"
               alignSelf="stretch"
             >
-              <img src="/img/CCTV.jpg" width="100%" height={250} />
+              <img src="/img/P10.jpeg" width="100%" height={250} />
               <Typography variant="h5" color="#fff" fontWeight={700}>
                 CCTV SURVEILLANCE
               </Typography>
@@ -294,7 +290,7 @@ function Section() {
                   </DialogTitle>
                   <Grid container xs={12} md={12} lg={12} height="100vh">
                     <Grid item xs={12} md={12} lg={12} height="50vh">
-                      <img src="/img/CCTV.jpg" width="100%" height="100%" />
+                      <img src="/img/P10.jpeg" width="100%" height="100%" />
                     </Grid>
                     <Grid
                       item
@@ -407,7 +403,7 @@ function Section() {
             }
             buttonvisibility="none"
             subtitle="AVS Technologies Ltd support smart fire alarm and smoke detector system, affordable, expandable due to its wireless tendency and also very reliable.These batteries operated smart fire and smoke detection devices guaranty 24/7 alarm monitoring for homes and offices.Optical sensor on each devices detects smoke at an early stage of fire. "
-            src="/img/precument.jpg"
+            src="/img/P30.png"
           />
 
           <CardLeft
@@ -430,7 +426,7 @@ faucibus hac ultricies. Commodo proin eu tristique enim si.
 Cras magna fermentum himenaeos conubia accumsan 
 suspendisse congue tristique. Fermentum est sapien rhoncus 
 quis quam velit.  Integer netus mollis sed id arcu diam maximus pellentesque faucibus hac ultricies. Commodo proin eu tristique enim si. Cras magna fermentum himenaeos conubia accumsan suspendisse congue tristique. Fermentum est sapien rhoncus quis quam velit."
-            src="/img/15.jpg"
+            src="/img/P13.jpeg"
           />
           <CardRight
             height="100%"
@@ -448,7 +444,7 @@ quis quam velit.  Integer netus mollis sed id arcu diam maximus pellentesque fau
             }
             buttonvisibility="none"
             subtitle="AVS Technologies Ltd developed smart automation control Apps for climate, blinds and curtain mechanism for controlling humidity and automatic window blinds or curtain in an enclosed space.The smart automation system enables turning “on” your air conditioner a few minutes before your arrival to office or home, keep an eye on the room temperature for the most efficient use of electricity"
-            src="/img/precument.jpg"
+            src="/img/P0.jpeg"
           />
         </div>
         <Grid container>
@@ -506,6 +502,7 @@ quis quam velit.  Integer netus mollis sed id arcu diam maximus pellentesque fau
               display: "flex",
               justifyContent: "center",
               flexDirection: "column",
+              alignItems: "center",
             }}
           >
             <Grid
@@ -513,24 +510,45 @@ quis quam velit.  Integer netus mollis sed id arcu diam maximus pellentesque fau
               xs={12}
               md={12}
               lg={12}
-              gap={7}
+              gap={1}
               alignItems="center"
               justifyContent="center"
               size="large"
               marginTop="-2%"
-              padding={4}
+              sx={{
+                paddingLeft: { xs: 2, md: 20 },
+                paddingRight: { xs: 2, md: 20 },
+              }}
             >
               <Animator variant="zoom" delay={400} timeout={500}>
                 <Grid
                   item
                   xs={12}
-                  md={3.5}
-                  lg={3.5}
+                  md={2.9}
+                  lg={2.9}
+                  display="flex"
+                  flexDirection="column"
+                  margin={0}
+                  height="250px"
+                  alignItems="center"
+                  justifyContent="center"
+                >
+                  <img src="/img/5.jpg" width="100%" height="100%" />
+                </Grid>
+              </Animator>
+              <Animator variant="zoom" delay={400} timeout={500}>
+                <Grid
+                  item
+                  xs={12}
+                  md={2.9}
+                  lg={2.9}
                   display="flex"
                   flexDirection="column"
                   gap={2}
                   margin={0}
-                  height="320px"
+                  height="250px"
+                  alignItems="center"
+                  justifyContent="center"
                 >
                   <img src="/img/5.jpg" width="100%" height="100%" />
                 </Grid>
@@ -538,31 +556,35 @@ quis quam velit.  Integer netus mollis sed id arcu diam maximus pellentesque fau
               <Animator variant="zoom" delay={600} timeout={500}>
                 <Grid
                   xs={12}
-                  md={3.5}
-                  lg={3.5}
+                  md={2.9}
+                  lg={2.9}
                   item
                   display="flex"
                   flexDirection="column"
                   gap={2}
                   margin={0}
-                  height={320}
+                  height="250px"
+                  alignItems="center"
+                  justifyContent="center"
                 >
-                  <img src="/img/15.jpg" width="100%" height="100%" />
+                  <img src="/img/57.jpeg" width="100%" height="100%" />
                 </Grid>
               </Animator>
               <Animator variant="zoom" delay={800} timeout={900}>
                 <Grid
                   xs={12}
-                  md={3.5}
-                  lg={3.5}
+                  md={2.9}
+                  lg={2.9}
                   item
                   gap={2}
-                  height={320}
+                  height="250px"
+                  alignItems="center"
+                  justifyContent="center"
                   display="flex"
                   flexDirection="column"
                   margin={0}
                 >
-                  <img src="/img/11.jpg" width="100%" height="100%" />
+                  <img src="/img/42.jpeg" width="100%" height="100%" />
                 </Grid>
               </Animator>
             </Grid>

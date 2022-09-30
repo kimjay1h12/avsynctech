@@ -106,8 +106,8 @@ function CardLeft({
               width="100%"
               style={{
                 borderRadius: 15,
-                objectFit: "cover",
-                height: "330px",
+                objectFit: "fill",
+                height: "250px",
               }}
             />
           </Grid>

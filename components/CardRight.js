@@ -78,8 +78,8 @@ function CardRight({
               width="100%"
               style={{
                 borderRadius: 15,
-                objectFit: "cover",
-                maxHeight: "330px",
+                objectFit: "fill",
+                maxHeight: "250px",
               }}
             />
           </Grid>
