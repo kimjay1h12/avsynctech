@@ -314,7 +314,7 @@ function ServicesCategory() {
           {" "}
           Wish to see our Videos
         </Typography>
-        <Grid container mt={3} padding={20} gap={2}>
+        <Grid container mt={3} sx={{ padding: { xs: 1, md: 20 } }} gap={2}>
           <Grid item xs={12} md={5.7} lg={5.7} height="40vh" bgcolor="#888">
             {" "}
             <video src="/img/1.mp4" controls height="100%" width="100%" />
