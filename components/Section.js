@@ -1,13 +1,21 @@
 import { Button, Grid, Typography } from "@mui/material";
 import React from "react";
 import Animator from "./Animator";
+
 import Card from "../components/Card";
 import Card1 from "./Card1";
 import CardRight from "./CardRight";
 import CardLeft from "./CardLeft";
 import { Dialog, DialogTitle } from "@mui/material";
 import DialogPop from "./DialogPop";
-import { Close } from "@mui/icons-material";
+import {
+  ArrowForward,
+  CalendarMonth,
+  Close,
+  DeliveryDining,
+  People,
+  Settings,
+} from "@mui/icons-material";
 import Slider from "react-animated-slider";
 import "react-animated-slider/build/horizontal.css";
 import { makeStyles } from "@mui/styles";
@@ -394,12 +402,11 @@ function Section() {
                 color="#fff"
                 fontWeight={700}
               >
-                Procurement and system develompent
+                Smart Fire Alarm and Smoke Detector Systems
               </Typography>
             }
             buttonvisibility="none"
-            subtitle=" As an indigenous audiovisual company in Nigeria,AVS Technologies does procurement and supply of audiovisual equipment in a wide range and pride ourselves on the 
-impartiality of our advice,the practicality of our recommendations as well as quality of our after-sales service. Integer netus mollis sed id arcu diam maximus pellentesque faucibus hac ultricies. Commodo proin eu tristique enim si. Cras magna fermentum himenaeos conubia accumsan suspendisse congue tristique. Fermentum est sapien rhoncus quis quam velit."
+            subtitle="AVS Technologies Ltd support smart fire alarm and smoke detector system, affordable, expandable due to its wireless tendency and also very reliable.These batteries operated smart fire and smoke detection devices guaranty 24/7 alarm monitoring for homes and offices.Optical sensor on each devices detects smoke at an early stage of fire. "
             src="/img/precument.jpg"
           />
 
@@ -410,7 +417,7 @@ impartiality of our advice,the practicality of our recommendations as well as qu
             title={
               <Typography
                 variant="h4"
-                fontSize={40}
+                fontSize={35}
                 color="#fff"
                 fontWeight={700}
               >
@@ -432,19 +439,268 @@ quis quam velit.  Integer netus mollis sed id arcu diam maximus pellentesque fau
             title={
               <Typography
                 variant="h4"
-                fontSize={40}
+                fontSize={35}
                 color="#fff"
                 fontWeight={700}
               >
-                Procurement and system develompent
+                Smart Lighting Control Solution
               </Typography>
             }
             buttonvisibility="none"
-            subtitle=" As an indigenous audiovisual company in Nigeria,AVS Technologies does procurement and supply of audiovisual equipment in a wide range and pride ourselves on the 
-impartiality of our advice,the practicality of our recommendations as well as quality of our after-sales service.Integer netus mollis sed id arcu diam maximus pellentesque faucibus hac ultricies. Commodo proin eu tristique enim si. Cras magna fermentum himenaeos conubia accumsan suspendisse congue tristique. Fermentum est sapien rhoncus quis quam velit."
+            subtitle="AVS Technologies Ltd developed smart automation control Apps for climate, blinds and curtain mechanism for controlling humidity and automatic window blinds or curtain in an enclosed space.The smart automation system enables turning “on” your air conditioner a few minutes before your arrival to office or home, keep an eye on the room temperature for the most efficient use of electricity"
             src="/img/precument.jpg"
           />
         </div>
+        <Grid container>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+              width: "100%",
+            }}
+          >
+            <Grid container md={12} sx={{ padding: { xs: 2, md: 8 } }}>
+              <Grid item xs={12} md={5.6} lg={5.6}>
+                <Typography variant="caption" color="#f90">
+                  Our Recent Working
+                </Typography>
+                <Typography
+                  variant="h4"
+                  fontSize={35}
+                  color="#fff"
+                  fontWeight={700}
+                  mt={2}
+                >
+                  We Have Great Work Portfolio With Our Clients
+                </Typography>
+              </Grid>
+              <Grid
+                item
+                xs={12}
+                md={6.4}
+                lg={6.4}
+                display="flex"
+                justifyContent="flex-end"
+              >
+                <Button
+                  variant="outlined"
+                  size="sm"
+                  href="/gallery"
+                  sx={{
+                    fontSize: 10,
+                    padding: 2,
+                    height: 50,
+                    background: "#999",
+                    color: "#fff",
+                  }}
+                >
+                  View All Portfolio
+                  <ArrowForward />
+                </Button>
+              </Grid>
+            </Grid>
+          </div>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              flexDirection: "column",
+            }}
+          >
+            <Grid
+              container
+              xs={12}
+              md={12}
+              lg={12}
+              gap={7}
+              alignItems="center"
+              justifyContent="center"
+              size="large"
+              marginTop="-2%"
+              padding={4}
+            >
+              <Animator variant="zoom" delay={400} timeout={500}>
+                <Grid
+                  item
+                  xs={12}
+                  md={3.5}
+                  lg={3.5}
+                  display="flex"
+                  flexDirection="column"
+                  gap={2}
+                  margin={0}
+                  height="320px"
+                >
+                  <img src="/img/5.jpg" width="100%" height="100%" />
+                </Grid>
+              </Animator>
+              <Animator variant="zoom" delay={600} timeout={500}>
+                <Grid
+                  xs={12}
+                  md={3.5}
+                  lg={3.5}
+                  item
+                  display="flex"
+                  flexDirection="column"
+                  gap={2}
+                  margin={0}
+                  height={320}
+                >
+                  <img src="/img/15.jpg" width="100%" height="100%" />
+                </Grid>
+              </Animator>
+              <Animator variant="zoom" delay={800} timeout={900}>
+                <Grid
+                  xs={12}
+                  md={3.5}
+                  lg={3.5}
+                  item
+                  gap={2}
+                  height={320}
+                  display="flex"
+                  flexDirection="column"
+                  margin={0}
+                >
+                  <img src="/img/11.jpg" width="100%" height="100%" />
+                </Grid>
+              </Animator>
+            </Grid>
+          </div>
+        </Grid>
+        <Grid
+          container
+          sx={{ padding: { xs: 2, md: 10, lg: 10 } }}
+          gap={14}
+          mt={5}
+        >
+          <Animator
+            variant="slide"
+            direction="right"
+            delay={800}
+            timeout={1000}
+          >
+            <Grid item xs={12} md={5} lg={5}>
+              <Typography color="#f90" variant="caption">
+                Why Choose Us
+              </Typography>
+              <Typography
+                color="#fff"
+                variant="h4"
+                fontSize={40}
+                fontWeight={700}
+                mt={2}
+              >
+                We Give The Great Offer Pricing With Our Professionals Team
+                Certification
+              </Typography>
+              <Typography
+                color="#fff"
+                variant="caption"
+                sx={{ wordBreak: "break-all" }}
+                lineHeight={2}
+                mt={2}
+              >
+                Integer netus mollis sed id arcu diam maximus pellentesque
+                faucibus hac ultricies. Commodo proin eu tristique enim si. Cras
+                magna fermentum himenaeos conubia accumsan suspendisse congue
+                tristique. Fermentum est sapien rhoncus quis quam velit.
+              </Typography>
+              <Grid
+                container
+                spacing={1}
+                mt={2}
+                sx={{ gap: { xs: 0, md: 2, lg: 2 } }}
+              >
+                <Grid
+                  item
+                  xs={6}
+                  md={5.6}
+                  lg={5.6}
+                  bgcolor="#999"
+                  display="flex"
+                  flexDirection="column"
+                  justifyContent="space-around"
+                >
+                  <CalendarMonth sx={{ fontSize: 40, color: "#f90" }} />
+                  <Typography color="#fff" variant="h6" fontWeight={700}>
+                    Easy Online Appointment & Booking Service
+                  </Typography>
+                  <Typography color="#fff" variant="caption" mt={2}>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </Typography>
+                </Grid>
+                <Grid
+                  item
+                  xs={6}
+                  md={5.6}
+                  lg={5.6}
+                  bgcolor="#999"
+                  display="flex"
+                  flexDirection="column"
+                  justifyContent="space-around"
+                >
+                  <DeliveryDining sx={{ fontSize: 40, color: "#f90" }} />
+                  <Typography color="#fff" variant="h6" fontWeight={700}>
+                    All In One Tools Ready For Your House Installation
+                  </Typography>
+                  <Typography color="#fff" variant="caption">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </Typography>
+                </Grid>
+                <Grid
+                  item
+                  xs={6}
+                  md={5.6}
+                  lg={5.6}
+                  bgcolor="#999"
+                  display="flex"
+                  flexDirection="column"
+                  justifyContent="space-around"
+                >
+                  <People sx={{ fontSize: 40, color: "#f90" }} />
+                  <Typography color="#fff" variant="h6" fontWeight={700}>
+                    Professionals With Cerficitation Team Working
+                  </Typography>
+                  <Typography color="#fff" variant="caption">
+                    Our product will speed up your work in creating your own
+                    presentations
+                  </Typography>
+                </Grid>
+                <Grid
+                  item
+                  xs={6}
+                  md={5.6}
+                  lg={5.6}
+                  bgcolor="#999"
+                  display="flex"
+                  flexDirection="column"
+                  justifyContent="space-around"
+                >
+                  <Settings sx={{ fontSize: 40, color: "#f90" }} />
+                  <Typography color="#fff" variant="h6" fontWeight={700}>
+                    Great Maintanence For After Service Record
+                  </Typography>
+                  <Typography color="#fff" variant="caption">
+                    Our product will speed up your work in creating your own
+                    presentations
+                  </Typography>
+                </Grid>
+              </Grid>
+            </Grid>
+          </Animator>
+          <Animator variant="zoom" delay={300} timeout={500}>
+            <Grid
+              item
+              xs={12}
+              md={5.7}
+              lg={5.7}
+              sx={{ display: { xs: "none", md: "block", lg: "block" } }}
+            >
+              <img src="/img/25.jpeg" width="100%" height="100%" />
+            </Grid>
+          </Animator>
+        </Grid>
       </div>
     </div>
   );

@@ -5,7 +5,7 @@ import ImageListItem from "@mui/material/ImageListItem";
 import ImageListItemBar from "@mui/material/ImageListItemBar";
 import MainLayout from "../../layouts/MainLayout";
 import Footer from "../../components/Footer";
-import { Dialog, DialogTitle } from "@mui/material";
+import { Dialog, DialogTitle, Grid } from "@mui/material";
 
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
@@ -28,31 +28,26 @@ export default function TitlebarBelowMasonryImageList() {
           sx={{
             width: "100%",
             height: "100%",
-            overflowY: "scroll",
+
             background: "#000",
             display: "flex",
             justifyContent: "center",
-            gap: 20,
           }}
         >
-          <ImageList sx={{ width: "70%", height: "100%" }}>
+          <Grid container gap={2} sx={{ width: "100%", height: "100%" }}>
             {itemData.map((item) => (
-              <ImageListItem key={item.img}>
+              <Grid item xs={12} md={3.9} lg={3.9} key={item.img}>
                 <img
-                  src={`${item.img}?w=248&fit=crop&auto=format`}
-                  srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                  src={item.img}
                   alt={item.title}
                   loading="lazy"
                   onClick={handleClickOpen}
+                  width="100%"
+                  height="100%"
                 />
-                <ImageListItemBar
-                  title={item.title}
-                  subtitle={<span>by: {item.author}</span>}
-                  position="below"
-                />
-              </ImageListItem>
+              </Grid>
             ))}
-          </ImageList>
+          </Grid>
         </Box>
         <Dialog
           onClose={handleClose}
