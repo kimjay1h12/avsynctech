@@ -293,9 +293,18 @@ function ServicesCategory() {
             xs={12}
             md={5.7}
             lg={5.7}
-            sx={{ display: { xs: "none", md: "block", lg: "block" } }}
+            sx={{
+              display: { xs: "none", md: "flex", lg: "flex" },
+              alignItems: "center",
+              justifyContent: "flex-end",
+            }}
           >
-            <img src="/img/25.jpeg" width="100%" height="100%" />
+            <img
+              src="/img/25.jpeg"
+              width="500px"
+              height="500px"
+              style={{ objectFit: "cover" }}
+            />
           </Grid>
         </Animator>
       </Grid>
