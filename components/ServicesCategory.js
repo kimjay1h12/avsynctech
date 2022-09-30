@@ -109,7 +109,7 @@ function ServicesCategory() {
       >
         Our Services
       </Typography>
-      <Typography color="#fff" fontSize={18} variant="body2" mt={2}>
+      <Typography color="#fff" fontSize={18} variant="caption" mt={2}>
         Get to know our Services
       </Typography>
       <Grid
@@ -143,7 +143,7 @@ function ServicesCategory() {
               display="flex"
               padding={2}
               sx={{
-                background: "#aaa",
+                background: "#444",
 
                 width: "100%",
                 borderRadius: 3,
@@ -157,16 +157,11 @@ function ServicesCategory() {
                   flexDirection: "column",
                 }}
               >
-                <Typography color="#000">{cur.icon}</Typography>
+                <Typography color="#0000">{cur.icon}</Typography>
                 <Typography color="#fff" fontWeight={700} fontSize={25}>
                   {cur.title}
                 </Typography>
-                <Typography
-                  color="#fff"
-                  fontWeight={300}
-                  variant="caption"
-                  sx={{ wordBreak: "break-all" }}
-                >
+                <Typography color="#fff" fontWeight={300} variant="caption">
                   {cur.details}
                 </Typography>
               </Box>
@@ -176,7 +171,7 @@ function ServicesCategory() {
       </Grid>
       <Grid
         container
-        sx={{ padding: { xs: 2, md: 10, lg: 10 } }}
+        sx={{ padding: { xs: 2, md: 15, lg: 15 } }}
         gap={14}
         mt={5}
       >
@@ -185,20 +180,14 @@ function ServicesCategory() {
             <Typography
               color="#fff"
               variant="h4"
-              fontSize={40}
+              fontSize={35}
               fontWeight={700}
               mt={2}
             >
               Have Access to Safe,
               <br /> Smart and Secure life
             </Typography>
-            <Typography
-              color="#fff"
-              variant="caption"
-              sx={{ wordBreak: "break-all" }}
-              lineHeight={2}
-              mt={2}
-            >
+            <Typography color="#fff" variant="caption" lineHeight={2} mt={2}>
               Integer netus mollis sed id arcu diam maximus pellentesque
               faucibus hac ultricies. Commodo proin eu tristique enim si. Cras
               magna fermentum himenaeos conubia accumsan suspendisse congue
@@ -215,7 +204,7 @@ function ServicesCategory() {
                 xs={6}
                 md={5.6}
                 lg={5.6}
-                bgcolor="#999"
+                bgcolor="#444"
                 display="flex"
                 flexDirection="column"
                 justifyContent="space-around"
@@ -233,7 +222,7 @@ function ServicesCategory() {
                 xs={6}
                 md={5.6}
                 lg={5.6}
-                bgcolor="#999"
+                bgcolor="#444"
                 display="flex"
                 flexDirection="column"
                 justifyContent="space-around"
@@ -251,7 +240,7 @@ function ServicesCategory() {
                 xs={6}
                 md={5.6}
                 lg={5.6}
-                bgcolor="#999"
+                bgcolor="#444"
                 display="flex"
                 flexDirection="column"
                 justifyContent="space-around"
@@ -270,7 +259,7 @@ function ServicesCategory() {
                 xs={6}
                 md={5.6}
                 lg={5.6}
-                bgcolor="#999"
+                bgcolor="#444"
                 display="flex"
                 flexDirection="column"
                 justifyContent="space-around"
@@ -296,13 +285,13 @@ function ServicesCategory() {
             sx={{
               display: { xs: "none", md: "flex", lg: "flex" },
               alignItems: "center",
-              justifyContent: "flex-end",
+              justifyContent: "center",
             }}
           >
             <img
               src="/img/25.jpeg"
               width="500px"
-              height="500px"
+              height="430px"
               style={{ objectFit: "cover" }}
             />
           </Grid>

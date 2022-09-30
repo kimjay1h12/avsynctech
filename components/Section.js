@@ -54,6 +54,207 @@ function Section() {
   return (
     <div className={classes.root}>
       <Card1 />
+      <Grid
+        container
+        mt={10}
+        sx={{
+          background: "linear-gradient(to bottom,  #f90a , #111)",
+        }}
+      >
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            width: "100%",
+
+            height: "100%",
+          }}
+        >
+          <Grid container md={12} sx={{ padding: { xs: 2, md: 11 } }}>
+            <Grid item xs={12} md={5.6} lg={5.6}>
+              <Typography
+                variant="h4"
+                fontSize={35}
+                color="#fff"
+                fontWeight={700}
+                mt={2}
+              >
+                Advantage of using Smart Home Technologies
+              </Typography>
+              <Typography variant="caption" color="#fff" fontSize={14}>
+                Smart Automation Technologies solutions enables your home or
+                office to automatically respond to your lifestyle.
+              </Typography>
+            </Grid>
+          </Grid>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
+        >
+          <Grid
+            container
+            xs={12}
+            md={12}
+            lg={12}
+            gap={1}
+            alignItems="center"
+            justifyContent="center"
+            size="large"
+            marginTop="-2%"
+            mb={5}
+            sx={{
+              paddingLeft: { xs: 2, md: 10 },
+              paddingRight: { xs: 2, md: 10 },
+            }}
+          >
+            <Animator variant="zoom" delay={400} timeout={500}>
+              <Grid
+                item
+                xs={12}
+                md={2.9}
+                lg={2.9}
+                display="flex"
+                flexDirection="column"
+                justifyContent="space-around"
+                gap={2}
+                margin={0}
+                height={320}
+                padding={1}
+                sx={{
+                  backgroundImage: `url(${"/img/smarthone.png"})`,
+                  backgroundSize: "cover",
+                }}
+              >
+                <Typography
+                  variant="h4"
+                  fontSize={35}
+                  color="#fff"
+                  fontWeight={700}
+                >
+                  Convenience
+                </Typography>
+                <Typography variant="caption" color="#fff" mt={2}>
+                  Being able to monitor devices remotely or with voice commands,
+                  plan them and even coordinate them with the sunrise and sunset
+                  is a dream come true. Imagine coming down to freshly baked
+                  toast without having to press a button in the morning!Energy
+                </Typography>
+              </Grid>
+            </Animator>
+            <Animator variant="zoom" delay={400} timeout={500}>
+              <Grid
+                item
+                xs={12}
+                md={2.9}
+                lg={2.9}
+                display="flex"
+                flexDirection="column"
+                gap={2}
+                margin={0}
+                height={320}
+                justifyContent="space-around"
+                padding={1}
+                sx={{
+                  backgroundImage: `url(${"/img/smarthone.png"})`,
+                  backgroundSize: "cover",
+                }}
+              >
+                <Typography
+                  variant="h4"
+                  fontSize={35}
+                  color="#fff"
+                  fontWeight={700}
+                >
+                  Efficiency
+                </Typography>
+                <Typography variant="caption" color="#fff" mt={2}>
+                  You may use home control to put items like thermostats, lights
+                  and sockets on a routine to avoid wasting electricity. Hence,
+                  energy saving tends to gain significant percentages of
+                  electricity consumption.
+                </Typography>
+              </Grid>
+            </Animator>
+            <Animator variant="zoom" delay={600} timeout={500}>
+              <Grid
+                xs={12}
+                md={2.9}
+                lg={2.9}
+                item
+                display="flex"
+                flexDirection="column"
+                height={320}
+                justifyContent="space-around"
+                padding={1}
+                sx={{
+                  backgroundImage: `url(${"/img/smarthone.png"})`,
+                  backgroundSize: "cover",
+                }}
+              >
+                <Typography
+                  variant="h4"
+                  fontSize={35}
+                  color="#fff"
+                  fontWeight={700}
+                >
+                  Safety
+                </Typography>
+                <Typography variant="caption" color="#fff" mt={2}>
+                  There are various security devices that can actually improve
+                  your business such as, door and window sensors, security
+                  cameras that can track pedestrians and video doorbell that
+                  help you welcome visitors from anywhere with an internet
+                  connection.
+                </Typography>
+              </Grid>
+            </Animator>
+            <Animator variant="zoom" delay={800} timeout={900}>
+              <Grid
+                xs={12}
+                md={2.9}
+                lg={2.9}
+                item
+                gap={2}
+                display="flex"
+                flexDirection="column"
+                margin={0}
+                height={320}
+                justifyContent="space-around"
+                padding={1}
+                sx={{
+                  backgroundImage: `url(${"/img/smarthone.png"})`,
+                  backgroundSize: "cover",
+                }}
+              >
+                <Typography
+                  variant="h4"
+                  fontSize={35}
+                  color="#fff"
+                  fontWeight={700}
+                  mt={3.2}
+                >
+                  Comfort
+                </Typography>
+                <Typography variant="caption" color="#fff" mt={2}>
+                  Do you know how you get all snuggled up in bed and then
+                  remember you forgot to turn off the bathroom light? Our smart
+                  automation solutions does the task accordingly.Remote
+                  AccessAbility to monitor equipment remotely allows you to do
+                  activities like; door opening, switching on fan, playing
+                  music, opening window blinds or curtain without leaving a key
+                  under the floor.
+                </Typography>
+              </Grid>
+            </Animator>
+          </Grid>
+        </div>
+      </Grid>
       <div
         style={{
           display: "flex",
@@ -66,9 +267,16 @@ function Section() {
           <Typography color="#fff" fontWeight={700} variant="h4" fontSize={40}>
             Let&apos;s See How it Works
           </Typography>
-          <Typography color="#fff" mt={2} variant="p">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit
-          </Typography>
+          <Grid container justifyContent="center" mt={2}>
+            <Grid item lg={5} justifyContent="center">
+              <Typography color="#fff" lineHeight={1} variant="caption">
+                we plan, design, build and support unique, fully integrated
+                experiential spaces while coordinating with a wide range of
+                partners to collaborate globally and achieve seamless solutions
+                that transform the places where we live, work and play.
+              </Typography>
+            </Grid>
+          </Grid>
         </Grid>
         <Grid
           mt={10}
@@ -344,6 +552,7 @@ function Section() {
           }}
         >
           <Box
+            mt={5}
             sx={{
               display: "flex",
               justifyContent: "center",
@@ -353,16 +562,28 @@ function Section() {
               textAlign: "center",
             }}
           >
-            <Typography
-              color="#fff"
-              fontWeight={700}
-              variant="h4"
-              fontSize={40}
-              mb={6}
-            >
-              Featured Project
-            </Typography>
-
+            <Grid container justifyContent="center" mb={6}>
+              <Typography
+                color="#fff"
+                fontWeight={700}
+                variant="h4"
+                fontSize={35}
+              >
+                Featured Project
+              </Typography>
+              <Grid container justifyContent="center">
+                <Grid item lg={5.4} justifyContent="center" mt={2}>
+                  <Typography color="#fff" lineHeight={1} variant="caption">
+                    Smart audio & video distribution, smart home cinema, smart
+                    lighting & HVAC control, smart CCTV video surveillance &
+                    intercom system, smart curtain & blinds control, smart door
+                    lock, access control & time attendance system, smart fire
+                    alarm, motion sensor & sliding gate automation, IT
+                    Infrastructure Solutions & ELV Services.
+                  </Typography>
+                </Grid>
+              </Grid>
+            </Grid>
             <Slider duration="6000" autoplay="2">
               {slideImages.map((slide, index) => (
                 <div
@@ -394,7 +615,7 @@ function Section() {
             title={
               <Typography
                 variant="h4"
-                fontSize={40}
+                fontSize={33}
                 color="#fff"
                 fontWeight={700}
               >
@@ -413,7 +634,7 @@ function Section() {
             title={
               <Typography
                 variant="h4"
-                fontSize={35}
+                fontSize={33}
                 color="#fff"
                 fontWeight={700}
               >
@@ -421,11 +642,20 @@ function Section() {
               </Typography>
             }
             buttonvisibility="none"
-            subtitle="Integer netus mollis sed id arcu diam maximus pellentesque
-faucibus hac ultricies. Commodo proin eu tristique enim si.
-Cras magna fermentum himenaeos conubia accumsan 
-suspendisse congue tristique. Fermentum est sapien rhoncus 
-quis quam velit.  Integer netus mollis sed id arcu diam maximus pellentesque faucibus hac ultricies. Commodo proin eu tristique enim si. Cras magna fermentum himenaeos conubia accumsan suspendisse congue tristique. Fermentum est sapien rhoncus quis quam velit."
+            subtitle={
+              <Typography mt={2} color="#fff9" fontSize={14} variant="caption">
+                AVS Technology Ltd offers free consultation and perfect design
+                that fits your budget, while producing optimal results for your
+                specific needs. Our diverse Knowledge allows us to pick the best
+                products and solutions for every project in order to deliver an
+                efficient environment that is comfortable,friendly and
+                interactive.
+                <br />
+                Life is pretty much better when everything works together,
+                brings your home to mordern technology and control anytime using
+                our reliable App
+              </Typography>
+            }
             src="/img/P13.jpeg"
           />
           <CardRight
@@ -456,9 +686,9 @@ quis quam velit.  Integer netus mollis sed id arcu diam maximus pellentesque fau
               width: "100%",
             }}
           >
-            <Grid container md={12} sx={{ padding: { xs: 2, md: 8 } }}>
+            <Grid container md={12} sx={{ padding: { xs: 2, md: 15 } }}>
               <Grid item xs={12} md={5.6} lg={5.6}>
-                <Typography variant="caption" color="#f90">
+                <Typography variant="caption" color="#f90" fontSize={14}>
                   Our Recent Working
                 </Typography>
                 <Typography
@@ -478,6 +708,7 @@ quis quam velit.  Integer netus mollis sed id arcu diam maximus pellentesque fau
                 lg={6.4}
                 display="flex"
                 justifyContent="flex-end"
+                alignItems="center"
               >
                 <Button
                   variant="outlined"
@@ -485,14 +716,14 @@ quis quam velit.  Integer netus mollis sed id arcu diam maximus pellentesque fau
                   href="/gallery"
                   sx={{
                     fontSize: 10,
-                    padding: 2,
-                    height: 50,
+                    padding: 1,
+                    height: 40,
                     background: "#999",
                     color: "#fff",
                   }}
                 >
                   View All Portfolio
-                  <ArrowForward />
+                  <ArrowForward sx={{ fontSize: 18 }} />
                 </Button>
               </Grid>
             </Grid>
@@ -590,6 +821,7 @@ quis quam velit.  Integer netus mollis sed id arcu diam maximus pellentesque fau
             </Grid>
           </div>
         </Grid>
+
         <Grid
           container
           sx={{ padding: { xs: 2, md: 10, lg: 10 } }}
@@ -603,13 +835,13 @@ quis quam velit.  Integer netus mollis sed id arcu diam maximus pellentesque fau
             timeout={1000}
           >
             <Grid item xs={12} md={5} lg={5}>
-              <Typography color="#f90" variant="caption">
+              <Typography color="#f90a" variant="caption" fontSize={14}>
                 Why Choose Us
               </Typography>
               <Typography
                 color="#fff"
                 variant="h4"
-                fontSize={40}
+                fontSize={35}
                 fontWeight={700}
                 mt={2}
               >
@@ -619,8 +851,7 @@ quis quam velit.  Integer netus mollis sed id arcu diam maximus pellentesque fau
               <Typography
                 color="#fff"
                 variant="caption"
-                sx={{ wordBreak: "break-all" }}
-                lineHeight={2}
+                lineHeight={1.8}
                 mt={2}
               >
                 Integer netus mollis sed id arcu diam maximus pellentesque
@@ -639,16 +870,17 @@ quis quam velit.  Integer netus mollis sed id arcu diam maximus pellentesque fau
                   xs={6}
                   md={5.6}
                   lg={5.6}
-                  bgcolor="#999"
+                  bgcolor="#444"
                   display="flex"
                   flexDirection="column"
                   justifyContent="space-around"
+                  p={1}
                 >
                   <CalendarMonth sx={{ fontSize: 40, color: "#f90" }} />
                   <Typography color="#fff" variant="h6" fontWeight={700}>
                     Easy Online Appointment & Booking Service
                   </Typography>
-                  <Typography color="#fff" variant="caption" mt={2}>
+                  <Typography color="#fff" variant="caption">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   </Typography>
                 </Grid>
@@ -657,12 +889,13 @@ quis quam velit.  Integer netus mollis sed id arcu diam maximus pellentesque fau
                   xs={6}
                   md={5.6}
                   lg={5.6}
-                  bgcolor="#999"
+                  bgcolor="#444"
                   display="flex"
                   flexDirection="column"
                   justifyContent="space-around"
+                  p={1}
                 >
-                  <DeliveryDining sx={{ fontSize: 40, color: "#f90" }} />
+                  <DeliveryDining sx={{ fontSize: 40, color: "#f90a" }} />
                   <Typography color="#fff" variant="h6" fontWeight={700}>
                     All In One Tools Ready For Your House Installation
                   </Typography>
@@ -675,10 +908,11 @@ quis quam velit.  Integer netus mollis sed id arcu diam maximus pellentesque fau
                   xs={6}
                   md={5.6}
                   lg={5.6}
-                  bgcolor="#999"
+                  bgcolor="#444"
                   display="flex"
                   flexDirection="column"
                   justifyContent="space-around"
+                  p={1}
                 >
                   <People sx={{ fontSize: 40, color: "#f90" }} />
                   <Typography color="#fff" variant="h6" fontWeight={700}>
@@ -694,10 +928,11 @@ quis quam velit.  Integer netus mollis sed id arcu diam maximus pellentesque fau
                   xs={6}
                   md={5.6}
                   lg={5.6}
-                  bgcolor="#999"
+                  bgcolor="#444"
                   display="flex"
                   flexDirection="column"
                   justifyContent="space-around"
+                  p={1}
                 >
                   <Settings sx={{ fontSize: 40, color: "#f90" }} />
                   <Typography color="#fff" variant="h6" fontWeight={700}>
@@ -717,9 +952,19 @@ quis quam velit.  Integer netus mollis sed id arcu diam maximus pellentesque fau
               xs={12}
               md={5.7}
               lg={5.7}
-              sx={{ display: { xs: "none", md: "block", lg: "block" } }}
+              sx={{
+                display: {
+                  xs: "none",
+                  md: "flex",
+                  lg: "flex",
+                },
+                flexDirection: "column",
+                height: "49vh",
+                alignItems: "flex-end",
+              }}
             >
-              <img src="/img/25.jpeg" width="100%" height="100%" />
+              <img src="/img/38.jpeg" width="90%" height="100%" />
+              <img src="/img/42.jpeg" width="90%" height="100%" />
             </Grid>
           </Animator>
         </Grid>

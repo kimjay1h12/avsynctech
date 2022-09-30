@@ -27,14 +27,20 @@ function index() {
         >
           <Typography
             variant="caption"
-            fontSize={40}
+            fontSize={45}
             fontWeight={700}
             color="#f90"
           >
             About us
           </Typography>
           <Animator variant="grow" delay={800} timeout={1000}>
-            <Typography color="#fff" fontSize={25} padding={2} fontWeight={600}>
+            <Typography
+              color="#fff"
+              variant="caption"
+              fontSize={20}
+              padding={2}
+              fontWeight={400}
+            >
               Pushing the boundaries of technology to create <br />
               impactful human experiences.
             </Typography>
@@ -44,24 +50,26 @@ function index() {
           <Grid
             container
             justifyContent="center"
-            textAlign="center"
             alignItems="center"
             flexDirection="column"
             padding={1}
           >
             <Grid item xs={12} md={8}>
               <Typography
-                variant="h3"
+                variant="h4"
                 color="#fff "
+                fontSize={35}
                 lineHeight={2}
                 fontWeight={700}
+                textAlign="center"
               >
                 Who Are We
               </Typography>
               <Typography
                 color="#fff"
                 lineHeight={2}
-                variant="body1"
+                variant="caption"
+                fontSize={15}
                 fontWeight={500}
                 sx={{
                   padding: 1,
@@ -99,7 +107,8 @@ function index() {
                 color="#fff"
                 lineHeight={2}
                 mt={7}
-                variant="body1"
+                variant="caption"
+                fontSize={15}
                 fontWeight={500}
                 sx={{
                   padding: 0,

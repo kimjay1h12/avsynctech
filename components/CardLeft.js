@@ -66,9 +66,7 @@ function CardLeft({
           <Grid item xs={11} md={4} lg={4}>
             {title}
 
-            <Typography mt={2} color="#fff9" variant="body2">
-              {subtitle}
-            </Typography>
+            <Typography>{subtitle}</Typography>
 
             <Grid className="right" flexDirection="row" mt={4}>
               <Button

@@ -74,6 +74,7 @@ function ContactUs({
   const [showButton, setShowButton] = React.useState(true);
   const [name, setName] = useState();
   const [email, setEmail] = useState();
+  const [value, setValue] = useState();
   const [message, setMessage] = useState();
   const form = React.useRef();
   const app = initializeApp(firebaseConfig);
@@ -103,6 +104,7 @@ function ContactUs({
         },
         (error) => {}
       );
+    setValue("");
   };
   return (
     <div className={classes.root}>
@@ -117,15 +119,10 @@ function ContactUs({
         lg={12}
       >
         <Grid item xs={11} md={4} lg={4}>
-          <Typography
-            mt={2}
-            lineHeight={2}
-            color="#fff9"
-            fontFamily="Inria Sans"
-          >
+          <Typography mt={2} lineHeight={2} color="#fff9" variant="caption">
             Contact-Us
           </Typography>
-          <Typography variant="h3" color="#fff" fontWeight={700}>
+          <Typography variant="h4" fontSize={35} color="#fff" fontWeight={700}>
             Get In Touch
           </Typography>
           <Grid flexDirection="column">
@@ -157,6 +154,7 @@ function ContactUs({
                   placeholder="Full name"
                   type="text"
                   name="name"
+                  value={value}
                   onChange={(e) => {
                     setName(e.target.value);
                   }}
@@ -179,6 +177,7 @@ function ContactUs({
                   }
                   placeholder="Email"
                   name="email"
+                  value={value}
                   onChange={(e) => {
                     setEmail(e.target.value);
                   }}
@@ -198,6 +197,7 @@ function ContactUs({
                   }}
                   placeholder="Message"
                   type="text"
+                  value={value}
                   name="message"
                   onChange={(e) => {
                     setMessage(e.target.value);

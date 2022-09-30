@@ -68,8 +68,8 @@ function index() {
           >
             <Grid item xs={12} md={4} lg={4}>
               <Box sx={{ padding: { xs: 2 } }}>
-                <Typography color="blue">WHAT WE OFFER</Typography>
-                <Typography color="#fff" variant="h3" mt={2}>
+                <Typography color="#f90a">WHAT WE OFFER</Typography>
+                <Typography color="#fff" variant="h4" fontSize={35} mt={2}>
                   An Efforts to Make a Reliable House
                 </Typography>
                 <Typography color="#fff" variant="body2" lineHeight={2}>
@@ -112,13 +112,18 @@ function index() {
                       justifyContent: "center",
                     }}
                   >
-                    <Typography variant="h3" color="#000" fontWeight={700}>
+                    <Typography
+                      variant="h4"
+                      fontSize={35}
+                      color="#000"
+                      fontWeight={700}
+                    >
                       1.
                     </Typography>
-                    <Typography variant="h4" color="blue">
+                    <Typography variant="h4" color="#f90a">
                       Planning
                     </Typography>
-                    <Typography>
+                    <Typography variant="caption">
                       Volutpat sed lobortis congue habitant ac erat. Diam
                       nascetur pulvinar elementum sed ligula tortor faucibus
                       dapibus lorem.
@@ -140,13 +145,18 @@ function index() {
                       justifyContent: "center",
                     }}
                   >
-                    <Typography variant="h3" color="#000" fontWeight={700}>
+                    <Typography
+                      variant="h4"
+                      fontSize={35}
+                      color="#000"
+                      fontWeight={700}
+                    >
                       2.
                     </Typography>
-                    <Typography variant="h4" color="blue">
+                    <Typography variant="h4" fontSize={30} color="#f90a">
                       Design
                     </Typography>
-                    <Typography>
+                    <Typography variant="caption">
                       Volutpat sed lobortis congue habitant ac erat. Diam
                       nascetur pulvinar elementum sed ligula tortor faucibus
                       dapibus lorem.
@@ -168,13 +178,18 @@ function index() {
                       justifyContent: "center",
                     }}
                   >
-                    <Typography variant="h3" color="#000" fontWeight={700}>
+                    <Typography
+                      variant="h4"
+                      fontSize={35}
+                      color="#000"
+                      fontWeight={700}
+                    >
                       3.
                     </Typography>
-                    <Typography variant="h4" color="blue">
+                    <Typography variant="h4" fontSize={30} color="#f90a">
                       Built Up
                     </Typography>
-                    <Typography>
+                    <Typography variant="caption">
                       Volutpat sed lobortis congue habitant ac erat. Diam
                       nascetur pulvinar elementum sed ligula tortor faucibus
                       dapibus lorem.

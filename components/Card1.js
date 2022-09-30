@@ -13,13 +13,19 @@ function Card1() {
         padding: 10,
       }}
     >
-      <Grid contsiner justifyContent="center" textAlign="center">
+      <Grid container justifyContent="center" textAlign="center">
         <Typography color="#fff" fontWeight={700} variant="h4" fontSize={40}>
           Control your entire space with one App
         </Typography>
-        <Typography color="#fff" lineHeight={4} variant="p">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit
-        </Typography>
+        <Grid container justifyContent="center" mt={2}>
+          <Grid item lg={5} justifyContent="center">
+            <Typography color="#fff" lineHeight={2} variant="caption">
+              With a control user interface your home or office truly connectd
+              the global smart technologies to control, automate and monitor all
+              your smart devices in a few simple steps
+            </Typography>
+          </Grid>
+        </Grid>
       </Grid>
       <Grid
         mt={10}
