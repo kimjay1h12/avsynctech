@@ -163,8 +163,8 @@ function ServicesCategory() {
                 </Typography>
                 <Typography
                   color="#fff"
-                  fontWeight={700}
-                  variant="body2"
+                  fontWeight={300}
+                  variant="caption"
                   sx={{ wordBreak: "break-all" }}
                 >
                   {cur.details}
