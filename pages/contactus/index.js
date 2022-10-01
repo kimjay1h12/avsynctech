@@ -72,7 +72,7 @@ const UseStyles = makeStyles({
     },
   },
 });
-function index() {
+function Index() {
   const classes = UseStyles();
 
   const [country, setCountry] = useState("Country");
@@ -503,4 +503,4 @@ function index() {
   );
 }
 
-export default index;
+export default Index;
