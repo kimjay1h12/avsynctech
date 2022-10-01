@@ -64,7 +64,7 @@ const useStyles = makeStyles({
   },
   drawer: {
     zIndex: 1500,
-    background: "#A45729",
+    background: "#f90a",
     position: "fixed",
     top: 0,
     left: 0,
@@ -85,6 +85,7 @@ const useStyles = makeStyles({
         color: "#fff",
         padding: 15,
       },
+
       "& .css-i4bv87-MuiSvgIcon-root": {
         color: "inherit",
       },
@@ -137,9 +138,11 @@ function AppToolbar({ active, routes = [], logo }) {
 
   return (
     <AppBar
-      color="transparent"
       elevation={0}
-      style={{ position: "sticky", background: "#f90a" }}
+      style={{
+        position: "sticky",
+        background: " #f90f",
+      }}
     >
       <Hidden lgUp>
         <Backdrop open={menuOpen} onClick={() => setMenuOpen(false)} />

@@ -71,7 +71,7 @@ function MainLayout({ active, title, description, children }) {
 
         {/* <meta property="og:image:height" content="630" /> */}
       </Head>
-      <Toolbar active={active} routes={routes} logo="/img/logo.png" />
+      <Toolbar active={active} routes={routes} logo="/img/logo1.png" />
 
       {children}
     </div>

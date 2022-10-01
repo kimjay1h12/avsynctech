@@ -54,207 +54,7 @@ function Section() {
   return (
     <div className={classes.root}>
       <Card1 />
-      <Grid
-        container
-        mt={10}
-        sx={{
-          background: "linear-gradient(to bottom,  #f90a , #111)",
-        }}
-      >
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            width: "100%",
 
-            height: "100%",
-          }}
-        >
-          <Grid container md={12} sx={{ padding: { xs: 2, md: 11 } }}>
-            <Grid item xs={12} md={5.6} lg={5.6}>
-              <Typography
-                variant="h4"
-                fontSize={35}
-                color="#fff"
-                fontWeight={700}
-                mt={2}
-              >
-                Advantage of using Smart Home Technologies
-              </Typography>
-              <Typography variant="caption" color="#fff" fontSize={14}>
-                Smart Automation Technologies solutions enables your home or
-                office to automatically respond to your lifestyle.
-              </Typography>
-            </Grid>
-          </Grid>
-        </div>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center",
-          }}
-        >
-          <Grid
-            container
-            xs={12}
-            md={12}
-            lg={12}
-            gap={1}
-            alignItems="center"
-            justifyContent="center"
-            size="large"
-            marginTop="-2%"
-            mb={5}
-            sx={{
-              paddingLeft: { xs: 2, md: 10 },
-              paddingRight: { xs: 2, md: 10 },
-            }}
-          >
-            <Animator variant="zoom" delay={400} timeout={500}>
-              <Grid
-                item
-                xs={12}
-                md={2.9}
-                lg={2.9}
-                display="flex"
-                flexDirection="column"
-                justifyContent="space-around"
-                gap={2}
-                margin={0}
-                height={320}
-                padding={1}
-                sx={{
-                  backgroundImage: `url(${"/img/smarthone.png"})`,
-                  backgroundSize: "cover",
-                }}
-              >
-                <Typography
-                  variant="h4"
-                  fontSize={35}
-                  color="#fff"
-                  fontWeight={700}
-                >
-                  Convenience
-                </Typography>
-                <Typography variant="caption" color="#fff" mt={2}>
-                  Being able to monitor devices remotely or with voice commands,
-                  plan them and even coordinate them with the sunrise and sunset
-                  is a dream come true. Imagine coming down to freshly baked
-                  toast without having to press a button in the morning!Energy
-                </Typography>
-              </Grid>
-            </Animator>
-            <Animator variant="zoom" delay={400} timeout={500}>
-              <Grid
-                item
-                xs={12}
-                md={2.9}
-                lg={2.9}
-                display="flex"
-                flexDirection="column"
-                gap={2}
-                margin={0}
-                height={320}
-                justifyContent="space-around"
-                padding={1}
-                sx={{
-                  backgroundImage: `url(${"/img/smarthone.png"})`,
-                  backgroundSize: "cover",
-                }}
-              >
-                <Typography
-                  variant="h4"
-                  fontSize={35}
-                  color="#fff"
-                  fontWeight={700}
-                >
-                  Efficiency
-                </Typography>
-                <Typography variant="caption" color="#fff" mt={2}>
-                  You may use home control to put items like thermostats, lights
-                  and sockets on a routine to avoid wasting electricity. Hence,
-                  energy saving tends to gain significant percentages of
-                  electricity consumption.
-                </Typography>
-              </Grid>
-            </Animator>
-            <Animator variant="zoom" delay={600} timeout={500}>
-              <Grid
-                xs={12}
-                md={2.9}
-                lg={2.9}
-                item
-                display="flex"
-                flexDirection="column"
-                height={320}
-                justifyContent="space-around"
-                padding={1}
-                sx={{
-                  backgroundImage: `url(${"/img/smarthone.png"})`,
-                  backgroundSize: "cover",
-                }}
-              >
-                <Typography
-                  variant="h4"
-                  fontSize={35}
-                  color="#fff"
-                  fontWeight={700}
-                >
-                  Safety
-                </Typography>
-                <Typography variant="caption" color="#fff" mt={2}>
-                  There are various security devices that can actually improve
-                  your business such as, door and window sensors, security
-                  cameras that can track pedestrians and video doorbell that
-                  help you welcome visitors from anywhere with an internet
-                  connection.
-                </Typography>
-              </Grid>
-            </Animator>
-            <Animator variant="zoom" delay={800} timeout={900}>
-              <Grid
-                xs={12}
-                md={2.9}
-                lg={2.9}
-                item
-                gap={2}
-                display="flex"
-                flexDirection="column"
-                margin={0}
-                height={320}
-                justifyContent="space-around"
-                padding={1}
-                sx={{
-                  backgroundImage: `url(${"/img/smarthone.png"})`,
-                  backgroundSize: "cover",
-                }}
-              >
-                <Typography
-                  variant="h4"
-                  fontSize={35}
-                  color="#fff"
-                  fontWeight={700}
-                  mt={3.2}
-                >
-                  Comfort
-                </Typography>
-                <Typography variant="caption" color="#fff" mt={2}>
-                  Do you know how you get all snuggled up in bed and then
-                  remember you forgot to turn off the bathroom light? Our smart
-                  automation solutions does the task accordingly.Remote
-                  AccessAbility to monitor equipment remotely allows you to do
-                  activities like; door opening, switching on fan, playing
-                  music, opening window blinds or curtain without leaving a key
-                  under the floor.
-                </Typography>
-              </Grid>
-            </Animator>
-          </Grid>
-        </div>
-      </Grid>
       <div
         style={{
           display: "flex",
@@ -607,6 +407,7 @@ function Section() {
             </Slider>
           </Box>
         </Grid>
+
         <div style={{ marginTop: 100 }}>
           <CardRight
             height="100%"
@@ -969,6 +770,207 @@ function Section() {
           </Animator>
         </Grid>
       </div>
+      <Grid
+        container
+        mt={10}
+        sx={{
+          background: "linear-gradient(to bottom,  #f90a , #111)",
+        }}
+      >
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            width: "100%",
+
+            height: "100%",
+          }}
+        >
+          <Grid container md={12} sx={{ padding: { xs: 2, md: 11 } }}>
+            <Grid item xs={12} md={5.6} lg={5.6}>
+              <Typography
+                variant="h4"
+                fontSize={35}
+                color="#fff"
+                fontWeight={700}
+                mt={2}
+              >
+                Advantage of using Smart Home Technologies
+              </Typography>
+              <Typography variant="caption" color="#fff" fontSize={14}>
+                Smart Automation Technologies solutions enables your home or
+                office to automatically respond to your lifestyle.
+              </Typography>
+            </Grid>
+          </Grid>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
+        >
+          <Grid
+            container
+            xs={12}
+            md={12}
+            lg={12}
+            gap={1}
+            alignItems="center"
+            justifyContent="center"
+            size="large"
+            marginTop="-2%"
+            mb={5}
+            sx={{
+              paddingLeft: { xs: 2, md: 10 },
+              paddingRight: { xs: 2, md: 10 },
+            }}
+          >
+            <Animator variant="zoom" delay={400} timeout={500}>
+              <Grid
+                item
+                xs={12}
+                md={2.9}
+                lg={2.9}
+                display="flex"
+                flexDirection="column"
+                justifyContent="space-around"
+                gap={2}
+                margin={0}
+                height={320}
+                padding={1}
+                sx={{
+                  backgroundImage: `url(${"/img/smarthone.png"})`,
+                  backgroundSize: "cover",
+                }}
+              >
+                <Typography
+                  variant="h4"
+                  fontSize={35}
+                  color="#fff"
+                  fontWeight={700}
+                >
+                  Convenience
+                </Typography>
+                <Typography variant="caption" color="#fff" mt={2}>
+                  Being able to monitor devices remotely or with voice commands,
+                  plan them and even coordinate them with the sunrise and sunset
+                  is a dream come true. Imagine coming down to freshly baked
+                  toast without having to press a button in the morning!Energy
+                </Typography>
+              </Grid>
+            </Animator>
+            <Animator variant="zoom" delay={400} timeout={500}>
+              <Grid
+                item
+                xs={12}
+                md={2.9}
+                lg={2.9}
+                display="flex"
+                flexDirection="column"
+                gap={2}
+                margin={0}
+                height={320}
+                justifyContent="space-around"
+                padding={1}
+                sx={{
+                  backgroundImage: `url(${"/img/smarthone.png"})`,
+                  backgroundSize: "cover",
+                }}
+              >
+                <Typography
+                  variant="h4"
+                  fontSize={35}
+                  color="#fff"
+                  fontWeight={700}
+                >
+                  Efficiency
+                </Typography>
+                <Typography variant="caption" color="#fff" mt={2}>
+                  You may use home control to put items like thermostats, lights
+                  and sockets on a routine to avoid wasting electricity. Hence,
+                  energy saving tends to gain significant percentages of
+                  electricity consumption.
+                </Typography>
+              </Grid>
+            </Animator>
+            <Animator variant="zoom" delay={600} timeout={500}>
+              <Grid
+                xs={12}
+                md={2.9}
+                lg={2.9}
+                item
+                display="flex"
+                flexDirection="column"
+                height={320}
+                justifyContent="space-around"
+                padding={1}
+                sx={{
+                  backgroundImage: `url(${"/img/smarthone.png"})`,
+                  backgroundSize: "cover",
+                }}
+              >
+                <Typography
+                  variant="h4"
+                  fontSize={35}
+                  color="#fff"
+                  fontWeight={700}
+                >
+                  Safety
+                </Typography>
+                <Typography variant="caption" color="#fff" mt={2}>
+                  There are various security devices that can actually improve
+                  your business such as, door and window sensors, security
+                  cameras that can track pedestrians and video doorbell that
+                  help you welcome visitors from anywhere with an internet
+                  connection.
+                </Typography>
+              </Grid>
+            </Animator>
+            <Animator variant="zoom" delay={800} timeout={900}>
+              <Grid
+                xs={12}
+                md={2.9}
+                lg={2.9}
+                item
+                gap={2}
+                display="flex"
+                flexDirection="column"
+                margin={0}
+                height={320}
+                justifyContent="space-around"
+                padding={1}
+                sx={{
+                  backgroundImage: `url(${"/img/smarthone.png"})`,
+                  backgroundSize: "cover",
+                }}
+              >
+                <Typography
+                  variant="h4"
+                  fontSize={35}
+                  color="#fff"
+                  fontWeight={700}
+                  mt={3.2}
+                >
+                  Comfort
+                </Typography>
+                <Typography variant="caption" color="#fff" mt={2}>
+                  Do you know how you get all snuggled up in bed and then
+                  remember you forgot to turn off the bathroom light? Our smart
+                  automation solutions does the task accordingly.Remote
+                  AccessAbility to monitor equipment remotely allows you to do
+                  activities like; door opening, switching on fan, playing
+                  music, opening window blinds or curtain without leaving a key
+                  under the floor.
+                </Typography>
+              </Grid>
+            </Animator>
+          </Grid>
+        </div>
+      </Grid>
     </div>
   );
 }

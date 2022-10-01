@@ -1,4 +1,10 @@
-import { Facebook, Instagram, Twitter } from "@mui/icons-material";
+import {
+  Email,
+  Facebook,
+  Instagram,
+  Twitter,
+  WhatsApp,
+} from "@mui/icons-material";
 import { Divider, Grid, Typography } from "@mui/material";
 import React from "react";
 
@@ -23,7 +29,7 @@ function Footer() {
           textAlign="center"
         >
           <img
-            src="/img/logo.png"
+            src="/img/logo1.png"
             width="200px"
             style={{
               marginLeft: "auto",
@@ -32,9 +38,8 @@ function Footer() {
             }}
           />
           <Typography mt={3} color="#fff" textAlign="center" fontSize={12}>
-            Lorem ipsum dolor sit amet, consectetur adip elit
-            <br />. Posuere dolor massa, pellentesque aliquam nisl facilisis
-            sed.
+            We’re pushing the boundaries of technology to unleash the power of
+            human experience
           </Typography>
         </Grid>
         <span
@@ -45,10 +50,15 @@ function Footer() {
             background: "#fff",
           }}
         ></span>
-        <Grid container justifyContent="center" gap={3} mt={7}>
+        <Typography color="#fff" textAlign="center" mt={2}>
+          Follow Us
+        </Typography>
+        <Grid container justifyContent="center" gap={3} mt={2}>
           <Facebook color="#fff" sx={{ color: "#fff", fontSize: 35 }} />
           <Twitter color="#fff" sx={{ color: "#fff", fontSize: 35 }} />
           <Instagram color="#fff" sx={{ color: "#fff", fontSize: 35 }} />
+          <WhatsApp color="#fff" sx={{ color: "#fff", fontSize: 35 }} />
+          <Email color="#fff" sx={{ color: "#fff", fontSize: 35 }} />
         </Grid>
       </Grid>
     </div>

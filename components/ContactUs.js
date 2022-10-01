@@ -119,7 +119,7 @@ function ContactUs({
         lg={12}
       >
         <Grid item xs={11} md={4} lg={4}>
-          <Typography mt={2} lineHeight={2} color="#fff9" variant="caption">
+          <Typography mt={2} lineHeight={2} color="#f90a" variant="caption">
             Contact-Us
           </Typography>
           <Typography variant="h4" fontSize={35} color="#fff" fontWeight={700}>
