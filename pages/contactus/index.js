@@ -9,10 +9,10 @@ import {
   OutlinedInput,
   Typography,
 } from "@mui/material";
-import React from "react";
+import React, { useMemo, useState } from "react";
 import Animator from "../../components/Animator";
 import Map from "../../components/Map";
-import Animator from "./Animator";
+
 import { firebaseConfig } from "../../Backend/Firebase";
 import { Mail, Rowing } from "@mui/icons-material";
 import {
@@ -24,9 +24,9 @@ import {
 } from "@mui/icons-material";
 import MainLayout from "../../layouts/MainLayout";
 import { makeStyles } from "@mui/styles";
-
+import { initializeApp } from "firebase/app";
 import Footer from "../../components/Footer";
-import ContactUs from "../components/Section";
+
 const headerimg = "/img/contactheader.png";
 const UseStyles = makeStyles({
   form: {
@@ -76,7 +76,7 @@ function index() {
   const classes = UseStyles();
 
   const [country, setCountry] = useState("Country");
-  const options = useMemo(() => countryList().getData(), []);
+
   const changeHandler = (country) => {
     setCountry(country);
   };
@@ -143,7 +143,6 @@ function index() {
         <section>
           <div className={classes.form}>
             <Grid
-              mt={mt}
               width="100vw"
               justifyContent="center"
               alignItems="center"
