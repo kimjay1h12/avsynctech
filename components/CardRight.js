@@ -101,7 +101,7 @@ function CardRight({
           >
             {title}
 
-            <Typography mt={2} variant="caption" fontSize={14} color="#fff9">
+            <Typography mt={2} variant="caption" fontSize={16} color="#fff9">
               {subtitle}
             </Typography>
 

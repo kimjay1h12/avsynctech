@@ -19,13 +19,18 @@ function Card1() {
         padding: 10,
       }}
     >
-      <Grid container justifyContent="center" textAlign="center">
+      <Grid container justifyContent="center">
         <Typography color="#fff" fontWeight={700} variant="h4" fontSize={40}>
           Control your entire space with one App
         </Typography>
         <Grid container justifyContent="center" mt={2}>
-          <Grid item lg={5} justifyContent="center">
-            <Typography color="#fff" lineHeight={2} variant="caption">
+          <Grid item lg={9} justifyContent="center">
+            <Typography
+              color="#fff"
+              lineHeight={1.5}
+              variant="caption"
+              fontSize={16}
+            >
               With a control user interface your home or office truly connectd
               the global smart technologies to control, automate and monitor all
               your smart devices in a few simple steps
@@ -51,8 +56,8 @@ function Card1() {
             borderRadius: 10,
           }}
           xs={12}
-          md={2}
-          lg={2}
+          md={2.3}
+          lg={2.3}
           display="flex"
           flexDirection="column"
           padding={1}
@@ -65,15 +70,15 @@ function Card1() {
             Smart Home
           </Typography>
           <Typography variant="caption" color="#fff">
-            First, we&apos;ll listen, answer your questions, and advise on the
-            overall project scope and budget.
+            A smart home help with the day-to-day of life by automating tech for
+            security,convenience,comfort and entertainment
           </Typography>
         </Grid>
 
         <Grid
           xs={12}
-          md={2}
-          lg={2}
+          md={2.3}
+          lg={2.3}
           style={{
             backgroundImage: `url(${"/img/smartoffice.png"})`,
             backgroundSize: "cover",
@@ -92,15 +97,15 @@ function Card1() {
             Smart Office
           </Typography>
           <Typography variant="caption" color="#fff">
-            Then, we&apos;ll explore what&apos;spossible together, and test our
-            decisions to ensure cost alignment.
+            A Smart Office integrates systems and devices altogether for
+            effective communication to work intelligently;
           </Typography>
         </Grid>
 
         <Grid
           xs={12}
-          md={2}
-          lg={2}
+          md={2.3}
+          lg={2.3}
           style={{
             backgroundImage: `url(${"/img/beautifyliving.png"})`,
             backgroundSize: "cover",
@@ -119,8 +124,8 @@ function Card1() {
             Smart Services
           </Typography>
           <Typography variant="caption" color="#fff">
-            Finally, we&apos;ll execute the plan, and make sure you&apos;re
-            aware of progress every step of the way
+            Smart Services at AVS Technologies Ltd offers you proactive advice,
+            remedies and building competitive advantage in your business.
           </Typography>
         </Grid>
       </Grid>

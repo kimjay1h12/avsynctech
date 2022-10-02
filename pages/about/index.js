@@ -37,7 +37,7 @@ function index() {
             <Typography
               color="#fff"
               variant="caption"
-              fontSize={20}
+              fontSize={23}
               padding={2}
               fontWeight={400}
             >
@@ -54,7 +54,7 @@ function index() {
             flexDirection="column"
             padding={1}
           >
-            <Grid item xs={12} md={8}>
+            <Grid item xs={12} md={9}>
               <Typography
                 variant="h4"
                 color="#fff "
@@ -69,7 +69,7 @@ function index() {
                 color="#fff"
                 lineHeight={2}
                 variant="caption"
-                fontSize={15}
+                fontSize={16}
                 fontWeight={500}
                 sx={{
                   padding: 1,
@@ -80,18 +80,18 @@ function index() {
                 solutions provider company based in Lagos (western Nigeria) and
                 Abuja (Northern Nigeria), registered with the Corporate Affairs
                 Commission (CAC) of Nigeria December 2010 with registration
-                number: RC: 1047010.Our professionals have a global reputation
+                number: RC: 1047010. Our professionals have a global reputation
                 as a first-choice vendor for the projects that matter. We’re
                 always searching for new ways to innovate, creating bold
-                solutions Where Imagination Comes to Life™. Our team bring
-                together technical skills acquired over years, creative know-how
-                and commitment to deliver solutions that empower and enhance the
-                human experience.AVS Technologies Ltd is dedicated to developing
-                complete home automation systems and creative smart products,
-                providing users with more convenient, comfortable and secure
-                smart life, Great experiences need great teams that bring
-                together creativity, design, engineering, integration, project
-                management and support.
+                solutions Where Imagination Comes to Life™. <br />
+                Our team bring together technical skills acquired over years,
+                creative know-how and commitment to deliver solutions that
+                empower and enhance the human experience.AVS Technologies Ltd is
+                dedicated to developing complete home automation systems and
+                creative smart products, providing users with more convenient,
+                comfortable and secure smart life, Great experiences need great
+                teams that bring together creativity, design, engineering,
+                integration, project management and support.
               </Typography>
               <img
                 src="/img/15.jpg"
@@ -106,9 +106,9 @@ function index() {
               <Typography
                 color="#fff"
                 lineHeight={2}
-                mt={7}
+                mt={10}
                 variant="caption"
-                fontSize={15}
+                fontSize={16}
                 fontWeight={500}
                 sx={{
                   padding: 0,

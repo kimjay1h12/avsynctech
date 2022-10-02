@@ -37,7 +37,11 @@ function Section() {
             margin={0}
             height={320}
           >
-            <img src="/img/vision.png" width="100%" />
+            <img
+              src="/img/vision.png"
+              width="50%"
+              style={{ objectFit: "cover" }}
+            />
             <Typography variant="h5" fontWeight={700} color="#fff">
               Our Vision
             </Typography>
@@ -59,7 +63,11 @@ function Section() {
             margin={0}
             height={320}
           >
-            <img src="/img/mission.png" width="100%" />
+            <img
+              src="/img/mission.png"
+              width="50%"
+              style={{ objectFit: "cover" }}
+            />
             <Typography variant="h5" color="#fff" fontWeight={700}>
               Our Mission
             </Typography>
@@ -81,7 +89,11 @@ function Section() {
             flexDirection="column"
             margin={0}
           >
-            <img src="/img/corevalue.png" width="100%" />
+            <img
+              src="/img/corevalue.png"
+              width="50%"
+              style={{ objectFit: "cover" }}
+            />
             <Typography variant="h5" color="#fff" fontWeight={700}>
               Our CoreValues
             </Typography>

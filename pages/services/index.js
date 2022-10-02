@@ -27,24 +27,6 @@ function index() {
           <Typography variant="h2" fontSize={40} fontWeight={700} color="#f90">
             Our Services
           </Typography>
-          <Animator variant="grow" delay={100} timeout={500}>
-            <Typography
-              mt={3}
-              sx={{
-                paddingLeft: { xs: 2, md: 30, lg: 30 },
-                paddingRight: { xs: 2, md: 30, lg: 30 },
-              }}
-              variant="caption"
-              color="#fff"
-              fontSize={18}
-            >
-              AVS Technologies Ltd offers a full range of services as we access
-              our requirements, collect relevant technical info for a particular
-              project. Hence, we design a solution based and build all relevant
-              smart devices altogether before installation and programming for
-              both residential and commercial projects.
-            </Typography>
-          </Animator>
         </header>
         <section>
           <Grid

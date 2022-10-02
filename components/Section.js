@@ -63,13 +63,24 @@ function Section() {
           marginTop: 100,
         }}
       >
-        <Grid contsiner justifyContent="center" textAlign="center" padding={2}>
-          <Typography color="#fff" fontWeight={700} variant="h4" fontSize={40}>
+        <Grid contsiner justifyContent="center" padding={2}>
+          <Typography
+            color="#fff"
+            fontWeight={700}
+            variant="h4"
+            textAlign="center"
+            fontSize={35}
+          >
             Let&apos;s See How it Works
           </Typography>
           <Grid container justifyContent="center" mt={2}>
-            <Grid item lg={5} justifyContent="center">
-              <Typography color="#fff" lineHeight={1} variant="caption">
+            <Grid item lg={9} justifyContent="center">
+              <Typography
+                color="#fff"
+                lineHeight={1}
+                fontSize={16}
+                variant="caption"
+              >
                 we plan, design, build and support unique, fully integrated
                 experiential spaces while coordinating with a wide range of
                 partners to collaborate globally and achieve seamless solutions
@@ -106,7 +117,12 @@ function Section() {
               <Typography variant="h5" fontWeight={700} color="#fff">
                 SMART Controls
               </Typography>
-              <Typography variant="p" color="#fff" lineHeight={1.4}>
+              <Typography
+                variant="caption"
+                color="#fff"
+                lineHeight={1.4}
+                fontSize={16}
+              >
                 A Smart Home help with the day-to-day of life by automating tech
                 for security, convenience, comfort and entertainment.
                 <br />
@@ -194,7 +210,12 @@ function Section() {
               <Typography variant="h5" color="#fff" fontWeight={700}>
                 SMART Lock
               </Typography>
-              <Typography variant="p" lineHeight={1.4} color="#fff">
+              <Typography
+                fontSize={16}
+                variant="caption"
+                lineHeight={1.4}
+                color="#fff"
+              >
                 A Smart Office integrates systems and devices altogether for
                 effective communication to work intelligently; enabling
                 monitoring, controlling
@@ -277,7 +298,12 @@ function Section() {
               <Typography variant="h5" color="#fff" fontWeight={700}>
                 CCTV SURVEILLANCE
               </Typography>
-              <Typography variant="p" color="#fff" lineHeight={1.4}>
+              <Typography
+                variant="caption"
+                fontSize={16}
+                color="#fff"
+                lineHeight={1.4}
+              >
                 AVS Technologies offer a wide range of surveillance CCTV
                 security systems which are designed and i nstalled to secure
                 you, your domestic premises and your business.
@@ -358,8 +384,6 @@ function Section() {
               justifyContent: "center",
               alignItems: "center",
               flexDirection: "column",
-
-              textAlign: "center",
             }}
           >
             <Grid container justifyContent="center" mb={6}>
@@ -372,8 +396,13 @@ function Section() {
                 Featured Project
               </Typography>
               <Grid container justifyContent="center">
-                <Grid item lg={5.4} justifyContent="center" mt={2}>
-                  <Typography color="#fff" lineHeight={1} variant="caption">
+                <Grid item lg={9} justifyContent="center" mt={2}>
+                  <Typography
+                    color="#fff"
+                    lineHeight={1}
+                    variant="caption"
+                    fontSize={16}
+                  >
                     Smart audio & video distribution, smart home cinema, smart
                     lighting & HVAC control, smart CCTV video surveillance &
                     intercom system, smart curtain & blinds control, smart door
@@ -444,7 +473,7 @@ function Section() {
             }
             buttonvisibility="none"
             subtitle={
-              <Typography mt={2} color="#fff9" fontSize={14} variant="caption">
+              <Typography mt={2} color="#fff9" fontSize={16} variant="caption">
                 AVS Technology Ltd offers free consultation and perfect design
                 that fits your budget, while producing optimal results for your
                 specific needs. Our diverse Knowledge allows us to pick the best
@@ -489,7 +518,7 @@ function Section() {
           >
             <Grid container md={12} sx={{ padding: { xs: 2, md: 15 } }}>
               <Grid item xs={12} md={5.6} lg={5.6}>
-                <Typography variant="caption" color="#f90" fontSize={14}>
+                <Typography variant="caption" fontSize={16} color="#f90">
                   Our Recent Working
                 </Typography>
                 <Typography
@@ -628,6 +657,8 @@ function Section() {
           sx={{ padding: { xs: 2, md: 10, lg: 10 } }}
           gap={14}
           mt={5}
+          minHeight="30vh"
+          alignItems="center"
         >
           <Animator
             variant="slide"
@@ -636,7 +667,7 @@ function Section() {
             timeout={1000}
           >
             <Grid item xs={12} md={5} lg={5}>
-              <Typography color="#f90a" variant="caption" fontSize={14}>
+              <Typography color="#f90a" variant="caption" fontSize={16}>
                 Why Choose Us
               </Typography>
               <Typography
@@ -696,7 +727,7 @@ function Section() {
                   justifyContent="space-around"
                   p={1}
                 >
-                  <DeliveryDining sx={{ fontSize: 40, color: "#f90a" }} />
+                  <DeliveryDining sx={{ fontSize: 40, color: "#f90" }} />
                   <Typography color="#fff" variant="h6" fontWeight={700}>
                     All In One Tools Ready For Your House Installation
                   </Typography>
@@ -760,11 +791,10 @@ function Section() {
                   lg: "flex",
                 },
                 flexDirection: "column",
-                height: "49vh",
+
                 alignItems: "flex-end",
               }}
             >
-              <img src="/img/38.jpeg" width="90%" height="100%" />
               <img src="/img/42.jpeg" width="90%" height="100%" />
             </Grid>
           </Animator>
@@ -796,9 +826,9 @@ function Section() {
                 fontWeight={700}
                 mt={2}
               >
-                Advantage of using Smart Home Technologies
+                Advantage of using Automation Technologies
               </Typography>
-              <Typography variant="caption" color="#fff" fontSize={14}>
+              <Typography variant="caption" color="#fff" fontSize={16}>
                 Smart Automation Technologies solutions enables your home or
                 office to automatically respond to your lifestyle.
               </Typography>
@@ -855,7 +885,7 @@ function Section() {
                 >
                   Convenience
                 </Typography>
-                <Typography variant="caption" color="#fff" mt={2}>
+                <Typography variant="caption" color="#fff" mt={2} fontSize={14}>
                   Being able to monitor devices remotely or with voice commands,
                   plan them and even coordinate them with the sunrise and sunset
                   is a dream come true. Imagine coming down to freshly baked
@@ -889,7 +919,7 @@ function Section() {
                 >
                   Efficiency
                 </Typography>
-                <Typography variant="caption" color="#fff" mt={2}>
+                <Typography variant="caption" color="#fff" mt={2} fontSize={14}>
                   You may use home control to put items like thermostats, lights
                   and sockets on a routine to avoid wasting electricity. Hence,
                   energy saving tends to gain significant percentages of
@@ -921,7 +951,7 @@ function Section() {
                 >
                   Safety
                 </Typography>
-                <Typography variant="caption" color="#fff" mt={2}>
+                <Typography variant="caption" color="#fff" mt={2} fontSize={14}>
                   There are various security devices that can actually improve
                   your business such as, door and window sensors, security
                   cameras that can track pedestrians and video doorbell that
@@ -953,15 +983,11 @@ function Section() {
                   fontSize={35}
                   color="#fff"
                   fontWeight={700}
-                  mt={3.2}
                 >
-                  Comfort
+                  Remote Access
                 </Typography>
-                <Typography variant="caption" color="#fff" mt={2}>
-                  Do you know how you get all snuggled up in bed and then
-                  remember you forgot to turn off the bathroom light? Our smart
-                  automation solutions does the task accordingly.Remote
-                  AccessAbility to monitor equipment remotely allows you to do
+                <Typography variant="caption" color="#fff" mt={2} fontSize={14}>
+                  Ability to monitor equipment remotely allows you to do
                   activities like; door opening, switching on fan, playing
                   music, opening window blinds or curtain without leaving a key
                   under the floor.

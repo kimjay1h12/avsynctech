@@ -67,11 +67,17 @@ function Header({
           <Grid item xs={11} md={5} lg={5}>
             {title}
 
-            <Typography mt={1} color="#fff9" variant="body2" lineHeight={1.7}>
+            <Typography
+              mt={1}
+              color="#fff9"
+              fontSize={16}
+              variant="caption"
+              lineHeight={1.2}
+            >
               {subtitle}
             </Typography>
 
-            <Grid className="right" flexDirection="row" mt={3}>
+            <Grid className="right" flexDirection="row" mt={2}>
               <Button
                 variant="outlined"
                 href="/services"

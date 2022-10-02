@@ -109,9 +109,24 @@ function ServicesCategory() {
       >
         Our Services
       </Typography>
-      <Typography color="#fff" fontSize={18} variant="caption" mt={2}>
-        Get to know our Services
-      </Typography>
+      <Animator variant="grow" delay={100} timeout={500}>
+        <Typography
+          mt={3}
+          sx={{
+            paddingLeft: { xs: 2, md: 17, lg: 17 },
+            paddingRight: { xs: 2, md: 17, lg: 17 },
+          }}
+          variant="caption"
+          color="#fff"
+          fontSize={16}
+        >
+          AVS Technologies Ltd offers a full range of services as we access our
+          requirements, collect relevant technical info for a particular
+          project. Hence, we design a solution based and build all relevant
+          smart devices altogether before installation and programming for both
+          residential and commercial projects.
+        </Typography>
+      </Animator>
       <Grid
         container
         xs={12}
@@ -137,8 +152,8 @@ function ServicesCategory() {
             <Grid
               item
               xs={12}
-              lg={3}
-              md={3}
+              lg={3.5}
+              md={3.5}
               gap={10}
               display="flex"
               padding={2}
@@ -153,7 +168,7 @@ function ServicesCategory() {
                 key={index}
                 sx={{
                   display: "flex",
-                  gap: { xs: 1, md: 4, lg: 4 },
+                  gap: { xs: 1, md: 1, lg: 1 },
                   flexDirection: "column",
                 }}
               >
@@ -161,7 +176,12 @@ function ServicesCategory() {
                 <Typography color="#fff" fontWeight={700} fontSize={25}>
                   {cur.title}
                 </Typography>
-                <Typography color="#fff" fontWeight={300} variant="caption">
+                <Typography
+                  color="#fff"
+                  fontWeight={300}
+                  variant="caption"
+                  fontSize={14}
+                >
                   {cur.details}
                 </Typography>
               </Box>

@@ -18,8 +18,7 @@ function Header() {
             Comport & Convenient Lifestyle
           </Typography>
         }
-        subtitle="We design and install smart automation that will control everything in your home or office space which offer multiple optional designs and cutting=edge technologies
-We use products from top rated brands that has great reputation for reliability, seamlessly integration with other devices like Google, Alexa and Siri. "
+        subtitle="Getting every task done seamlessly at your fingertips or voice commands to experience an amazing and productive smart automation solutions proffered by AVS Technologies Ltd as your best choice for both residential and commercial projects. "
         button1=" Get Started"
         button2=" See video"
         src="/img/homepage.jpeg"
