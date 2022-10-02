@@ -24,7 +24,7 @@ function index() {
             textAlign: "center",
           }}
         >
-          <Typography variant="h2" fontSize={40} fontWeight={700} color="#f90">
+          <Typography variant="h2" fontSize={50} fontWeight={700} color="#f90">
             Our Services
           </Typography>
         </header>
