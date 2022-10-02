@@ -76,22 +76,24 @@ function index() {
                   ["@media (min-width : 1200px)"]: { padding: "0vh, 35vw" },
                 }}
               >
-                AVS Technologies Ltd is an independent custom-made electronics
-                solutions provider company based in Lagos (western Nigeria) and
-                Abuja (Northern Nigeria), registered with the Corporate Affairs
-                Commission (CAC) of Nigeria December 2010 with registration
-                number: RC: 1047010. Our professionals have a global reputation
-                as a first-choice vendor for the projects that matter. We’re
-                always searching for new ways to innovate, creating bold
-                solutions Where Imagination Comes to Life™. <br />
-                Our team bring together technical skills acquired over years,
-                creative know-how and commitment to deliver solutions that
-                empower and enhance the human experience.AVS Technologies Ltd is
-                dedicated to developing complete home automation systems and
-                creative smart products, providing users with more convenient,
-                comfortable and secure smart life, Great experiences need great
-                teams that bring together creativity, design, engineering,
-                integration, project management and support.
+                <span style={{ color: "transparent" }}>p</span> AVS Technologies
+                Ltd is an independent custom-made electronics solutions provider
+                company based in Lagos (western Nigeria) and Abuja (Northern
+                Nigeria), registered with the Corporate Affairs Commission (CAC)
+                of Nigeria December 2010 with registration number: RC: 1047010.
+                Our professionals have a global reputation as a first-choice
+                vendor for the projects that matter. We’re always searching for
+                new ways to innovate, creating bold solutions Where Imagination
+                Comes to Life™. <br />
+                <span style={{ color: "transparent" }}>dp</span>Our team bring
+                together technical skills acquired over years, creative know-how
+                and commitment to deliver solutions that empower and enhance the
+                human experience.AVS Technologies Ltd is dedicated to developing
+                complete home automation systems and creative smart products,
+                providing users with more convenient, comfortable and secure
+                smart life, Great experiences need great teams that bring
+                together creativity, design, engineering, integration, project
+                management and support.
               </Typography>
               <img
                 src="/img/15.jpg"
@@ -115,13 +117,14 @@ function index() {
                   ["@media (min-width : 1200px)"]: { padding: "3vh, 35vw" },
                 }}
               >
-                At AVS Technologies Ltd, we plan, design, build and support
-                unique, fully integrated experiential spaces while coordinating
-                with a wide range of partners to collaborate globally and
-                achieve seamless solutions that transform the places where we
-                live, work and play. Our vision, mission and values serve as our
-                guiding principles as we fuse architecture, storytelling and
-                technology to create lasting human experiences
+                <span style={{ color: "transparent" }}>dp</span> At AVS
+                Technologies Ltd, we plan, design, build and support unique,
+                fully integrated experiential spaces while coordinating with a
+                wide range of partners to collaborate globally and achieve
+                seamless solutions that transform the places where we live, work
+                and play. Our vision, mission and values serve as our guiding
+                principles as we fuse architecture, storytelling and technology
+                to create lasting human experiences
               </Typography>
             </Grid>
           </Grid>

@@ -157,10 +157,9 @@ function Section() {
                       md={12}
                       lg={12}
                       height="50vh"
-                      textAlign="center"
                       display="flex"
                       justifyContent="center"
-                      padding={4}
+                      padding={1}
                     >
                       <Typography>
                         {" "}
@@ -244,10 +243,9 @@ function Section() {
                       md={12}
                       lg={12}
                       height="50vh"
-                      textAlign="center"
                       display="flex"
                       justifyContent="center"
-                      padding={4}
+                      padding={1}
                     >
                       <Typography>
                         {" "}
@@ -332,10 +330,9 @@ function Section() {
                       md={12}
                       lg={12}
                       height="50vh"
-                      textAlign="center"
                       display="flex"
                       justifyContent="center"
-                      padding={4}
+                      padding={1}
                     >
                       <Typography>
                         {" "}
