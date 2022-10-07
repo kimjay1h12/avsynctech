@@ -110,7 +110,10 @@ function AppToolbar({ active, routes = [], logo }) {
 
   const Drawer = (
     <div className={classes.drawer}>
-      <img src={logo} style={{ marginLeft: 10 }} />
+      <img
+        src={logo}
+        style={{ marginLeft: 10, width: "250px", objectFit: "cover" }}
+      />
 
       <ul>
         {routes.map((cur) => (
