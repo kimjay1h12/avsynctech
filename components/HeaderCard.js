@@ -47,7 +47,12 @@ function Header({
   return (
     <div className={classes.root}>
       <Grid
-        minHeight={height}
+        sx={{
+          minHeight: {
+            xs: "60vh",
+            lg: height,
+          },
+        }}
         width="100vw"
         justifyContent="center"
         alignItems="center"

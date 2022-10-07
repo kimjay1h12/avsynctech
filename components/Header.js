@@ -13,7 +13,12 @@ function Header() {
         height="100vh"
         variant="slide"
         title={
-          <Typography variant="h4" fontSize={40} color="#f90a" fontWeight={700}>
+          <Typography
+            variant="h4"
+            xs={{ fontSize: { xs: 45, lg: 40 } }}
+            color="#f90a"
+            fontWeight={700}
+          >
             Smart <br />
             Comport & Convenient Lifestyle
           </Typography>

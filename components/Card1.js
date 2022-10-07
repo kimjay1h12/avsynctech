@@ -57,7 +57,11 @@ function Card1() {
         padding: 10,
       }}
     >
-      <Grid container justifyContent="center">
+      <Grid
+        container
+        justifyContent="center"
+        sx={{ marginTop: { xs: "150px", lg: 0 } }}
+      >
         <Typography color="#fff" fontWeight={700} variant="h4" fontSize={40}>
           Control your entire space with one App
         </Typography>
