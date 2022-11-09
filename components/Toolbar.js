@@ -20,12 +20,12 @@ const useStyles = makeStyles({
     ["@media (min-width : 1200px)"]: {},
     "&.scrolled": {
       "& .icon": {
-        color: "#fff",
+        color: "#000",
       },
       boxShadow: "0 5px 5px #0001",
-      background: "#000",
+      background: "#fff",
       "& a": {
-        color: "#fff",
+        color: "#000",
       },
     },
 
@@ -144,7 +144,7 @@ function AppToolbar({ active, routes = [], logo }) {
       elevation={0}
       style={{
         position: "sticky",
-        background: " #f90f",
+        background: " #fff",
       }}
     >
       <Hidden lgUp>
