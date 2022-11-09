@@ -16,7 +16,7 @@ function Header() {
           <Typography
             variant="h4"
             xs={{ fontSize: { xs: 45, lg: 40 } }}
-            color="#f90a"
+            color="#fff"
             fontWeight={700}
           >
             Smart <br />

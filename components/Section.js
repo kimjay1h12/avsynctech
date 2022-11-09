@@ -393,7 +393,7 @@ function Section() {
                 Featured Project
               </Typography>
               <Grid container justifyContent="center">
-                <Grid item lg={9} justifyContent="center" mt={2}>
+                <Grid item lg={9} justifyContent="center" p={2}>
                   <Typography
                     color="#fff"
                     lineHeight={1}
