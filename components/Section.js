@@ -1,7 +1,7 @@
 import { Button, Grid, Typography } from "@mui/material";
 import React from "react";
 import Animator from "./Animator";
-
+import { ReadMoreMore, AdvReadMoreMore } from "read-more-more";
 import Card from "../components/Card";
 import Card1 from "./Card1";
 import CardRight from "./CardRight";
@@ -20,6 +20,7 @@ import Slider from "react-animated-slider";
 import "react-animated-slider/build/horizontal.css";
 import { makeStyles } from "@mui/styles";
 import { Box } from "@mui/system";
+import Link from "next/link";
 const UseStyles = makeStyles({
   root: {},
 });
@@ -63,7 +64,7 @@ function Section() {
           marginTop: 100,
         }}
       >
-        <Grid contsiner justifyContent="center" padding={2}>
+        <Grid container justifyContent="center" padding={2}>
           <Typography
             color="#fff"
             fontWeight={700}
@@ -76,7 +77,7 @@ function Section() {
           <Grid container justifyContent="center" mt={2}>
             <Grid item lg={9} justifyContent="center">
               <Typography
-                color="#fff"
+                color="#aaa"
                 lineHeight={1}
                 fontSize={16}
                 variant="caption"
@@ -89,7 +90,7 @@ function Section() {
             </Grid>
           </Grid>
         </Grid>
-        <Grid
+        {/* <Grid
           mt={10}
           container
           xs={12}
@@ -111,9 +112,8 @@ function Section() {
               flexDirection="column"
               gap={2}
               margin={0}
-              alignSelf="stretch"
             >
-              <img src="/img/P9.jpg" width="100%" height={250} />
+              <img src="/img/P9.jpg" width="100%" height={200} />
               <Typography variant="h5" fontWeight={700} color="#fff">
                 SMART Controls
               </Typography>
@@ -124,7 +124,7 @@ function Section() {
                 fontSize={16}
               >
                 A Smart Home help with the day-to-day of life by automating tech
-                for security, convenience, comfort and entertainment.
+                for security, convenience, comfort and
                 <br />
                 entertainment.
               </Typography>
@@ -203,9 +203,8 @@ function Section() {
               flexDirection="column"
               gap={2}
               margin={0}
-              alignSelf="stretch"
             >
-              <img src="/img/P22.jpeg" width="100%" height={250} />
+              <img src="/img/P22.jpeg" width="100%" height={200} />
               <Typography variant="h5" color="#fff" fontWeight={700}>
                 SMART Lock
               </Typography>
@@ -290,9 +289,8 @@ function Section() {
               margin={0}
               display="flex"
               flexDirection="column"
-              alignSelf="stretch"
             >
-              <img src="/img/P10.jpeg" width="100%" height={250} />
+              <img src="/img/P10.jpeg" width="100%" height={200} />
               <Typography variant="h5" color="#fff" fontWeight={700}>
                 CCTV SURVEILLANCE
               </Typography>
@@ -359,10 +357,250 @@ function Section() {
               </Grid>
             </Grid>
           </Animator>
+        </Grid> */}
+        <Grid
+          container
+          spacing={3}
+          sx={{ padding: { xs: 2, md: 19 }, marginBottom: { xs: 10, md: 0 } }}
+          minHeight="70vh"
+        >
+          <Grid
+            item
+            xs={12}
+            md={4}
+            lg={4}
+            display="flex"
+            flexDirection="column"
+            justifyContent="space-between"
+          >
+            <img src="/img/P9.jpg" width="100%" height={200} />
+            <Typography variant="h5" fontWeight={700} mt={2} color="#fff">
+              SMART Controls
+            </Typography>
+
+            <Typography
+              variant="caption"
+              color="#fff"
+              lineHeight={1.4}
+              fontSize={16}
+            >
+              A smart controls systems can control, monitor, and optimize
+              building services, such as, lighting, HVAC, electrical plug-loads,
+              security, CCTV, access control, audio-visual, as well as
+              occupancy-related systems.
+            </Typography>
+            <Grid mt={2}>
+              <Dialog
+                onClose={handleClose}
+                open={open}
+                maxWidth="sm"
+                style={{ scrollbarWidth: "hidden" }}
+              >
+                <DialogTitle>
+                  <Grid container justifyContent="space-between">
+                    <Typography>Detail</Typography>{" "}
+                    <Close onClick={handleClose} />{" "}
+                  </Grid>
+                </DialogTitle>
+                <Grid container xs={12} md={12} lg={12}>
+                  <Grid item xs={12} md={12} lg={12}>
+                    <img
+                      src="/img/P9.jpg"
+                      height="300px"
+                      width="100%"
+                      style={{ objectFit: "contain" }}
+                      alt="logo"
+                    />
+                  </Grid>
+                  <Grid
+                    item
+                    xs={12}
+                    md={12}
+                    lg={12}
+                    display="flex"
+                    justifyContent="center"
+                    p={2}
+                  >
+                    <Typography>
+                      <span style={{ marginLeft: 10 }}></span>Building control
+                      systems are the dynamic or active part of the building
+                      that monitor, manage, and adjust the environment and
+                      performance of the building. There are a variety of
+                      control systems in buildings that support occupant
+                      comfort, a healthy environment, life safety, security, and
+                      the building's basic infrastructure such as electric power
+                      and conveyance equipment. These control systems primarily
+                      address heating, cooling, ventilation, lighting, power,
+                      access to the building, shading, etc.
+                    </Typography>
+                  </Grid>
+                </Grid>
+              </Dialog>
+              <Button
+                onClick={handleClickOpen}
+                size="large"
+                style={{ color: "#000", background: "#fff", borderRadius: 0 }}
+              >
+                Learn more
+              </Button>
+            </Grid>
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            md={4}
+            lg={4}
+            display="flex"
+            flexDirection="column"
+            justifyContent="space-between"
+          >
+            <img src="/img/P22.jpeg" width="100%" height={200} />
+            <Typography variant="h5" color="#fff" mt={2} fontWeight={700}>
+              SMART Lock
+            </Typography>
+            <Typography
+              fontSize={16}
+              variant="caption"
+              lineHeight={1.4}
+              color="#fff"
+            >
+              A smart lock is an electronic and mechanical locking device that
+              opens wirelessly with an authorized users’ authentication. smart
+              locks allow a homeowner to enter their home or provide others
+              access without requiring a traditional key.
+            </Typography>
+            <Grid mt={2}>
+              <Dialog
+                onClose={handleClose1}
+                open={open1}
+                fullWidth="true"
+                maxWidth="sm"
+                style={{ scrollbarWidth: "hidden" }}
+              >
+                <DialogTitle>
+                  <Grid container justifyContent="space-between">
+                    <Typography>Detail</Typography>{" "}
+                    <Close onClick={handleClose1} />{" "}
+                  </Grid>
+                </DialogTitle>
+                <Grid container xs={12} md={12} lg={12} height="100vh">
+                  <Grid item xs={12} md={12} lg={12}>
+                    <img
+                      src="/img/P22.jpeg"
+                      height="300px"
+                      width="100%"
+                      style={{ objectFit: "contain" }}
+                    />
+                  </Grid>
+                  <Grid
+                    item
+                    xs={12}
+                    md={12}
+                    lg={12}
+                    display="flex"
+                    justifyContent="center"
+                    p={2}
+                  >
+                    <Typography>
+                      <span style={{ marginLeft: 10 }}></span> Smart locks allow
+                      a homeowner to enter their home or provide others access
+                      without requiring a traditional key. Instead, the user
+                      uses their smartphone or a key fob to wirelessly verify
+                      and mechanically unlock the door. Smart locks are an
+                      extension of home automation into home security,office
+                      security etc. As a connected device, smart locks can be
+                      considered a part of the internet of things
+                    </Typography>
+                  </Grid>
+                </Grid>
+              </Dialog>
+              <Button
+                onClick={handleClickOpen1}
+                size="large"
+                style={{ color: "#000", background: "#fff", borderRadius: 0 }}
+              >
+                Learn more
+              </Button>
+            </Grid>
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            md={4}
+            lg={4}
+            display="flex"
+            flexDirection="column"
+            justifyContent="space-between"
+          >
+            <img src="/img/P10.jpeg" width="100%" height={200} />
+            <Typography variant="h5" mt={2} color="#fff" fontWeight={700}>
+              CCTV SURVEILLANCE
+            </Typography>
+            <Typography
+              variant="caption"
+              fontSize={16}
+              color="#fff"
+              lineHeight={1.5}
+            >
+              CCTV is a closed system consisting of video cameras, display
+              devices, monitors and wired or wireless data networks that allow
+              you to transfer images from video cameras to monitors.
+            </Typography>
+            <Grid mt={2}>
+              <Dialog
+                onClose={handleClose2}
+                open={open2}
+                maxWidth="sm"
+                style={{ scrollbarWidth: "hidden" }}
+              >
+                <DialogTitle>
+                  <Grid container justifyContent="space-between">
+                    <Typography>Detail</Typography>{" "}
+                    <Close onClick={handleClose2} />{" "}
+                  </Grid>
+                </DialogTitle>
+                <Grid container xs={12} md={12} lg={12} height="100vh">
+                  <Grid item xs={12} md={12} lg={12}>
+                    <img
+                      src="/img/P10.jpeg"
+                      height="300px"
+                      width="100%"
+                      style={{ objectFit: "contain" }}
+                    />
+                  </Grid>
+                  <Grid
+                    item
+                    xs={12}
+                    md={12}
+                    lg={12}
+                    display="flex"
+                    justifyContent="center"
+                    padding={1}
+                  >
+                    <Typography>
+                      Older CCTV systems used small, low-resolution black and
+                      white monitors with no interactive capabilities. Modern
+                      CCTV displays can be color, high-resolution displays and
+                      can include the ability to zoom in on an image or track
+                      something (or someone) among their features. Talk CCTV
+                      allows an overseer to speak to people within range of the
+                      camera's associated speakers.
+                    </Typography>
+                  </Grid>
+                </Grid>
+              </Dialog>
+              <Button
+                onClick={handleClickOpen2}
+                size="large"
+                style={{ color: "#000", background: "#fff", borderRadius: 0 }}
+              >
+                Learn more
+              </Button>
+            </Grid>
+          </Grid>
         </Grid>
         <Grid
           container
-          mt={10}
           justifyContent="center"
           sx={{
             "& .slider": {
@@ -375,7 +613,6 @@ function Section() {
           }}
         >
           <Box
-            mt={5}
             sx={{
               display: "flex",
               justifyContent: "center",
@@ -537,21 +774,22 @@ function Section() {
                 justifyContent="flex-end"
                 alignItems="center"
               >
-                <Button
-                  variant="outlined"
-                  size="sm"
-                  href="/gallery"
-                  sx={{
-                    fontSize: 10,
-                    padding: 1,
-                    height: 40,
-                    background: "#999",
-                    color: "#fff",
-                  }}
-                >
-                  View All Portfolio
-                  <ArrowForward sx={{ fontSize: 18 }} />
-                </Button>
+                <Link href="/gallery">
+                  <Button
+                    variant="outlined"
+                    size="sm"
+                    sx={{
+                      fontSize: 10,
+                      padding: 1,
+                      height: 40,
+                      background: "#999",
+                      color: "#fff",
+                    }}
+                  >
+                    View All Portfolio
+                    <ArrowForward sx={{ fontSize: 18 }} />
+                  </Button>
+                </Link>
               </Grid>
             </Grid>
           </div>
@@ -677,17 +915,7 @@ function Section() {
                 We Give The Great Offer Pricing With Our Professionals Team
                 Certification
               </Typography>
-              <Typography
-                color="#fff"
-                variant="caption"
-                lineHeight={1.8}
-                mt={2}
-              >
-                Integer netus mollis sed id arcu diam maximus pellentesque
-                faucibus hac ultricies. Commodo proin eu tristique enim si. Cras
-                magna fermentum himenaeos conubia accumsan suspendisse congue
-                tristique. Fermentum est sapien rhoncus quis quam velit.
-              </Typography>
+
               <Grid
                 container
                 spacing={1}
@@ -709,9 +937,6 @@ function Section() {
                   <Typography color="#fff" variant="h6" fontWeight={700}>
                     Easy Online Appointment & Booking Service
                   </Typography>
-                  <Typography color="#fff" variant="caption">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </Typography>
                 </Grid>
                 <Grid
                   item
@@ -727,9 +952,6 @@ function Section() {
                   <DeliveryDining sx={{ fontSize: 40, color: "#f90" }} />
                   <Typography color="#fff" variant="h6" fontWeight={700}>
                     All In One Tools Ready For Your House Installation
-                  </Typography>
-                  <Typography color="#fff" variant="caption">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   </Typography>
                 </Grid>
                 <Grid
@@ -747,10 +969,6 @@ function Section() {
                   <Typography color="#fff" variant="h6" fontWeight={700}>
                     Professionals With Cerficitation Team Working
                   </Typography>
-                  <Typography color="#fff" variant="caption">
-                    Our product will speed up your work in creating your own
-                    presentations
-                  </Typography>
                 </Grid>
                 <Grid
                   item
@@ -766,10 +984,6 @@ function Section() {
                   <Settings sx={{ fontSize: 40, color: "#f90" }} />
                   <Typography color="#fff" variant="h6" fontWeight={700}>
                     Great Maintanence For After Service Record
-                  </Typography>
-                  <Typography color="#fff" variant="caption">
-                    Our product will speed up your work in creating your own
-                    presentations
                   </Typography>
                 </Grid>
               </Grid>
@@ -801,7 +1015,7 @@ function Section() {
         container
         mt={10}
         sx={{
-          background: "linear-gradient(to bottom,  #f90a , #111)",
+          background: "linear-gradient(to bottom, #fff5, #000)",
         }}
       >
         <div
@@ -823,7 +1037,7 @@ function Section() {
                 fontWeight={700}
                 mt={2}
               >
-                Advantage of using Automation Technologies
+                Advantages of using Automation Technologies
               </Typography>
               <Typography variant="caption" color="#fff" fontSize={16}>
                 Smart Automation Technologies solutions enables your home or

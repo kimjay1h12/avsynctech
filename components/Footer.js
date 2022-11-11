@@ -6,14 +6,15 @@ import {
   WhatsApp,
 } from "@mui/icons-material";
 import { Divider, Grid, Typography } from "@mui/material";
+import Link from "next/link";
 import React from "react";
 
 function Footer() {
   return (
     <div
       style={{
-        background: "#07090D",
-        height: "60vh",
+        background: "linear-gradient(to bottom, #000,  #fff5)",
+        height: "50vh",
         display: "flex",
         alignItems: "center",
         marginTop: 100,
@@ -37,7 +38,13 @@ function Footer() {
               display: "block",
             }}
           />
-          <Typography mt={3} color="#fff" textAlign="center" fontSize={12}>
+          <Typography
+            mt={1}
+            p={2}
+            color="#fff"
+            textAlign="center"
+            fontSize={15}
+          >
             We’re pushing the boundaries of technology to unleash the power of
             human experience
           </Typography>
@@ -47,18 +54,24 @@ function Footer() {
             height: 0.1,
             marginTop: 40,
             width: "100%",
-            background: "#fff",
+            background: "#000",
           }}
         ></span>
         <Typography color="#fff" textAlign="center" mt={2}>
           Follow Us
         </Typography>
         <Grid container justifyContent="center" gap={3} mt={2}>
-          <Facebook color="#fff" sx={{ color: "#fff", fontSize: 35 }} />
-          <Twitter color="#fff" sx={{ color: "#fff", fontSize: 35 }} />
+          <Link href="https://web.facebook.com/AVSTechnologies/?_rdc=1&_rdr">
+            <Facebook color="#000" sx={{ color: "#fff", fontSize: 35 }} />
+          </Link>
+
           <Instagram color="#fff" sx={{ color: "#fff", fontSize: 35 }} />
-          <WhatsApp color="#fff" sx={{ color: "#fff", fontSize: 35 }} />
-          <Email color="#fff" sx={{ color: "#fff", fontSize: 35 }} />
+          <Link href="https://wa.me/08028419895">
+            <WhatsApp color="#fff" sx={{ color: "#fff", fontSize: 35 }} />
+          </Link>
+          <Link href="mailto:support@avsynctech.com.ng?subject=How can we help you">
+            <Email color="#fff" sx={{ color: "#fff", fontSize: 35 }} />
+          </Link>
         </Grid>
       </Grid>
     </div>

@@ -20,12 +20,12 @@ const useStyles = makeStyles({
     ["@media (min-width : 1200px)"]: {},
     "&.scrolled": {
       "& .icon": {
-        color: "#000",
+        color: "#fff",
       },
       boxShadow: "0 5px 5px #0001",
-      background: "#fff",
+      background: "#111a",
       "& a": {
-        color: "#000",
+        color: "#fff",
       },
     },
 
@@ -51,20 +51,20 @@ const useStyles = makeStyles({
     },
 
     ["@media  (min-width : 1200px)"]: {
-      padding: "0px 15vw",
+      padding: "0px 10vw",
     },
   },
   menu: {
     marginLeft: "auto",
   },
   logo: {
-    height: 58,
+    height: 50,
     transition: "all 0.3s",
     margin: "10px 0",
   },
   drawer: {
     zIndex: 1500,
-    background: "#f90a",
+    background: "linear-gradient(to bottom, #000,  #fff)",
     position: "fixed",
     top: 0,
     left: 0,
@@ -82,7 +82,7 @@ const useStyles = makeStyles({
         display: "flex",
         alignItems: "center",
         textTransform: "capitalize",
-        color: "#fff",
+        color: "#000",
         padding: 15,
       },
 
@@ -94,7 +94,7 @@ const useStyles = makeStyles({
           paddingLeft: 15,
         },
         "& a:hover , & a:active , & a.active": {
-          background: "#f902",
+          background: "#fff",
           color: "#A45729",
           fontWeight: 700,
         },
@@ -144,7 +144,7 @@ function AppToolbar({ active, routes = [], logo }) {
       elevation={0}
       style={{
         position: "sticky",
-        background: " #fff",
+        background: "#111a",
       }}
     >
       <Hidden lgUp>

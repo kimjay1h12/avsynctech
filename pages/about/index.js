@@ -27,24 +27,12 @@ function index() {
         >
           <Typography
             variant="caption"
-            fontSize={45}
+            fontSize={48}
             fontWeight={700}
-            color="#f90"
+            color="#fff"
           >
             About us
           </Typography>
-          <Animator variant="grow" delay={800} timeout={1000}>
-            <Typography
-              color="#fff"
-              variant="caption"
-              fontSize={23}
-              padding={2}
-              fontWeight={400}
-            >
-              Pushing the boundaries of technology to create <br />
-              impactful human experiences.
-            </Typography>
-          </Animator>
         </header>
         <section style={{ marginTop: 150 }}>
           <Grid

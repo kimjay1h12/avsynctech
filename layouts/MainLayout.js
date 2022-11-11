@@ -6,7 +6,14 @@ import { makeStyles } from "@mui/styles";
 
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "../components/Toolbar";
-import { Home } from "@mui/icons-material";
+import {
+  Business,
+  Collections,
+  ConnectWithoutContact,
+  Home,
+  Info,
+  LocalParking,
+} from "@mui/icons-material";
 
 const useStyles = makeStyles({
   root: {
@@ -31,27 +38,27 @@ function MainLayout({ active, title, description, children }) {
     },
     {
       href: "/about",
-      icon: <Home />,
+      icon: <Info />,
       label: "About",
     },
     {
       href: "/services",
-      icon: <Home />,
+      icon: <Business />,
       label: "Services",
     },
     {
       href: "/products",
-      icon: <Home />,
+      icon: <LocalParking />,
       label: "Product",
     },
     {
       href: "/gallery",
-      icon: <Home />,
+      icon: <Collections />,
       label: "Gallery",
     },
     {
       href: "/contactus",
-      icon: <Home />,
+      icon: <ConnectWithoutContact />,
       label: "Contact us",
     },
   ];

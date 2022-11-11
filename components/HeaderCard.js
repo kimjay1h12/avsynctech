@@ -1,6 +1,7 @@
 import { Rowing } from "@mui/icons-material";
 import { Button, Grid, Typography } from "@mui/material";
 import { makeStyles } from "@mui/styles";
+import Link from "next/link";
 
 import React from "react";
 import Animator from "./Animator";
@@ -83,22 +84,23 @@ function Header({
             </Typography>
 
             <Grid className="right" flexDirection="row" mt={2}>
-              <Button
-                variant="outlined"
-                href="/services"
-                style={{
-                  background: "#fff",
-                  color: "#000",
-                  fontSize: 12,
-                  padding: 11,
+              <Link href="/services">
+                <Button
+                  variant="outlined"
+                  style={{
+                    background: "#fff",
+                    color: "#000",
+                    fontSize: 12,
+                    padding: 11,
 
-                  width: 180,
-                }}
-                size="sm"
-              >
-                {" "}
-                {button1}
-              </Button>{" "}
+                    width: 180,
+                  }}
+                  size="sm"
+                >
+                  {" "}
+                  {button1}
+                </Button>
+              </Link>{" "}
             </Grid>
           </Grid>
         </Animator>

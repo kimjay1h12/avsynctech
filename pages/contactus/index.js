@@ -133,11 +133,8 @@ function Index() {
             textAlign: "center",
           }}
         >
-          <Typography variant="h4" fontSize={35} fontWeight={700} color="#f90a">
+          <Typography variant="h4" fontSize={47} fontWeight={700} color="#fff">
             Contact Us
-          </Typography>
-          <Typography variant="caption" color="#fff" fontSize={14}>
-            Holla There We Wish To Hear From You
           </Typography>
         </header>
         <section>

@@ -24,7 +24,7 @@ function index() {
             textAlign: "center",
           }}
         >
-          <Typography variant="h2" fontSize={50} fontWeight={700} color="#f90">
+          <Typography variant="h2" fontSize={50} fontWeight={700} color="#fff">
             Our Services
           </Typography>
         </header>
@@ -50,15 +50,15 @@ function index() {
           >
             <Grid item xs={12} md={4} lg={4}>
               <Box sx={{ padding: { xs: 2 } }}>
-                <Typography color="#f90a">WHAT WE OFFER</Typography>
+                <Typography color="#aaa">WHAT WE OFFER</Typography>
                 <Typography color="#fff" variant="h4" fontSize={35} mt={2}>
                   An Efforts to Make a Reliable House
                 </Typography>
                 <Typography color="#fff" variant="body2" lineHeight={2}>
-                  Primis consectetur est velit magnis molestie. Per pharetra
-                  tortor neque ligula dictumst cras lorem dignissim tellus.
-                  Senectus eget nunc consectetur nullam tempor consequat dolor
-                  pellentesque metus sed vivamus.
+                  We design, build and support innovative technology solutions
+                  that create lasting experiences where people live, work and
+                  play,Focused on our customers, united as one team, constantly
+                  learning, always accountable and act with the utmost integrity
                 </Typography>
               </Box>
             </Grid>
@@ -102,13 +102,13 @@ function index() {
                     >
                       1.
                     </Typography>
-                    <Typography variant="h4" color="#f90a">
+                    <Typography variant="h4" color="#fff">
                       Planning
                     </Typography>
                     <Typography variant="caption">
-                      Volutpat sed lobortis congue habitant ac erat. Diam
-                      nascetur pulvinar elementum sed ligula tortor faucibus
-                      dapibus lorem.
+                      Focused on our customers, united as one team, constantly
+                      learning, always accountable and act with the utmost
+                      integrity
                     </Typography>
                   </Box>
                 </Grid>
@@ -135,13 +135,12 @@ function index() {
                     >
                       2.
                     </Typography>
-                    <Typography variant="h4" fontSize={30} color="#f90a">
+                    <Typography variant="h4" fontSize={30} color="#fff">
                       Design
                     </Typography>
                     <Typography variant="caption">
-                      Volutpat sed lobortis congue habitant ac erat. Diam
-                      nascetur pulvinar elementum sed ligula tortor faucibus
-                      dapibus lorem.
+                      We design, the boundaries of technology to unleash the
+                      power of human experience and well-being
                     </Typography>
                   </Box>
                 </Grid>
@@ -168,13 +167,13 @@ function index() {
                     >
                       3.
                     </Typography>
-                    <Typography variant="h4" fontSize={30} color="#f90a">
+                    <Typography variant="h4" fontSize={30} color="#fff">
                       Built Up
                     </Typography>
                     <Typography variant="caption">
-                      Volutpat sed lobortis congue habitant ac erat. Diam
-                      nascetur pulvinar elementum sed ligula tortor faucibus
-                      dapibus lorem.
+                      We build and support innovative technology solutions that
+                      create lasting experiences where people live, work and
+                      play
                     </Typography>
                   </Box>
                 </Grid>

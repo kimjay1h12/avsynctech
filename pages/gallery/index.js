@@ -23,7 +23,7 @@ export default function TitlebarBelowMasonryImageList() {
   };
   return (
     <MainLayout title="Gallery" description="View Our Previous Works">
-      <div style={{ background: "#000" }}>
+      <div style={{ background: "#000", marginTop: 2 }}>
         <Box
           sx={{
             width: "100%",
@@ -31,16 +31,20 @@ export default function TitlebarBelowMasonryImageList() {
 
             background: "#000",
             display: "flex",
+            alignItems: "center",
             justifyContent: "center",
           }}
         >
-          <Grid container gap={2} sx={{ width: "100%", height: "100%" }}>
+          <Grid
+            container
+            gap={2}
+            sx={{ justifyContent: "center", width: "100%", height: "100%" }}
+          >
             {itemData.map((item) => (
-              <Grid item xs={12} md={3.9} lg={3.9} key={item.img}>
+              <Grid item xs={12} md={3.7} lg={3.7} key={item.img}>
                 <img
                   src={item.img}
                   alt={item.title}
-                  loading="lazy"
                   onClick={handleClickOpen}
                   width="100%"
                   height="100%"
