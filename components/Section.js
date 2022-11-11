@@ -428,10 +428,10 @@ function Section() {
                       performance of the building. There are a variety of
                       control systems in buildings that support occupant
                       comfort, a healthy environment, life safety, security, and
-                      the building's basic infrastructure such as electric power
-                      and conveyance equipment. These control systems primarily
-                      address heating, cooling, ventilation, lighting, power,
-                      access to the building, shading, etc.
+                      the building&apos;s basic infrastructure such as electric
+                      power and conveyance equipment. These control systems
+                      primarily address heating, cooling, ventilation, lighting,
+                      power, access to the building, shading, etc.
                     </Typography>
                   </Grid>
                 </Grid>
@@ -584,7 +584,7 @@ function Section() {
                       can include the ability to zoom in on an image or track
                       something or someone among their features. Talk CCTV
                       allows an overseer to speak to people within range of the
-                      camera's associated speakers.
+                      camera&apos;s associated speakers.
                     </Typography>
                   </Grid>
                 </Grid>
