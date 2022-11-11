@@ -465,9 +465,9 @@ function Section() {
               color="#fff"
             >
               A smart lock is an electronic and mechanical locking device that
-              opens wirelessly with an authorized users’ authentication. smart
-              locks allow a homeowner to enter their home or provide others
-              access without requiring a traditional key.
+              opens wirelessly with an authorized users&apos; authentication.
+              smart locks allow a homeowner to enter their home or provide
+              others access without requiring a traditional key.
             </Typography>
             <Grid mt={2}>
               <Dialog
@@ -582,7 +582,7 @@ function Section() {
                       white monitors with no interactive capabilities. Modern
                       CCTV displays can be color, high-resolution displays and
                       can include the ability to zoom in on an image or track
-                      something (or someone) among their features. Talk CCTV
+                      something or someone among their features. Talk CCTV
                       allows an overseer to speak to people within range of the
                       camera's associated speakers.
                     </Typography>
