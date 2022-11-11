@@ -1,7 +1,7 @@
 import { Button, Grid, Typography } from "@mui/material";
 import React from "react";
 import Animator from "./Animator";
-import { ReadMoreMore, AdvReadMoreMore } from "read-more-more";
+
 import Card from "../components/Card";
 import Card1 from "./Card1";
 import CardRight from "./CardRight";
