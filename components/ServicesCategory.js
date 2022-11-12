@@ -208,9 +208,9 @@ function ServicesCategory() {
               <br /> Smart and Secure life
             </Typography>
             <Typography color="#fff" variant="caption" lineHeight={2} mt={2}>
-              Don't be overwhelmed about how to secure your home. Avsynctech has
-              the best products and offers the best services to help to secure
-              your homes and offices and enjoy a smart life
+              Don&apos;t be overwhelmed about how to secure your home.
+              Avsynctech has the best products and offers the best services to
+              help to secure your homes and offices and enjoy a smart life
             </Typography>
             <Grid
               container
