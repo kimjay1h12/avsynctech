@@ -116,9 +116,9 @@ function Index() {
     setValue("");
   };
   return (
-    <MainLayout title="Contact Us" description="Beep Us with Your messages">
-      {" "}
-      <div className="" style={{ background: "#000" }}>
+    <div className="">
+      <MainLayout title="Contact Us" description="Beep Us with Your messages">
+        {" "}
         <header
           style={{
             height: "80vh",
@@ -495,8 +495,8 @@ function Index() {
           </Grid>
         </section>
         <Footer />
-      </div>
-    </MainLayout>
+      </MainLayout>
+    </div>
   );
 }
 

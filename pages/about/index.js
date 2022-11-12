@@ -9,8 +9,9 @@ import MainLayout from "../../layouts/MainLayout";
 const headerimg = "/img/aboutus.png";
 function index() {
   return (
-    <MainLayout title="About Us" description="Get to know us better">
-      <div className="" style={{ background: "#000" }}>
+    <div className="">
+      {" "}
+      <MainLayout title="About Us" description="Get to know us better">
         <header
           style={{
             height: "80vh",
@@ -119,8 +120,8 @@ function index() {
           <Card2 />
         </section>
         <Footer />
-      </div>
-    </MainLayout>
+      </MainLayout>{" "}
+    </div>
   );
 }
 

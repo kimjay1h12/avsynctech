@@ -1,3 +1,4 @@
+import ReactReadMoreReadLess from "react-read-more-read-less";
 import {
   Business,
   Home,
@@ -112,74 +113,25 @@ function Card1() {
             Smart Home
           </Typography>
           <Typography variant="caption" color="#fff">
-            A smart home help with the day-to-day of life by automating tech for
-            security,convenience,comfort and entertainment
-            <br />
-            <ButtonBase>
-              <Typography
-                color="blue"
-                variant="caption"
-                onClick={handleClickOpen}
-              >
-                {" "}
-                Read more....
-              </Typography>
-            </ButtonBase>
-          </Typography>
-          <Grid mt={2}>
-            <Dialog
-              onClose={handleClose}
-              open={open}
-              fullWidth="true"
-              maxWidth="sm"
-              style={{ scrollbarWidth: "hidden" }}
+            <ReactReadMoreReadLess
+              charLimit={100}
+              readMoreText={"Read more ▼"}
+              readLessText={"Read less ▲"}
             >
-              <DialogTitle>
-                <Grid container justifyContent="space-between">
-                  <Typography>Detail</Typography>{" "}
-                  <Close onClick={handleClose} />
-                </Grid>
-              </DialogTitle>
-              <Grid container xs={12} md={12} lg={12} height="100vh">
-                <Grid item xs={12} md={12} lg={12} height="50vh">
-                  <img
-                    src="/img/P9.jpg"
-                    width="100%"
-                    height="100%"
-                    alt="logo"
-                  />
-                </Grid>
-                <Grid
-                  item
-                  xs={12}
-                  md={12}
-                  lg={12}
-                  height="50vh"
-                  display="flex"
-                  justifyContent="center"
-                  padding={1}
-                >
-                  <Typography>
-                    {" "}
-                    A Smart Home help with the day-to-day of life by automating
-                    tech for security, convenience, comfort and entertainment.
-                    However, devices can “talk” to one another in your home,
-                    creates a unique ecosystem that makes your life easier where
-                    appliances and devices communicates seamlessly via home
-                    network server. These appliances include; audio and video
-                    systems, lighting, HVAC, curtain and blinds, security system
-                    and so much more. AVS Technologies Ltd are professional
-                    system integrator and a solution provider for your home with
-                    intuitive, easy to use and user friendly. Our team has the
-                    expertise and capability to design and install a customized
-                    system specific to your needs, desires and budget friendly
-                    solutions either for new building or revamping an existing
-                    project
-                  </Typography>
-                </Grid>
-              </Grid>
-            </Dialog>
-          </Grid>
+              A Smart Home help with the day-to-day of life by automating tech
+              for security, convenience, comfort and entertainment. However,
+              devices can “talk” to one another in your home, creates a unique
+              ecosystem that makes your life easier where appliances and devices
+              communicates seamlessly via home network server. These appliances
+              include; audio and video systems, lighting, HVAC, curtain and
+              blinds, security system and so much more. AVS Technologies Ltd are
+              professional system integrator and a solution provider for your
+              home with intuitive, easy to use and user friendly. Our team has
+              the expertise and capability to design and install a customized
+              system specific to your needs, desires and budget friendly
+              solutions either for new building or revamping an existing project
+            </ReactReadMoreReadLess>
+          </Typography>
         </Grid>
 
         <Grid
@@ -187,91 +139,40 @@ function Card1() {
           md={2.3}
           lg={2.3}
           style={{
-            backgroundImage: `url(${"/img/smartoffice.png"})`,
+            backgroundImage: `url(${"/img/beautifyliving.png"})`,
             backgroundSize: "cover",
+            opacity: 1,
             borderRadius: 10,
           }}
           item
+          padding={1}
+          gap={1}
+          margin={0}
           display="flex"
           flexDirection="column"
-          padding={1}
-          gap={2}
-          margin={0}
-          alignSelf="stretch"
         >
-          <Business sx={{ fontSize: 70, color: "#f90f" }} />
-          <Typography variant="h4" fontWeight={700} color="#fff">
+          <SettingsAccessibility sx={{ fontSize: 70, color: "#f90F" }} />
+          <Typography variant="h4" color="#fff" fontWeight={700}>
             Smart Office
           </Typography>
           <Typography variant="caption" color="#fff">
-            A Smart Office integrates systems and devices altogether for
-            effective communication to work intelligently;
-            <br />
-            <ButtonBase>
-              <Typography
-                color="blue"
-                variant="caption"
-                onClick={handleClickOpen1}
-              >
-                {" "}
-                Read more....
-              </Typography>
-            </ButtonBase>
-          </Typography>
-          <Grid mt={2}>
-            <Dialog
-              onClose={handleClose1}
-              open={open1}
-              fullWidth="true"
-              maxWidth="sm"
-              style={{ scrollbarWidth: "hidden" }}
+            <ReactReadMoreReadLess
+              charLimit={100}
+              readMoreText={"Read more ▼"}
+              readLessText={"Read less ▲"}
             >
-              <DialogTitle>
-                <Grid container justifyContent="space-between">
-                  <Typography>Detail</Typography>{" "}
-                  <Close onClick={handleClose1} />{" "}
-                </Grid>
-              </DialogTitle>
-              <Grid container xs={12} md={12} lg={12} height="100vh">
-                <Grid item xs={12} md={12} lg={12} height="50vh">
-                  <img
-                    src="/img/P9.jpg"
-                    width="100%"
-                    height="100%"
-                    alt="logo"
-                  />
-                </Grid>
-                <Grid
-                  item
-                  xs={12}
-                  md={12}
-                  lg={12}
-                  height="50vh"
-                  display="flex"
-                  justifyContent="center"
-                  padding={1}
-                >
-                  <Typography>
-                    {" "}
-                    A Smart Home help with the day-to-day of life by automating
-                    tech for security, convenience, comfort and entertainment.
-                    However, devices can “talk” to one another in your home,
-                    creates a unique ecosystem that makes your life easier where
-                    appliances and devices communicates seamlessly via home
-                    network server. These appliances include; audio and video
-                    systems, lighting, HVAC, curtain and blinds, security system
-                    and so much more. AVS Technologies Ltd are professional
-                    system integrator and a solution provider for your home with
-                    intuitive, easy to use and user friendly. Our team has the
-                    expertise and capability to design and install a customized
-                    system specific to your needs, desires and budget friendly
-                    solutions either for new building or revamping an existing
-                    project
-                  </Typography>
-                </Grid>
-              </Grid>
-            </Dialog>
-          </Grid>
+              So what is a smart office? A smart office or a smart office
+              solution is an office space that incorporates modern technology to
+              increase and boost employee productivity, experience, and
+              efficiency by optimizing the office environment while
+              simultaneously keeping the office space environmentally friendly
+              and cost-efficient. This is usually managed in two different ways,
+              firstly by introducing tools that support employees in finding,
+              using, and collaborating in their office space, secondly by
+              providing analytic capabilities and tools for facility managers to
+              optimize space usage with smart systems.
+            </ReactReadMoreReadLess>
+          </Typography>
         </Grid>
 
         <Grid
@@ -296,75 +197,23 @@ function Card1() {
             Smart Services
           </Typography>
           <Typography variant="caption" color="#fff">
-            Smart Services at AVS Technologies Ltd offers you proactive advice,
-            remedies and building competitive advantage in your business.
-            <br />
-            <ButtonBase>
-              <Typography
-                color="blue"
-                variant="caption"
-                onClick={handleClickOpen2}
-              >
-                {" "}
-                Read more....
-              </Typography>
-            </ButtonBase>
-          </Typography>
-
-          <Grid mt={2}>
-            <Dialog
-              onClose={handleClose2}
-              open={open2}
-              fullWidth="true"
-              maxWidth="sm"
-              style={{ scrollbarWidth: "hidden" }}
+            <ReactReadMoreReadLess
+              charLimit={100}
+              readMoreText={"Read more ▼"}
+              readLessText={"Read less ▲"}
             >
-              <DialogTitle>
-                <Grid container justifyContent="space-between">
-                  <Typography>Detail</Typography>{" "}
-                  <Close onClick={handleClose2} />{" "}
-                </Grid>
-              </DialogTitle>
-              <Grid container xs={12} md={12} lg={12} height="100vh">
-                <Grid item xs={12} md={12} lg={12} height="50vh">
-                  <img
-                    src="/img/P9.jpg"
-                    width="100%"
-                    height="100%"
-                    alt="logo"
-                  />
-                </Grid>
-                <Grid
-                  item
-                  xs={12}
-                  md={12}
-                  lg={12}
-                  height="50vh"
-                  display="flex"
-                  justifyContent="center"
-                  padding={1}
-                >
-                  <Typography>
-                    {" "}
-                    A Smart Home help with the day-to-day of life by automating
-                    tech for security, convenience, comfort and entertainment.
-                    However, devices can “talk” to one another in your home,
-                    creates a unique ecosystem that makes your life easier where
-                    appliances and devices communicates seamlessly via home
-                    network server. These appliances include; audio and video
-                    systems, lighting, HVAC, curtain and blinds, security system
-                    and so much more. AVS Technologies Ltd are professional
-                    system integrator and a solution provider for your home with
-                    intuitive, easy to use and user friendly. Our team has the
-                    expertise and capability to design and install a customized
-                    system specific to your needs, desires and budget friendly
-                    solutions either for new building or revamping an existing
-                    project
-                  </Typography>
-                </Grid>
-              </Grid>
-            </Dialog>
-          </Grid>
+              If the intelligent residential system is installed in the
+              residence, the user can experience a safe, convenient and
+              intelligent service system. The home is the main place of use of
+              the intelligent residential system. In the process of use, it will
+              involve automatic control, Internet and wiring technology, etc.
+              The intelligent residential system design has the characteristics
+              of high safety and easy operation, which can effectively The
+              combination of electrical facilities and management system
+              provides users with a comfortable living environment and promotes
+              the development of interior design.
+            </ReactReadMoreReadLess>
+          </Typography>
         </Grid>
       </Grid>
     </div>

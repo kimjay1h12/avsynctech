@@ -44,7 +44,7 @@ const useStyles = makeStyles({
         textDecoration: "none",
 
         "&:hover ,&.active": {
-          color: "#A45729",
+          color: "#fff",
           borderBottom: "2px solid #A45729",
         },
       },
@@ -61,6 +61,9 @@ const useStyles = makeStyles({
     height: 50,
     transition: "all 0.3s",
     margin: "10px 0",
+  },
+  "& .icon": {
+    color: "#fff",
   },
   drawer: {
     zIndex: 1500,
@@ -82,10 +85,12 @@ const useStyles = makeStyles({
         display: "flex",
         alignItems: "center",
         textTransform: "capitalize",
-        color: "#000",
+        color: "#000a",
         padding: 15,
       },
-
+      "& .icon": {
+        color: "#fff",
+      },
       "& .css-i4bv87-MuiSvgIcon-root": {
         color: "inherit",
       },
@@ -95,7 +100,7 @@ const useStyles = makeStyles({
         },
         "& a:hover , & a:active , & a.active": {
           background: "#fff",
-          color: "#A45729",
+          color: "#fff",
           fontWeight: 700,
         },
       },
@@ -161,7 +166,11 @@ function AppToolbar({ active, routes = [], logo }) {
             onClick={() => setMenuOpen(!menuOpen)}
             className={classes.menu}
           >
-            {menuOpen ? <CloseOutlined /> : <Menu className="icon" />}
+            {menuOpen ? (
+              <CloseOutlined />
+            ) : (
+              <Menu className="icon" sx={{ color: "#fff" }} />
+            )}
           </IconButton>
         </Hidden>
 
@@ -170,7 +179,10 @@ function AppToolbar({ active, routes = [], logo }) {
             {routes.map((cur) => (
               <li key={cur.href}>
                 <Link href={cur.href}>
-                  <a className={active === cur.label ? "active" : ""}>
+                  <a
+                    style={{ color: "#fff" }}
+                    className={active === cur.label ? "active" : ""}
+                  >
                     {/* {cur.icon} */}
                     <span>{cur.label}</span>
                   </a>

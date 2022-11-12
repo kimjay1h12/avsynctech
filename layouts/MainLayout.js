@@ -49,7 +49,7 @@ function MainLayout({ active, title, description, children }) {
     {
       href: "/products",
       icon: <LocalParking />,
-      label: "Product",
+      label: "Products",
     },
     {
       href: "/gallery",

@@ -208,10 +208,9 @@ function ServicesCategory() {
               <br /> Smart and Secure life
             </Typography>
             <Typography color="#fff" variant="caption" lineHeight={2} mt={2}>
-              Integer netus mollis sed id arcu diam maximus pellentesque
-              faucibus hac ultricies. Commodo proin eu tristique enim si. Cras
-              magna fermentum himenaeos conubia accumsan suspendisse congue
-              tristique. Fermentum est sapien rhoncus quis quam velit.
+              Don't be overwhelmed about how to secure your home. Avsynctech has
+              the best products and offers the best services to help to secure
+              your homes and offices and enjoy a smart life
             </Typography>
             <Grid
               container
@@ -234,7 +233,8 @@ function ServicesCategory() {
                   Smart Home
                 </Typography>
                 <Typography color="#fff" variant="caption" mt={2}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Smart home system that connects with your appliances to
+                  automate specific tasks
                 </Typography>
               </Grid>
               <Grid
@@ -252,7 +252,8 @@ function ServicesCategory() {
                   Smart Office
                 </Typography>
                 <Typography color="#fff" variant="caption">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Office space that incorporates modern technology to increase
+                  and boost employee productivity, experience,
                 </Typography>
               </Grid>
               <Grid
@@ -270,8 +271,9 @@ function ServicesCategory() {
                   Smart Life
                 </Typography>
                 <Typography color="#fff" variant="caption">
-                  Our product will speed up your work in creating your own
-                  presentations
+                  Approach conceptualized from a frame of prevention, focused on
+                  youth, and aimed toward fostering independent and productive
+                  life styles.
                 </Typography>
               </Grid>
               <Grid
@@ -289,8 +291,10 @@ function ServicesCategory() {
                   Stressless
                 </Typography>
                 <Typography color="#fff" variant="caption">
-                  Our product will speed up your work in creating your own
-                  presentations
+                  Having no stress Call it hunger for advancement or the
+                  marching arms of grandfather’s clock, which changed not only
+                  the way we live but also the way we think and define
+                  innovation.
                 </Typography>
               </Grid>
             </Grid>
@@ -319,7 +323,7 @@ function ServicesCategory() {
       </Grid>
 
       <Grid container justifyContent="center" padding={2}>
-        <Typography color="#fff" variant="h3" fontWeight={700}>
+        <Typography color="#fff" variant="h2" fontSize={50} fontWeight={700}>
           {" "}
           Wish to see our Videos
         </Typography>

@@ -65,7 +65,9 @@ function Footer() {
             <Facebook color="#000" sx={{ color: "#fff", fontSize: 35 }} />
           </Link>
 
-          <Instagram color="#fff" sx={{ color: "#fff", fontSize: 35 }} />
+          <Link href="https://www.instagram.com/avs_technologies_ltd/">
+            <Instagram color="#fff" sx={{ color: "#fff", fontSize: 35 }} />
+          </Link>
           <Link href="https://wa.me/08028419895">
             <WhatsApp color="#fff" sx={{ color: "#fff", fontSize: 35 }} />
           </Link>

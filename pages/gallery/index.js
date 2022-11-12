@@ -23,7 +23,7 @@ export default function TitlebarBelowMasonryImageList() {
   };
   return (
     <MainLayout title="Gallery" description="View Our Previous Works">
-      <div style={{ background: "#000", marginTop: 2 }}>
+      <div style={{ marginTop: 2 }}>
         <Box
           sx={{
             width: "100%",

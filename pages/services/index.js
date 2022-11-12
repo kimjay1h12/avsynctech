@@ -9,7 +9,7 @@ import MainLayout from "../../layouts/MainLayout";
 function index() {
   return (
     <MainLayout>
-      <div className="" style={{ background: "#000" }}>
+      <div className="">
         <header
           style={{
             minHeight: "80vh",
