@@ -96,7 +96,7 @@ function Card1() {
           md={2.3}
           lg={2.3}
           style={{
-            backgroundImage: `url(${"/img/beautifyliving.png"})`,
+            backgroundImage: `url(${"/img/41.jpeg"})`,
             backgroundSize: "cover",
             opacity: 1,
             borderRadius: 10,
@@ -108,7 +108,7 @@ function Card1() {
           display="flex"
           flexDirection="column"
         >
-          <SettingsAccessibility sx={{ fontSize: 70, color: "#f90F" }} />
+          <Home sx={{ fontSize: 70, color: "#fff" }} />
           <Typography variant="h4" color="#fff" fontWeight={700}>
             Smart Home
           </Typography>
@@ -152,7 +152,7 @@ function Card1() {
           display="flex"
           flexDirection="column"
         >
-          <SettingsAccessibility sx={{ fontSize: 70, color: "#f90F" }} />
+          <Business sx={{ fontSize: 70, color: "#fff" }} />
           <Typography variant="h4" color="#fff" fontWeight={700}>
             Smart Office
           </Typography>
@@ -183,7 +183,7 @@ function Card1() {
           md={2.3}
           lg={2.3}
           style={{
-            backgroundImage: `url(${"/img/beautifyliving.png"})`,
+            backgroundImage: `url(${"/img/office.jpeg"})`,
             backgroundSize: "cover",
             opacity: 1,
             borderRadius: 10,
@@ -195,7 +195,7 @@ function Card1() {
           display="flex"
           flexDirection="column"
         >
-          <SettingsAccessibility sx={{ fontSize: 70, color: "#f90F" }} />
+          <SettingsAccessibility sx={{ fontSize: 70, color: "#fff" }} />
           <Typography variant="h4" color="#fff" fontWeight={700}>
             Smart Services
           </Typography>
