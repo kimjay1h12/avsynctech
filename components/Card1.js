@@ -114,7 +114,7 @@ function Card1() {
           </Typography>
           <Typography variant="caption" color="#fff">
             <ReactReadMoreReadLess
-              charLimit={100}
+              charLimit={160}
               readMoreText={"Read more ▼"}
               readLessText={"Read less ▲"}
               readLessStyle={{ color: "blue", fontSize: "10px" }}
@@ -158,7 +158,7 @@ function Card1() {
           </Typography>
           <Typography variant="caption" color="#fff">
             <ReactReadMoreReadLess
-              charLimit={100}
+              charLimit={170}
               readMoreText={"Read more ▼"}
               readLessText={"Read less ▲"}
               readLessStyle={{ color: "blue", fontSize: "10px" }}

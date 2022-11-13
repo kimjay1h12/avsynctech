@@ -2,13 +2,14 @@ import { Button, ButtonBase, Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import Link from "next/link";
 import React from "react";
+import Animator from "../../components/Animator";
 import Footer from "../../components/Footer";
 import MainLayout from "../../layouts/MainLayout";
 const products = [
   {
     title: "AudioSource",
     url: "/img/products/audiosource.png",
-    link: "",
+    link: "https://audiosource.net/",
   },
   {
     title: "Chief",
@@ -157,6 +158,7 @@ function Index() {
             Top products we use for our services
           </Typography>
         </div>
+
         <Grid
           container
           spacing={6}
@@ -164,49 +166,50 @@ function Index() {
           justifyContent="center"
         >
           {products.map((cur, index) => (
-            <Grid item xs={14} md={2.3} key={index}>
-              <Link href={cur.link}>
-                <Box
-                  p={2}
-                  bgcolor="#fff"
-                  borderRadius={2}
-                  display="flex"
-                  height={200}
-                  justifyContent="space-around"
-                  alignItems="center"
-                  flexDirection="column"
-                >
-                  <img
-                    src={cur.url}
-                    width="100%"
-                    height="100px"
-                    style={{ objectFit: "contain" }}
-                  ></img>
-                  <Typography
-                    variant="caption"
-                    mt={2}
-                    fontSize={18}
-                    fontWeight={700}
+            <Animator variant="grow" delay={100} timeout={500}>
+              <Grid item xs={14} md={2.3} key={index}>
+                <Link href={cur.link}>
+                  <Box
+                    p={2}
+                    bgcolor="#fff"
+                    borderRadius={2}
+                    display="flex"
+                    height={200}
+                    justifyContent="space-around"
+                    alignItems="center"
+                    flexDirection="column"
                   >
-                    {cur.title}
-                  </Typography>
-                  <Link href={cur.link}>
-                    <Button
-                      sx={{
-                        color: "#fff",
-                        fontSize: 10,
-                        background: "#000",
-                      }}
+                    <img
+                      src={cur.url}
+                      width="100%"
+                      height="100px"
+                      style={{ objectFit: "contain" }}
+                    ></img>
+                    <Typography
+                      variant="caption"
+                      mt={2}
+                      fontSize={18}
+                      fontWeight={700}
                     >
-                      Visit Site
-                    </Button>
-                  </Link>
-                </Box>
-              </Link>
-            </Grid>
+                      {cur.title}
+                    </Typography>
+                    <Link href={cur.link}>
+                      <Button
+                        sx={{
+                          color: "#fff",
+                          fontSize: 10,
+                          background: "#000",
+                        }}
+                      >
+                        Visit Site
+                      </Button>
+                    </Link>
+                  </Box>
+                </Link>
+              </Grid>
+            </Animator>
           ))}
         </Grid>
-
         <Footer />
       </MainLayout>
     </div>
