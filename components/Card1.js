@@ -140,7 +140,7 @@ function Card1() {
           md={2.3}
           lg={2.3}
           style={{
-            backgroundImage: `url(${"/img/beautifyliving.png"})`,
+            backgroundImage: `url(${"/img/office.jpeg"})`,
             backgroundSize: "cover",
             opacity: 1,
             borderRadius: 10,
@@ -183,7 +183,7 @@ function Card1() {
           md={2.3}
           lg={2.3}
           style={{
-            backgroundImage: `url(${"/img/office.jpeg"})`,
+            backgroundImage: `url(${"/img/beautifyliving.png"})`,
             backgroundSize: "cover",
             opacity: 1,
             borderRadius: 10,
