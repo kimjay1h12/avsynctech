@@ -92,24 +92,24 @@ function Card1() {
         justifyContent="center"
       >
         <Grid
-          item
-          style={{
-            backgroundImage: `url(${"/img/smarthone.png"})`,
-            backgroundSize: "cover",
-            borderRadius: 10,
-          }}
           xs={12}
           md={2.3}
           lg={2.3}
+          style={{
+            backgroundImage: `url(${"/img/beautifyliving.png"})`,
+            backgroundSize: "cover",
+            opacity: 1,
+            borderRadius: 10,
+          }}
+          item
+          padding={1}
+          gap={1}
+          margin={0}
           display="flex"
           flexDirection="column"
-          padding={1}
-          gap={2}
-          margin={0}
-          alignSelf="stretch"
         >
-          <Home sx={{ fontSize: 70, color: "#f90f" }} />
-          <Typography variant="h4" fontWeight={700} color="#fff">
+          <SettingsAccessibility sx={{ fontSize: 70, color: "#f90F" }} />
+          <Typography variant="h4" color="#fff" fontWeight={700}>
             Smart Home
           </Typography>
           <Typography variant="caption" color="#fff">
@@ -117,6 +117,8 @@ function Card1() {
               charLimit={100}
               readMoreText={"Read more ▼"}
               readLessText={"Read less ▲"}
+              readLessStyle={{ color: "blue", fontSize: "10px" }}
+              readMoreStyle={{ color: "blue", fontSize: "10px" }}
             >
               A Smart Home help with the day-to-day of life by automating tech
               for security, convenience, comfort and entertainment. However,
@@ -129,7 +131,6 @@ function Card1() {
               home with intuitive, easy to use and user friendly. Our team has
               the expertise and capability to design and install a customized
               system specific to your needs, desires and budget friendly
-              solutions either for new building or revamping an existing project
             </ReactReadMoreReadLess>
           </Typography>
         </Grid>
@@ -160,6 +161,8 @@ function Card1() {
               charLimit={100}
               readMoreText={"Read more ▼"}
               readLessText={"Read less ▲"}
+              readLessStyle={{ color: "blue", fontSize: "10px" }}
+              readMoreStyle={{ color: "blue", fontSize: "10px" }}
             >
               So what is a smart office? A smart office or a smart office
               solution is an office space that incorporates modern technology to
@@ -201,6 +204,8 @@ function Card1() {
               charLimit={100}
               readMoreText={"Read more ▼"}
               readLessText={"Read less ▲"}
+              readLessStyle={{ color: "blue", fontSize: "10px" }}
+              readMoreStyle={{ color: "blue", fontSize: "10px" }}
             >
               If the intelligent residential system is installed in the
               residence, the user can experience a safe, convenient and

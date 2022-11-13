@@ -1,7 +1,7 @@
 import { Rowing } from "@mui/icons-material";
 import { Button, Grid, Typography } from "@mui/material";
 import { makeStyles } from "@mui/styles";
-
+import ReactReadMoreReadLess from "react-read-more-read-less";
 import React from "react";
 import Animator from "./Animator";
 const useStyles = makeStyles({

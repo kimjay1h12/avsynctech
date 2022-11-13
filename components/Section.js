@@ -1,7 +1,7 @@
 import { Button, Grid, Typography } from "@mui/material";
 import React from "react";
 import Animator from "./Animator";
-
+import ReactReadMoreReadLess from "react-read-more-read-less";
 import Card from "../components/Card";
 import Card1 from "./Card1";
 import CardRight from "./CardRight";
@@ -117,7 +117,6 @@ function Section() {
               lineHeight={1.4}
               fontSize={16}
             >
-             
               A smart controls systems can control, monitor, and optimize
               building services, such as, lighting, HVAC, electrical plug-loads,
               security, CCTV, access control, audio-visual, as well as
@@ -421,7 +420,22 @@ function Section() {
               </Typography>
             }
             buttonvisibility="none"
-            subtitle="AVS Technologies Ltd support smart fire alarm and smoke detector system, affordable, expandable due to its wireless tendency and also very reliable.These batteries operated smart fire and smoke detection devices guaranty 24/7 alarm monitoring for homes and offices.Optical sensor on each devices detects smoke at an early stage of fire. "
+            subtitle={
+              <ReactReadMoreReadLess
+                charLimit={200}
+                readMoreText={"Read more ▼"}
+                readLessText={"Read less ▲"}
+                readLessStyle={{ color: "blue", fontSize: "10px" }}
+                readMoreStyle={{ color: "blue", fontSize: "10px" }}
+              >
+                AVS Technologies Ltd support smart fire alarm and smoke detector
+                system, affordable, expandable due to its wireless tendency and
+                also very reliable.These batteries operated smart fire and smoke
+                detection devices guaranty 24/7 alarm monitoring for homes and
+                offices.Optical sensor on each devices detects smoke at an early
+                stage of fire.
+              </ReactReadMoreReadLess>
+            }
             src="/img/P30.png"
           />
 
@@ -442,16 +456,22 @@ function Section() {
             buttonvisibility="none"
             subtitle={
               <Typography mt={2} color="#fff9" fontSize={16} variant="caption">
-                AVS Technology Ltd offers free consultation and perfect design
-                that fits your budget, while producing optimal results for your
-                specific needs. Our diverse Knowledge allows us to pick the best
-                products and solutions for every project in order to deliver an
-                efficient environment that is comfortable,friendly and
-                interactive.
-                <br />
-                Life is pretty much better when everything works together,
-                brings your home to mordern technology and control anytime using
-                our reliable App
+                <ReactReadMoreReadLess
+                  charLimit={200}
+                  readMoreText={"Read more ▼"}
+                  readLessText={"Read less ▲"}
+                  readLessStyle={{ color: "blue", fontSize: "10px" }}
+                  readMoreStyle={{ color: "blue", fontSize: "10px" }}
+                >
+                  AVS Technology Ltd offers free consultation and perfect design
+                  that fits your budget, while producing optimal results for
+                  your specific needs. Our diverse Knowledge allows us to pick
+                  the best products and solutions for every project in order to
+                  deliver an efficient environment that is comfortable,friendly
+                  and interactive. Life is pretty much better when everything
+                  works together, brings your home to mordern technology and
+                  control anytime using our reliable App
+                </ReactReadMoreReadLess>
               </Typography>
             }
             src="/img/P13.jpeg"
@@ -471,7 +491,23 @@ function Section() {
               </Typography>
             }
             buttonvisibility="none"
-            subtitle="AVS Technologies Ltd developed smart automation control Apps for climate, blinds and curtain mechanism for controlling humidity and automatic window blinds or curtain in an enclosed space.The smart automation system enables turning “on” your air conditioner a few minutes before your arrival to office or home, keep an eye on the room temperature for the most efficient use of electricity"
+            subtitle={
+              <ReactReadMoreReadLess
+                charLimit={200}
+                readMoreText={"Read more ▼"}
+                readLessText={"Read less ▲"}
+                readLessStyle={{ color: "blue", fontSize: "10px" }}
+                readMoreStyle={{ color: "blue", fontSize: "10px" }}
+              >
+                AVS Technologies Ltd developed smart automation control Apps for
+                climate, blinds and curtain mechanism for controlling humidity
+                and automatic window blinds or curtain in an enclosed space.The
+                smart automation system enables turning “on” your air
+                conditioner a few minutes before your arrival to office or home,
+                keep an eye on the room temperature for the most efficient use
+                of electricity
+              </ReactReadMoreReadLess>
+            }
             src="/img/P0.jpeg"
           />
         </div>
