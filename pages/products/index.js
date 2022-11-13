@@ -166,8 +166,8 @@ function Index() {
           justifyContent="center"
         >
           {products.map((cur, index) => (
-            <Animator variant="grow" delay={100} timeout={500}>
-              <Grid item xs={14} md={2.3} key={index}>
+            <Animator variant="grow" delay={100} timeout={500} key={index}>
+              <Grid item xs={14} md={2.3}>
                 <Link href={cur.link}>
                   <Box
                     p={2}
