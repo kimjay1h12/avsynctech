@@ -970,7 +970,7 @@ function Section() {
                 justifyContent="space-around"
                 padding={1}
                 sx={{
-                  backgroundImage: `url(${"/img/p16.jpeg"})`,
+                  backgroundImage: `url(${"/img/28.jpeg"})`,
                   backgroundSize: "cover",
                 }}
               >

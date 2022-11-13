@@ -100,7 +100,7 @@ const useStyles = makeStyles({
         },
         "& a:hover , & a:active , & a.active": {
           background: "#fff",
-          color: "#fff",
+          color: "#000",
           fontWeight: 700,
         },
       },
