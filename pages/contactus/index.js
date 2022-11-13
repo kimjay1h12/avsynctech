@@ -117,7 +117,11 @@ function Index() {
   };
   return (
     <div className="">
-      <MainLayout title="Contact Us" description="Beep Us with Your messages">
+      <MainLayout
+        active="Contactus"
+        title="Contact Us"
+        description="Beep Us with Your messages"
+      >
         {" "}
         <header
           style={{
@@ -295,7 +299,7 @@ function Index() {
             container
             mt={10}
             sx={{
-              background: "linear-gradient(to bottom,  #f90a , #111)",
+              background: "linear-gradient(to bottom, #fff5, #000)",
             }}
           >
             <div
@@ -317,9 +321,9 @@ function Index() {
                     fontWeight={700}
                     mt={2}
                   >
-                    Advantage of using Smart Home Technologies
+                    Advantages of using Automation Technologies
                   </Typography>
-                  <Typography variant="caption" color="#fff" fontSize={14}>
+                  <Typography variant="caption" color="#fff" fontSize={16}>
                     Smart Automation Technologies solutions enables your home or
                     office to automatically respond to your lifestyle.
                   </Typography>
@@ -364,7 +368,7 @@ function Index() {
                     height={320}
                     padding={1}
                     sx={{
-                      backgroundImage: `url(${"/img/smarthone.png"})`,
+                      backgroundImage: `url(${"/img/49.jpeg"})`,
                       backgroundSize: "cover",
                     }}
                   >
@@ -376,7 +380,12 @@ function Index() {
                     >
                       Convenience
                     </Typography>
-                    <Typography variant="caption" color="#fff" mt={2}>
+                    <Typography
+                      variant="caption"
+                      color="#fff"
+                      mt={2}
+                      fontSize={14}
+                    >
                       Being able to monitor devices remotely or with voice
                       commands, plan them and even coordinate them with the
                       sunrise and sunset is a dream come true. Imagine coming
@@ -399,7 +408,7 @@ function Index() {
                     justifyContent="space-around"
                     padding={1}
                     sx={{
-                      backgroundImage: `url(${"/img/smarthone.png"})`,
+                      backgroundImage: `url(${"/img/36.jpeg"})`,
                       backgroundSize: "cover",
                     }}
                   >
@@ -411,7 +420,12 @@ function Index() {
                     >
                       Efficiency
                     </Typography>
-                    <Typography variant="caption" color="#fff" mt={2}>
+                    <Typography
+                      variant="caption"
+                      color="#fff"
+                      mt={2}
+                      fontSize={14}
+                    >
                       You may use home control to put items like thermostats,
                       lights and sockets on a routine to avoid wasting
                       electricity. Hence, energy saving tends to gain
@@ -431,7 +445,7 @@ function Index() {
                     justifyContent="space-around"
                     padding={1}
                     sx={{
-                      backgroundImage: `url(${"/img/smarthone.png"})`,
+                      backgroundImage: `url(${"/img/6.jpeg"})`,
                       backgroundSize: "cover",
                     }}
                   >
@@ -443,7 +457,12 @@ function Index() {
                     >
                       Safety
                     </Typography>
-                    <Typography variant="caption" color="#fff" mt={2}>
+                    <Typography
+                      variant="caption"
+                      color="#fff"
+                      mt={2}
+                      fontSize={14}
+                    >
                       There are various security devices that can actually
                       improve your business such as, door and window sensors,
                       security cameras that can track pedestrians and video
@@ -466,7 +485,7 @@ function Index() {
                     justifyContent="space-around"
                     padding={1}
                     sx={{
-                      backgroundImage: `url(${"/img/smarthone.png"})`,
+                      backgroundImage: `url(${"/img/p16.jpeg"})`,
                       backgroundSize: "cover",
                     }}
                   >
@@ -475,18 +494,19 @@ function Index() {
                       fontSize={35}
                       color="#fff"
                       fontWeight={700}
-                      mt={3.2}
                     >
-                      Comfort
+                      Remote Access
                     </Typography>
-                    <Typography variant="caption" color="#fff" mt={2}>
-                      Do you know how you get all snuggled up in bed and then
-                      remember you forgot to turn off the bathroom light? Our
-                      smart automation solutions does the task
-                      accordingly.Remote AccessAbility to monitor equipment
-                      remotely allows you to do activities like; door opening,
-                      switching on fan, playing music, opening window blinds or
-                      curtain without leaving a key under the floor.
+                    <Typography
+                      variant="caption"
+                      color="#fff"
+                      mt={2}
+                      fontSize={14}
+                    >
+                      Ability to monitor equipment remotely allows you to do
+                      activities like; door opening, switching on fan, playing
+                      music, opening window blinds or curtain without leaving a
+                      key under the floor.
                     </Typography>
                   </Grid>
                 </Animator>

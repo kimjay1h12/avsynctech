@@ -59,7 +59,7 @@ function MainLayout({ active, title, description, children }) {
     {
       href: "/contactus",
       icon: <ConnectWithoutContact />,
-      label: "Contact us",
+      label: "Contactus",
     },
   ];
   return (

@@ -11,7 +11,11 @@ function index() {
   return (
     <div className="">
       {" "}
-      <MainLayout title="About Us" description="Get to know us better">
+      <MainLayout
+        title="About Us"
+        active="About"
+        description="Get to know us better"
+      >
         <header
           style={{
             height: "80vh",

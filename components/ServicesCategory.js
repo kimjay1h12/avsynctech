@@ -323,7 +323,7 @@ function ServicesCategory() {
       </Grid>
 
       <Grid container justifyContent="center" padding={2}>
-        <Typography color="#fff" variant="h2" fontSize={50} fontWeight={700}>
+        <Typography color="#fff" variant="h2" fontSize={43} fontWeight={700}>
           {" "}
           Wish to see our Videos
         </Typography>

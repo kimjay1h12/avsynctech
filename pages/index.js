@@ -12,7 +12,7 @@ import ContactUs from "../components/ContactUs";
 import Iframe from "react-iframe";
 export default function Home() {
   return (
-    <MainLayout>
+    <MainLayout active="home">
       <div
         style={{
           background: "#000",

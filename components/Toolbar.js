@@ -45,7 +45,7 @@ const useStyles = makeStyles({
 
         "&:hover ,&.active": {
           color: "#fff",
-          borderBottom: "2px solid #A45729",
+          borderBottom: "4px solid #fff",
         },
       },
     },

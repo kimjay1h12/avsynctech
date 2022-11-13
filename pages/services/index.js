@@ -8,7 +8,7 @@ import MainLayout from "../../layouts/MainLayout";
 
 function index() {
   return (
-    <MainLayout>
+    <MainLayout active="Services">
       <div className="">
         <header
           style={{

@@ -22,7 +22,11 @@ export default function TitlebarBelowMasonryImageList() {
     setOpen(false);
   };
   return (
-    <MainLayout title="Gallery" description="View Our Previous Works">
+    <MainLayout
+      active="Gallery"
+      title="Gallery"
+      description="View Our Previous Works"
+    >
       <div style={{ marginTop: 2 }}>
         <Box
           sx={{
@@ -92,7 +96,7 @@ const itemData = [
     author: "swabdesign",
   },
   {
-    img: "/img/36.jpeg",
+    img: "/img/6.jpeg",
     title: "Books",
     author: "Pavel Nekoranec",
   },
@@ -107,7 +111,7 @@ const itemData = [
     author: "Christian Mackie",
   },
   {
-    img: "/img/32.jpeg",
+    img: "/img/31.jpeg",
     title: "Blinds",
     author: "Darren Richardson",
   },
@@ -117,12 +121,12 @@ const itemData = [
     author: "Taylor Simpson",
   },
   {
-    img: "/img/22.jpeg",
+    img: "/img/67.jpeg",
     title: "Laptop",
     author: "Ben Kolde",
   },
   {
-    img: "/img/13.jpg",
+    img: "/img/74.jpg",
     title: "Doors",
     author: "Philipp Berndt",
   },
@@ -142,27 +146,37 @@ const itemData = [
     author: "Fi Bell",
   },
   {
-    img: "/img/37.jpeg",
+    img: "/img/49.jpeg",
     title: "Coffee table",
     author: "Hutomo Abrianto",
   },
   {
-    img: "/img/27.jpeg",
+    img: "/img/59.jpeg",
     title: "Coffee",
     author: "Jen P.",
   },
   {
-    img: "/img/16.jpeg",
+    img: "/img/18.jpeg",
     title: "Storage",
     author: "Douglas Sheppard",
   },
   {
-    img: "/img/14.jpeg",
+    img: "/img/30.jpeg",
     title: "Candle",
     author: "Fi Bell",
   },
   {
-    img: "/img/37.jpeg",
+    img: "/img/67.jpeg",
+    title: "Coffee table",
+    author: "Hutomo Abrianto",
+  },
+  {
+    img: "/img/69.jpeg",
+    title: "Coffee table",
+    author: "Hutomo Abrianto",
+  },
+  {
+    img: "/img/59.jpeg",
     title: "Coffee table",
     author: "Hutomo Abrianto",
   },

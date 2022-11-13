@@ -141,7 +141,7 @@ const products = [
 function Index() {
   return (
     <div className="root">
-      <MainLayout>
+      <MainLayout active="Products">
         <div
           style={{
             display: "flex",

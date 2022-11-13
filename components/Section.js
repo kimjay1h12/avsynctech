@@ -106,7 +106,12 @@ function Section() {
             flexDirection="column"
             justifyContent="space-between"
           >
-            <img src="/img/P9.jpg" width="100%" height={200} />
+            <img
+              src="/img/P9.jpg"
+              width="100%"
+              height={250}
+              style={{ objectFit: "cover" }}
+            />
             <Typography variant="h5" fontWeight={700} mt={2} color="#fff">
               SMART Controls
             </Typography>
@@ -187,7 +192,7 @@ function Section() {
             flexDirection="column"
             justifyContent="space-between"
           >
-            <img src="/img/P22.jpeg" width="100%" height={200} />
+            <img src="/img/61.jpeg" width="100%" height={250} />
             <Typography variant="h5" color="#fff" mt={2} fontWeight={700}>
               SMART Lock
             </Typography>
@@ -219,7 +224,7 @@ function Section() {
                 <Grid container xs={12} md={12} lg={12} height="100vh">
                   <Grid item xs={12} md={12} lg={12}>
                     <img
-                      src="/img/P22.jpeg"
+                      src="/img/62.jpeg"
                       height="300px"
                       width="100%"
                       style={{ objectFit: "contain" }}
@@ -265,7 +270,12 @@ function Section() {
             flexDirection="column"
             justifyContent="space-between"
           >
-            <img src="/img/P10.jpeg" width="100%" height={200} />
+            <img
+              src="/img/56.jpeg"
+              width="100%"
+              height={250}
+              style={{ objectFit: "cover" }}
+            />
             <Typography variant="h5" mt={2} color="#fff" fontWeight={700}>
               CCTV SURVEILLANCE
             </Typography>
@@ -295,7 +305,7 @@ function Section() {
                 <Grid container xs={12} md={12} lg={12} height="100vh">
                   <Grid item xs={12} md={12} lg={12}>
                     <img
-                      src="/img/P10.jpeg"
+                      src="/img/56.jpeg"
                       height="300px"
                       width="100%"
                       style={{ objectFit: "contain" }}
@@ -436,7 +446,7 @@ function Section() {
                 stage of fire.
               </ReactReadMoreReadLess>
             }
-            src="/img/P30.png"
+            src="/img/P30.jpeg"
           />
 
           <CardLeft
@@ -474,7 +484,7 @@ function Section() {
                 </ReactReadMoreReadLess>
               </Typography>
             }
-            src="/img/P13.jpeg"
+            src="/img/37.jpeg"
           />
           <CardRight
             height="100%"
@@ -508,7 +518,7 @@ function Section() {
                 of electricity
               </ReactReadMoreReadLess>
             }
-            src="/img/P0.jpeg"
+            src="/img/9.jpg"
           />
         </div>
         <Grid container>
@@ -599,7 +609,7 @@ function Section() {
                   alignItems="center"
                   justifyContent="center"
                 >
-                  <img src="/img/5.jpg" width="100%" height="100%" />
+                  <img src="/img/19.jpg" width="100%" height="100%" />
                 </Grid>
               </Animator>
               <Animator variant="zoom" delay={400} timeout={500}>
@@ -633,7 +643,7 @@ function Section() {
                   alignItems="center"
                   justifyContent="center"
                 >
-                  <img src="/img/57.jpeg" width="100%" height="100%" />
+                  <img src="/img/20.jpeg" width="100%" height="100%" />
                 </Grid>
               </Animator>
               <Animator variant="zoom" delay={800} timeout={900}>
@@ -650,7 +660,7 @@ function Section() {
                   flexDirection="column"
                   margin={0}
                 >
-                  <img src="/img/42.jpeg" width="100%" height="100%" />
+                  <img src="/img/33.jpeg" width="100%" height="100%" />
                 </Grid>
               </Animator>
             </Grid>
@@ -776,7 +786,12 @@ function Section() {
                 alignItems: "flex-end",
               }}
             >
-              <img src="/img/42.jpeg" width="90%" height="100%" />
+              <img
+                src="/img/p29.jpeg"
+                width="90%"
+                height="500px"
+                style={{ objectFit: "contain" }}
+              />
             </Grid>
           </Animator>
         </Grid>
@@ -854,7 +869,7 @@ function Section() {
                 height={320}
                 padding={1}
                 sx={{
-                  backgroundImage: `url(${"/img/smarthone.png"})`,
+                  backgroundImage: `url(${"/img/49.jpeg"})`,
                   backgroundSize: "cover",
                 }}
               >
@@ -888,7 +903,7 @@ function Section() {
                 justifyContent="space-around"
                 padding={1}
                 sx={{
-                  backgroundImage: `url(${"/img/smarthone.png"})`,
+                  backgroundImage: `url(${"/img/36.jpeg"})`,
                   backgroundSize: "cover",
                 }}
               >
@@ -920,7 +935,7 @@ function Section() {
                 justifyContent="space-around"
                 padding={1}
                 sx={{
-                  backgroundImage: `url(${"/img/smarthone.png"})`,
+                  backgroundImage: `url(${"/img/6.jpeg"})`,
                   backgroundSize: "cover",
                 }}
               >
@@ -955,7 +970,7 @@ function Section() {
                 justifyContent="space-around"
                 padding={1}
                 sx={{
-                  backgroundImage: `url(${"/img/smarthone.png"})`,
+                  backgroundImage: `url(${"/img/p16.jpeg"})`,
                   backgroundSize: "cover",
                 }}
               >
