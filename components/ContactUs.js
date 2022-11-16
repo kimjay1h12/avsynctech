@@ -93,16 +93,18 @@ function ContactUs({
 
     emailjs
       .sendForm(
-        "service_wkr80os",
-        "template_tw0xx35",
+        "service_nb3derb",
+        "template_va5pxdu",
         form.current,
-        "cfb2n4hwNsmbzyQDB"
+        "nYulBhvte7XAxrlRm"
       )
       .then(
         (result) => {
           console.log(result.text);
         },
-        (error) => {}
+        (error) => {
+          console.log(error);
+        }
       );
     setValue("");
   };
@@ -142,7 +144,7 @@ function ContactUs({
               }}
               onSubmit={sendEmail}
             >
-              <FormControl root variant="outlined" fullWidth="100%">
+              <FormControl variant="outlined" fullWidth="100%">
                 <OutlinedInput
                   sx={{
                     background: "#fff",
@@ -166,7 +168,7 @@ function ContactUs({
                   }}
                 />
               </FormControl>
-              <FormControl root variant="outlined" fullWidth="100%">
+              <FormControl variant="outlined" fullWidth="100%">
                 <OutlinedInput
                   sx={{
                     background: "#fff",
@@ -189,7 +191,7 @@ function ContactUs({
                   }}
                 />
               </FormControl>
-              <FormControl root variant="outlined" fullWidth="100%">
+              <FormControl variant="outlined" fullWidth="100%">
                 <OutlinedInput
                   sx={{
                     background: "#fff",
@@ -224,7 +226,6 @@ function ContactUs({
                   size="large"
                   type="submit"
                   variant="outlined"
-                  onClick={writeUserData}
                   sx={{
                     width: "100%",
 

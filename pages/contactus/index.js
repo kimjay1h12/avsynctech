@@ -102,10 +102,10 @@ function Index() {
 
     emailjs
       .sendForm(
-        "service_wkr80os",
-        "template_tw0xx35",
+        "service_nb3derb",
+        "template_va5pxdu",
         form.current,
-        "cfb2n4hwNsmbzyQDB"
+        "nYulBhvte7XAxrlRm"
       )
       .then(
         (result) => {

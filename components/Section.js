@@ -82,10 +82,14 @@ function Section() {
                 fontSize={16}
                 variant="caption"
               >
-                we plan, design, build and support unique, fully integrated
-                experiential spaces while coordinating with a wide range of
-                partners to collaborate globally and achieve seamless solutions
-                that transform the places where we live, work and play.
+                <span style={{ color: "transparent" }}>----</span> At AVS
+                Technologies Ltd, we plan, design, build and support unique,
+                fully integrated experiential spaces while coordinating with a
+                wide range of partners to collaborate globally and achieve
+                seamless solutions that transform the places where we live, work
+                and play. Our vision, mission and values serve as our guiding
+                principles as we fuse architecture, storytelling and technology
+                to create lasting human experiences.
               </Typography>
             </Grid>
           </Grid>

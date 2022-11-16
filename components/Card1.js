@@ -164,16 +164,19 @@ function Card1() {
               readLessStyle={{ color: "blue", fontSize: "10px" }}
               readMoreStyle={{ color: "blue", fontSize: "10px" }}
             >
-              So what is a smart office? A smart office or a smart office
-              solution is an office space that incorporates modern technology to
-              increase and boost employee productivity, experience, and
-              efficiency by optimizing the office environment while
-              simultaneously keeping the office space environmentally friendly
-              and cost-efficient. This is usually managed in two different ways,
-              firstly by introducing tools that support employees in finding,
-              using, and collaborating in their office space, secondly by
-              providing analytic capabilities and tools for facility managers to
-              optimize space usage with smart systems.
+              A Smart Office integrates systems and devices altogether for
+              effective communication to work intelligently; enabling
+              monitoring, controlling and putting management system in place
+              with smart technology using touch screen panel, iOS and other
+              smart devices. AVS Technologies Ltd offers trusted smart solutions
+              to control Audiovisual, teleconferencing, digital signate systems,
+              security, IT infrastructure, access control and time attendance
+              biometric systems. As a business owner or facility manager you
+              have enough to worry about without letting the technology of
+              business operations distract you. we can give you competitive
+              advantage by improving your operating efficiencies. Sets your
+              lighting, HVAC, music and video to greet your customers with the
+              perfect welcome.
             </ReactReadMoreReadLess>
           </Typography>
         </Grid>
@@ -207,16 +210,16 @@ function Card1() {
               readLessStyle={{ color: "blue", fontSize: "10px" }}
               readMoreStyle={{ color: "blue", fontSize: "10px" }}
             >
-              If the intelligent residential system is installed in the
-              residence, the user can experience a safe, convenient and
-              intelligent service system. The home is the main place of use of
-              the intelligent residential system. In the process of use, it will
-              involve automatic control, Internet and wiring technology, etc.
-              The intelligent residential system design has the characteristics
-              of high safety and easy operation, which can effectively The
-              combination of electrical facilities and management system
-              provides users with a comfortable living environment and promotes
-              the development of interior design.
+              Smart Services at AVS Technologies Ltd offers you proactive
+              advice, remedies and building competitive advantage in your
+              business. Our smart services experts engage your office on a
+              regular basis to understand your challenges and opportunities at
+              any given time, whether you are a small business or a large
+              enterprise, your network and IT infrastructure provides the
+              backbone of your entire business operations. AVS Technologies Ltd
+              delivers smart services extends to procurement, supply of all ELV
+              equipment in a wide range and product recommendations as well as
+              quality of after-sales-service.
             </ReactReadMoreReadLess>
           </Typography>
         </Grid>
