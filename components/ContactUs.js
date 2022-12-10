@@ -146,6 +146,7 @@ function ContactUs({
             >
               <FormControl variant="outlined" fullWidth="100%">
                 <OutlinedInput
+                  size="small"
                   sx={{
                     background: "#fff",
                     margin: "0",
@@ -170,6 +171,7 @@ function ContactUs({
               </FormControl>
               <FormControl variant="outlined" fullWidth="100%">
                 <OutlinedInput
+                  size="small"
                   sx={{
                     background: "#fff",
                     margin: "0",
@@ -197,7 +199,7 @@ function ContactUs({
                     background: "#fff",
                     margin: "0",
                     width: "100%",
-                    minHeight: "100px",
+                    minHeight: "70px",
                     display: "flex",
                     alignItems: "flex-start",
                     lineBreak: "auto",
@@ -223,7 +225,7 @@ function ContactUs({
                 }}
               >
                 <Button
-                  size="large"
+                  size="small"
                   type="submit"
                   variant="outlined"
                   sx={{
@@ -231,7 +233,6 @@ function ContactUs({
 
                     background: "#fff",
                     color: "#999",
-                    minHeight: 52,
                   }}
                 >
                   Contact Us Now

@@ -26,7 +26,7 @@ function Header() {
         subtitle="Getting every task done seamlessly at your fingertips or voice commands to experience an amazing and productive smart automation solutions proffered by AVS Technologies Ltd as your best choice for both residential and commercial projects. "
         button1=" Get Started"
         button2=" See video"
-        src="/img/homepage.jpeg"
+        src="/img/header3.jpg"
       />
     </div>
   );

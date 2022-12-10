@@ -696,81 +696,14 @@ function Section() {
                 fontWeight={700}
                 mt={2}
               >
-                We Give The Great Offer Pricing With Our Professionals Team
-                Certification
+                Smart Automation Best Practices
               </Typography>
 
-              <Grid
-                container
-                spacing={1}
-                mt={2}
-                sx={{ gap: { xs: 0, md: 2, lg: 2 } }}
-              >
-                <Grid
-                  item
-                  xs={6}
-                  md={5.6}
-                  lg={5.6}
-                  bgcolor="#444"
-                  display="flex"
-                  flexDirection="column"
-                  justifyContent="space-around"
-                  p={1}
-                >
-                  <CalendarMonth sx={{ fontSize: 40, color: "#f90" }} />
-                  <Typography color="#fff" variant="h6" fontWeight={700}>
-                    Easy Online Appointment & Booking Service
-                  </Typography>
-                </Grid>
-                <Grid
-                  item
-                  xs={6}
-                  md={5.6}
-                  lg={5.6}
-                  bgcolor="#444"
-                  display="flex"
-                  flexDirection="column"
-                  justifyContent="space-around"
-                  p={1}
-                >
-                  <DeliveryDining sx={{ fontSize: 40, color: "#f90" }} />
-                  <Typography color="#fff" variant="h6" fontWeight={700}>
-                    All In One Tools Ready For Your House Installation
-                  </Typography>
-                </Grid>
-                <Grid
-                  item
-                  xs={6}
-                  md={5.6}
-                  lg={5.6}
-                  bgcolor="#444"
-                  display="flex"
-                  flexDirection="column"
-                  justifyContent="space-around"
-                  p={1}
-                >
-                  <People sx={{ fontSize: 40, color: "#f90" }} />
-                  <Typography color="#fff" variant="h6" fontWeight={700}>
-                    Professionals With Cerficitation Team Working
-                  </Typography>
-                </Grid>
-                <Grid
-                  item
-                  xs={6}
-                  md={5.6}
-                  lg={5.6}
-                  bgcolor="#444"
-                  display="flex"
-                  flexDirection="column"
-                  justifyContent="space-around"
-                  p={1}
-                >
-                  <Settings sx={{ fontSize: 40, color: "#f90" }} />
-                  <Typography color="#fff" variant="h6" fontWeight={700}>
-                    Great Maintanence For After Service Record
-                  </Typography>
-                </Grid>
-              </Grid>
+              <Typography color="#fff">
+                Taking your facility to new heights is revolutionary
+                enchancements that features state-of-the-art technology and
+                virtually endless pos
+              </Typography>
             </Grid>
           </Animator>
           <Animator variant="zoom" delay={300} timeout={500}>
