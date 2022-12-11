@@ -76,7 +76,7 @@ function Header({
             <Typography
               mt={1}
               color="#fff9"
-              fontSize={16}
+              fontSize={14}
               variant="caption"
               lineHeight={1.2}
             >

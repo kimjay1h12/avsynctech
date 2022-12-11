@@ -156,7 +156,7 @@ function Index() {
                 <Typography
                   mt={2}
                   lineHeight={2}
-                  color="#f90a"
+                  color="#fff"
                   variant="caption"
                 >
                   Contact-Us
@@ -323,7 +323,7 @@ function Index() {
                   >
                     Advantages of using Automation Technologies
                   </Typography>
-                  <Typography variant="caption" color="#fff" fontSize={16}>
+                  <Typography variant="caption" color="#fff" fontSize={14}>
                     Smart Automation Technologies solutions enables your home or
                     office to automatically respond to your lifestyle.
                   </Typography>

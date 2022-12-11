@@ -8,7 +8,7 @@ function Map() {
     <div
       style={{
         width: "100%",
-        height: "260px",
+        height: "300px",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",

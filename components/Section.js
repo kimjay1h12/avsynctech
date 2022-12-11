@@ -79,7 +79,7 @@ function Section() {
               <Typography
                 color="#aaa"
                 lineHeight={1}
-                fontSize={16}
+                fontSize={14}
                 variant="caption"
               >
                 <span style={{ color: "transparent" }}>----</span> At AVS
@@ -124,7 +124,7 @@ function Section() {
               variant="caption"
               color="#fff"
               lineHeight={1.4}
-              fontSize={16}
+              fontSize={14}
             >
               A smart controls systems can control, monitor, and optimize
               building services, such as, lighting, HVAC, electrical plug-loads,
@@ -196,12 +196,12 @@ function Section() {
             flexDirection="column"
             justifyContent="space-between"
           >
-            <img src="/img/61.jpeg" width="100%" height={250} />
+            <img src="/img/pic1.jpeg" width="100%" height={250} />
             <Typography variant="h5" color="#fff" mt={2} fontWeight={700}>
               SMART Lock
             </Typography>
             <Typography
-              fontSize={16}
+              fontSize={14}
               variant="caption"
               lineHeight={1.4}
               color="#fff"
@@ -285,7 +285,7 @@ function Section() {
             </Typography>
             <Typography
               variant="caption"
-              fontSize={16}
+              fontSize={14}
               color="#fff"
               lineHeight={1.5}
             >
@@ -382,7 +382,7 @@ function Section() {
                     color="#fff"
                     lineHeight={1}
                     variant="caption"
-                    fontSize={16}
+                    fontSize={14}
                   >
                     Smart audio & video distribution, smart home cinema, smart
                     lighting & HVAC control, smart CCTV video surveillance &
@@ -469,7 +469,7 @@ function Section() {
             }
             buttonvisibility="none"
             subtitle={
-              <Typography mt={2} color="#fff9" fontSize={16} variant="caption">
+              <Typography mt={2} color="#fff9" fontSize={14} variant="caption">
                 <ReactReadMoreReadLess
                   charLimit={200}
                   readMoreText={"Read more ▼"}
@@ -522,7 +522,7 @@ function Section() {
                 of electricity
               </ReactReadMoreReadLess>
             }
-            src="/img/9.jpg"
+            src="/img/smartlighting.jpeg"
           />
         </div>
         <Grid container>
@@ -536,7 +536,7 @@ function Section() {
           >
             <Grid container md={12} sx={{ padding: { xs: 2, md: 15 } }}>
               <Grid item xs={12} md={5.6} lg={5.6}>
-                <Typography variant="caption" fontSize={16} color="#f90">
+                <Typography variant="caption" fontSize={14} color="#fff">
                   Our Recent Working
                 </Typography>
                 <Typography
@@ -686,7 +686,7 @@ function Section() {
             timeout={1000}
           >
             <Grid item xs={12} md={5} lg={5}>
-              <Typography color="#f90a" variant="caption" fontSize={16}>
+              <Typography color="#fff" variant="caption" fontSize={14}>
                 Why Choose Us
               </Typography>
               <Typography
@@ -699,10 +699,16 @@ function Section() {
                 Smart Automation Best Practices
               </Typography>
 
-              <Typography color="#fff">
+              <Typography color="#fff9" fontSize={14} variant="caption">
                 Taking your facility to new heights is revolutionary
-                enchancements that features state-of-the-art technology and
-                virtually endless pos
+                enhancements that features state-of-the-art technology and
+                virtually endless possibilities. Integrating dynamic custom-made
+                electronics into your home or office is a powerful tool used to
+                do things beyond your imagination. At AVS Technologies Ltd,
+                cutting corners or using DIY methods in an attempt to complete
+                any design as quickly and cheaply as possible and can endanger
+                the safety of those in your facility or achieving low-quality
+                results.
               </Typography>
             </Grid>
           </Animator>
@@ -724,10 +730,10 @@ function Section() {
               }}
             >
               <img
-                src="/img/p29.jpeg"
+                src="/img/46.jpeg"
                 width="90%"
-                height="500px"
-                style={{ objectFit: "contain" }}
+                height="300px"
+                style={{ objectFit: "cover" }}
               />
             </Grid>
           </Animator>
@@ -761,7 +767,7 @@ function Section() {
               >
                 Advantages of using Automation Technologies
               </Typography>
-              <Typography variant="caption" color="#fff" fontSize={16}>
+              <Typography variant="caption" color="#fff" fontSize={14}>
                 Smart Automation Technologies solutions enables your home or
                 office to automatically respond to your lifestyle.
               </Typography>

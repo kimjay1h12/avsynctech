@@ -118,7 +118,7 @@ function ServicesCategory() {
           }}
           variant="caption"
           color="#fff"
-          fontSize={16}
+          fontSize={14}
         >
           AVS Technologies Ltd offers a full range of services as we access our
           requirements, collect relevant technical info for a particular
@@ -228,7 +228,7 @@ function ServicesCategory() {
                 flexDirection="column"
                 justifyContent="space-around"
               >
-                <CalendarMonth sx={{ fontSize: 40, color: "#f90" }} />
+                <CalendarMonth sx={{ fontSize: 40, color: "#fff" }} />
                 <Typography color="#fff" variant="h6" fontWeight={700}>
                   Smart Home
                 </Typography>
@@ -247,7 +247,7 @@ function ServicesCategory() {
                 flexDirection="column"
                 justifyContent="space-around"
               >
-                <DeliveryDining sx={{ fontSize: 40, color: "#f90" }} />
+                <DeliveryDining sx={{ fontSize: 40, color: "#fff" }} />
                 <Typography color="#fff" variant="h6" fontWeight={700}>
                   Smart Office
                 </Typography>
@@ -266,7 +266,7 @@ function ServicesCategory() {
                 flexDirection="column"
                 justifyContent="space-around"
               >
-                <People sx={{ fontSize: 40, color: "#f90" }} />
+                <People sx={{ fontSize: 40, color: "#fff" }} />
                 <Typography color="#fff" variant="h6" fontWeight={700}>
                   Smart Life
                 </Typography>
@@ -286,7 +286,7 @@ function ServicesCategory() {
                 flexDirection="column"
                 justifyContent="space-around"
               >
-                <Settings sx={{ fontSize: 40, color: "#f90" }} />
+                <Settings sx={{ fontSize: 40, color: "#fff" }} />
                 <Typography color="#fff" variant="h6" fontWeight={700}>
                   Stressless
                 </Typography>

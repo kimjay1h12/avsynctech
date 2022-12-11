@@ -62,7 +62,7 @@ function index() {
                 color="#fff"
                 lineHeight={1.5}
                 variant="caption"
-                fontSize={16}
+                fontSize={14}
                 sx={{
                   padding: 1,
                   ["@media (min-width : 1200px)"]: { padding: "0vh, 35vw" },
@@ -122,7 +122,7 @@ function index() {
                 lineHeight={1.5}
                 mt={10}
                 variant="caption"
-                fontSize={16}
+                fontSize={14}
                 fontWeight={500}
                 sx={{
                   padding: 0,

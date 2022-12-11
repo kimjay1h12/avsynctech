@@ -72,7 +72,7 @@ function Card1() {
               color="#fff"
               lineHeight={1.5}
               variant="caption"
-              fontSize={16}
+              fontSize={14}
             >
               With a control user interface your home or office truly connectd
               the global smart technologies to control, automate and monitor all

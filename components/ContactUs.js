@@ -124,8 +124,8 @@ function ContactUs({
           <Typography
             mt={2}
             lineHeight={2}
-            fontSize={16}
-            color="#f90a"
+            fontSize={14}
+            color="#fff"
             variant="caption"
           >
             Contact-Us
